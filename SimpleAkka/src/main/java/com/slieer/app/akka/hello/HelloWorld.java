@@ -1,4 +1,4 @@
-package com.slieer.app.akka.demo;
+package com.slieer.app.akka.hello;
 
 import akka.actor.Props;
 import akka.actor.UntypedActor;
