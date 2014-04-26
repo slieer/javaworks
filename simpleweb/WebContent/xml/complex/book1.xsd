@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- salami Slice 所有元素都是全局元素 -->
+<xs:schema targetNamespace="http://www.itcast.cn" xmlns="http://www.itcast.cn" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="书架">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="书" maxOccurs='unbounded'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="书">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="书名"/>
+				<xs:element ref="作者"/>
+				<xs:element ref="售价"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="书名"></xs:element>
+	<xs:element name="售价"></xs:element>
+	<xs:element name="作者">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"></xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Java script</title>
+<script type="text/javascript">
+var simple = {
+	val : new Array([],null,undefined,null) == ",,,",
+	eqTest : function(){
+		if(simple.val == true){
+			alert('val == true.');
+		}
+	},
+	eqExactTest : function(){
+		if(simple.val === true){
+			(function(info){
+				alert(info);
+			})('val === true')
+		}else{
+		}
+	},
+	eq : function(){
+		(function(){
+			alert(false === undefined);
+		})()		
+	},
+	functionTest : (function(info){
+		alert("functionTest");
+		return info;
+	})("hello")
+};
+
+(function(){
+	new simple.eqTest();
+	new simple.eqExactTest();
+	new simple.eq();
+	alert(simple.functionTest);
+})();
+</script>
+</head>
+<body>
+
+</body>
+</html>

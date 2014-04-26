@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery动态创建div与input</title>
+<style type="text/css">
+.text{background-color: #bcc2cd}
+</style>
+</head>
+
+<body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function (){
+	<!--动态创建div-->
+	$("<div>", {
+		id : 'text',
+		text : 'this is a test',
+		"class" : "text",
+	    click:function(){
+	    	$(this).toggleClass('test');
+	    }
+	}).appendTo("body");
+
+	<!--动态创建input 1-->
+	$("<input>",{
+		type:'text',
+		val:'text',
+		function:function(){
+		    $(this).addClass('active');
+		},
+		focusout:function(){
+			$(this).removeClass('active');
+		}
+	}).appendTo("div");
+
+	$('<input type="checkbox">')
+    .attr('id', 'cus')
+    .attr('value', "abc")
+    .attr('checked', 'checked')
+    .appendTo("div");
+});
+
+</script>
+</body>
+</html>`

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>simpe pagination test</title>
+<style type="text/css">
+.pagging {
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    text-align: right;
+}
+
+.pagging-click {
+    border: 1px solid #000000;
+    padding: 2px;
+}
+
+.pagging-click-over {
+    padding: 2px;
+	border: solid 1px #d71345;
+	color: #d71345;
+	cursor: pointer;
+}
+
+#input-page {
+	padding-left: 2px;
+}	
+</style>
+</head>
+<body>
+<div class="pagging">
+	  	 	 共&nbsp; <span id="total-pages"><b>10</b></span>&nbsp;页&nbsp;&nbsp;
+			<span class="pagging-click" id="first-page">首页</span>&nbsp;&nbsp;
+			<span class="pagging-click" id="prev-page">上一页</span>&nbsp;&nbsp;
+			<span class="pagging-click" id="next-page">下一页</span>&nbsp;&nbsp;
+			<span class="pagging-click" id="last-page">尾页</span>&nbsp;&nbsp;第&nbsp;
+			<span id="specific-page">
+				<input type="text" value="1" maxlength="6" size="2" id="input-page">&nbsp;页
+			</span>&nbsp;&nbsp;
+			<span class="pagging-click" id="go-page">跳转</span>
+		</div>
+		<script type="text/javascript">
+			window.onload = function(){
+				function _event(e){
+			        e = window.event || e;
+
+					var eventSource;
+			        if(e.srcElement){
+			        	eventSource = e.srcElement;
+				    }else if( e.target){
+					    eventSource =  e.target;
+					}
+					return eventSource;					
+				}
+
+				function op(eventSource, className){
+			        var id = eventSource.id;
+			        for(var i = 0; i < arr.length; i++){
+				        console.info('arr[i]=' + arr[i] + ', id=' + id)
+				        if(arr[i] == id){
+				         	eventSource.className =  className;
+				         	break;
+					    }
+				    }					
+				}
+				
+    			var arr = ['next-page', 'last-page', 'go-page'];
+				var div = document.getElementsByTagName('div');
+				div[0].onmouseover = function(e){
+						var eventSource = _event(e);
+						op(eventSource, 'pagging-click-over' );
+				}
+
+				div[0].onmouseout = function(e){
+					var eventSource = _event(e);
+					op(eventSource, 'pagging-click');
+				}
+			}
+		</script>
+</body>
+</html>

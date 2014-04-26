@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Event Test</title>
+</head>
+<body>
+	<div id="demo">
+		<div id="container">
+			<p>Click for Hello World alert.</p>
+		</div>
+		<p>
+			<a href="http://yuilibrary.com" id="firstA">The YUI Library. (Link navigates away from page.)</a>
+		</p>
+		<p>
+			<a href="http://yuilibrary.com" id="secondA">The YUI Library. (Link's default behavior is suppressed.)</a>
+		</p>
+		<div id="first-demo">Click me</div>
+	</div>
+	
+<script src="http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js"></script>
+<script>
+YUI().use('node','console', function (Y) {
+    // subscribe the helloWorld function as an event handler for the click
+    // event on the container div:
+    var node = Y.one("#container");
+
+    node.on("click",  function(e) {
+        alert("Hello World!")
+    });
+
+    // A function that pops up an alert and prevents the default behavior of
+    // the event for which it is a handler:
+    Y.one('#secondA').on("click", function(e) {
+        e.preventDefault();
+        alert("You clicked on the second YUI link.  Because *preventDefault* was called, this link will not navigate away from the page.");
+    });
+
+    var first_demo = Y.one('#first-demo');
+    first_demo.on('click', function(e){
+    	first_demo.set('text', 'You clicked me!')
+    });
+
+    Y.log("Hello world!", "info",  "myapp");       
+        
+});
+</script>
+</body>
+</html>

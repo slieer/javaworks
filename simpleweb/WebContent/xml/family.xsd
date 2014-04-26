@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.w3school.com.cn/family" 
+	xmlns="http://www.w3school.com.cn/family"
+	elementFormDefault="qualified">
+	<xs:element name="persons">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="person" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="full_name" type="xs:string"
+								minOccurs="1" />
+							<xs:element name="child_name" type="xs:string"
+								minOccurs="0" maxOccurs="5" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

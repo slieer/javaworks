@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jslib/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <input type='radio' name='i' id='test'>
+    <hr>
+    <input type='radio' name='in'>
+    <input type='radio' name='in' checked='checked'>
+    <input type='radio' name='in'>
+    
+    <script type="text/javascript">
+    $(function(){
+        $('#test').attr('checked', 'checked');
+        
+    	$(':radio').click(function(event){
+    		event.preventDefault();
+        	console.log('test...');
+        });
+    });
+    </script>
+</body>
+</html>

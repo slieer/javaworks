@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>event test.</h1>
+    <div>
+        <ul>
+            <li><span>英雄炊烟<a href="#" id='link'>松涛阵阵</a></span></li>
+            <li><br/>首先是捕获式传递事件，接着是冒泡式传递，</li>
+        </ul>
+        <div id='re_div'>......</div>   
+     </div>
+     
+     <script type="text/javascript">
+     var link = document.getElementById("link");
+     var reDiv = document.getElementById("link");
+
+     function re(d){
+         var s = document.createElement('SPAN');
+         s.innerHTML = d
+         reDiv.appendChild(s);         
+     }
+
+     /**true表示注册到捕获阶段，false表示注册到冒泡阶段。*/
+     link.addEventListener('click', function(){
+         re('true');
+     }, true);
+
+     link.addEventListener('click', function(){
+    	 re('false');
+     }, false);
+
+     /**
+    只支持事件冒泡方式
+    link.onclick = function(){
+        
+    }  
+    */       
+     </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DIV Tab</title>
+<style type="text/css">
+body {
+	display: inline-table;
+	width: 500px;
+}
+
+#section {
+	background-color: #999;
+	display: table-row;
+}
+
+#a {
+	background-color: #F99;
+}
+
+#b {
+	background-color: #99F;
+	display: table-cell;
+}
+
+#a {
+	display: table-cell;
+}
+</style>
+</head>
+<body>
+	<div id="section">
+		<div id="a">title</div>
+		<div id="b">text</div>
+	</div>
+
+<!-- 
+以上是一个布局骨架，要求效果如下：
+1、a、b的宽度可自适应。具体为a的内容绝对不能换行，b铺满该行剩余的部分；
+2、section的高度可以根据a、b的最大高度自适应；
+能够满足该布局需求的table等效代码如下：
+	<table id="section">
+		<tr>
+			<td nowrap="nowrap" id="a">title</td>
+			<td id="b">text</td>
+		</tr>
+	</table>
+ -->
+</body>
+</html>

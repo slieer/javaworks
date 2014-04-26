@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html file api</title>
+</head>
+
+<body>
+    <h1>File API Demo</h1>
+    <!-- 用于文件上传的表单元素 -->
+    <form name="demoForm" id="demoForm" method="post"
+        enctype="multipart/form-data"
+        action="javascript: uploadAndSubmit();">
+        <p>
+            Upload File: <input type="file" name="file" />
+        </p>
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+    </form>
+    <div>
+        Progessing (in Bytes): 
+        <span id="bytesRead"> </span> / 
+        <span id="bytesTotal"></span>
+    </div>
+    
+    <script type="text/javascript">
+    var f = document.getElementsByName('file');
+    f[0].onchange = function(){
+        /*
+        lastModifiedDate
+        name
+        path
+        size
+        type
+        */
+        var file = this.files[0];
+        var lst = file.lastModifiedDate;
+        var n = file.name;
+        var p = file.path;
+        var s = file.size;
+        var t = file.type;
+    }
+/*
+    FileReader
+    .onloadstart
+    .onprogress
+    .onload
+    .onloadend
+    HTML5 支持拖拽
+
+    http://www.ibm.com/developerworks/cn/web/1101_hanbf_fileupload/
+    */
+
+    
+    </script>
+</body>
+</html>

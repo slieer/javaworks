@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jquery Table Test</title>
+<style type="text/css">
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 300px;
+}
+
+table td {
+	border: 1px solid black;
+	width: 50%;
+}
+
+table th {
+	border: 1px solid black;
+	width: 50%;
+}
+
+tbody th {
+	background-color: #06C;
+}
+
+.trhover {
+	background: #B0E3FE;
+}
+</style>
+</head>
+<body>
+	<div>
+		<p id='para'>
+			<a id="delTbody" href="javascript:;">del tbody</a> <a id='delRow'
+				href="javascript:;">del row</a> <a id='tbodyEmpty'
+				href="javascript:;">tbody empty</a>
+		</p>
+		动态操作table
+	</div>
+	<table id='tab'>
+		<thead>
+			<tr>
+				<th>name</th>
+				<th>sex</th>
+			</tr>
+            <tr>
+                <th>your name</th>
+                <th>your gender</th>
+            </tr>
+			
+		</thead>
+	</table>
+	<script type="text/javascript" src="../../jslib/jquery-1.7.1.js" ></script>
+	<script type="text/javascript" src="JqueryTab.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    new Op.constructTab();
+		    new Op.tabEvent();
+		});
+		alert($('#tab')[0].tHead);
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var j = {
+				a : "abc",
+				ar : {
+						x : 'xx',
+						b : 'b'
+					},
+
+				arr : [1,2,3,4]
+				};
+
+		function traverseJSON(j){
+			for(var x in j){
+				//console.info(x);
+				console.info(x + ':' + j[x]);
+				if(j[x] instanceof Array){
+					console.info('this is a array.');
+				}else if(j[x] instanceof Object){
+					console.info('this is a json.');
+				}	
+			}
+		}
+
+		traverseJSON(j)
+	</script>
+</body>
+</html>

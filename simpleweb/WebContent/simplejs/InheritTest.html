@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Inherit test</title>
+<script>
+	 var f = function(){		
+		function sayHi(){
+			console.log('hi');
+			{
+				var i = 10;
+			}
+			console.log(i);
+		}
+		
+		sayHi.alternate = function(){
+			console.log('hola');
+		}
+		
+		sayHi();
+		sayHi.alternate();
+	}
+	
+	new f();
+	
+	function MED(){
+    	this.aim = "营销体验设计";
+	}
+	
+	//inherit DED
+	function WD(skill,sex){
+	    //MED.apply(this, void{});
+	    MED.apply(this, arguments);
+	    MED.apply(this, null);
+
+	    this.skill = skill;
+	    this.sex = sex;
+	}
+	
+	var WD1 = new WD("Html","男");
+	console.log(WD1.aim); // "营销体验设计"
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Partial Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function apply(f) {
+			var args = Array.prototype.slice.call(arguments, 1)
+			return function(x) {
+				return f.apply(null, args.concat(x))
+			}
+		}
+
+		function eq(a, b) {
+			return a == b;
+		}
+		var re = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ].filter(apply(eq, 3));
+		console.log(re);
+
+		
+		
+		function jionWords(a, b) {
+			return [ a, b ].jion(' ');
+		}
+
+		function prefixer(word) {
+			return function(b) {
+				return jionWords(word, b);
+			}
+		}
+
+		var hate = prefixer('Hate');
+
+		hate('Java'); //返回值为:Hate Java
+	</script>
+</body>
+</html>

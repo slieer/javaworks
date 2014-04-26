@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js"></script>
+<title>Node Test</title>
+</head>
+<body>
+	<div id="main">
+		<div id="hello"></div>
+	</div>
+	<script type="text/javascript">
+	// Create a new YUI instance and populate it with the required modules.
+	YUI().use('node', function (Y) {
+		// Or pass an HTML element
+		var bodyNode = Y.one(document.body);
+		// Append new markup inside a Node
+		bodyNode.append("<p>This is the end, beautiful friend, the end.</p>");			    
+
+		// Create a new Node
+		var item = Y.Node.create('<li id="step3" class="highlight"><em>Profit</em></li>');
+		Y.one('#main').append(item);
+
+		Y.one('#step3').setStyle('backgroundColor', '#FFD7AA');
+				
+		// Replace the content in a Node
+		Y.one("#hello").setHTML("<h1>Hello, <em>World</em>!</h1>");
+		
+	});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itcast:书架 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:itcast="http://www.itcast.cn" 
+	xsi:schemaLocation="http://www.itcast.cn file:///E:/BorqsWorkspace/MyGoogleCode/java-primer/simpleweb/WebContent/xml/complex/book1.xsd">
+	<itcast:书>
+		<itcast:书名>JavaScript网页开发</itcast:书名>
+		<itcast:作者>redarmy</itcast:作者>
+		<itcast:售价>28.00元</itcast:售价>
+	</itcast:书>
+	<itcast:书>
+		<itcast:书名>aa</itcast:书名>
+		<itcast:作者>sdf</itcast:作者>
+		<itcast:售价>1元</itcast:售价>
+	</itcast:书>
+</itcast:书架>

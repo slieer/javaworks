@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.clearfix:after {
+	clear: both;
+	content: "\200B";
+	display: block;
+	height: 0;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.top-nav {
+	margin: 0;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 4px;
+	position: relative;
+}
+
+.top-nav li {
+	float: left;
+	position: relative;
+	margin-right: 8px;
+	padding: 0 1px;
+}
+
+.top-nav li.current:after {
+	content: "\200B";
+	position: absolute;
+	display: block;
+	width: 100%;
+	left: 0;
+	bottom: -5px;
+	border-bottom: 1px solid #fff;
+}
+
+.top-nav li a {
+	display: block;
+	position: relative;
+	border: 1px solid #ccc;
+	border-bottom: 0 none;
+	padding: 5px 5px 0 5px;
+	text-decoration: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.top-nav li a:before {
+	content: "\200B";
+	position: absolute;
+	display: block;
+	width: 4px;
+	height: 100%;
+	border-bottom-right-radius: 4px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	left: -5px;
+	top: 4px;
+}
+
+.top-nav li a:after {
+	content: "\200B";
+	position: absolute;
+	display: block;
+	width: 4px;
+	height: 100%;
+	border-bottom-left-radius: 4px;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	right: -5px;
+	top: 4px;
+}
+</style>
+</head>
+<body>
+	<ul id="top-nav" class="top-nav clearfix">
+		<li class="current"><a href="http://www.swordair.com/">Home</a></li>
+		<li><a href="http://www.swordair.com/blog/">Blog</a></li>
+		<li><a href="http://www.swordair.com/tools/">Tools</a></li>
+		<li><a href="http://www.swordair.com/docs/">Docs</a></li>
+		<li><a href="http://www.swordair.com/gallery/">Gallery</a></li>
+		<li><a href="http://www.swordair.com/record/">Record</a></li>
+		<li><a href="http://www.swordair.com/about/">About</a></li>
+	</ul>
+	
+	<script type="text/javascript" src="../jslib/jquery-1.7.1.js"></script>
+	<script>
+		$('#top-nav li').bind('click',function(){
+			$(this).siblings('.current').removeClass('current');
+			$(this).addClass('current');
+			return false;
+		});
+	</script>
+	
+	<h3>HTML</h3>
+</body>
+</html>

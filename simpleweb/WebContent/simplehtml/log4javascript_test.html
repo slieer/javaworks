@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>log4js test</title>
+<script type="text/javascript" src="../jslib/log4javascript.js"></script>
+</head>
+<body>
+    hello log4js test
+    <script type="text/javascript">
+        var log = log4javascript.getDefaultLogger();
+        log.info("Hello world");
+
+        try {
+            throw new Error("Faking something going wrong!");
+        } catch (e) {
+            log.error("An error occurred", e);
+        }
+        
+        log.debug("a", 1);
+        
+    </script>
+</body>
+</html>

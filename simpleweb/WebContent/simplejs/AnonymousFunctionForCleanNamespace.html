@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+	 * Javascript uses functional scope
+	 * A variable defined in a function is not available outside
+	 * Very useful for keeping global namespace clean
+	 * Hide your code in an anonymous function!
+	 * Then 3rd party Javascripts don't collide!
+	 * To export any methods to the global, assign them to the window obj (that is the global context)
+	 */
+
+	var contentDiv = document.getElementById('content');
+	(function() {
+		var a = 'Invisible outside of anonymous function';
+		function invisibleOutside() {
+		}
+
+		function visibleOutside() {
+		}
+
+		//给window加一个属性，使得(命名为visibleOutside的函数)对其它函数可见.
+		window.visibleOutside = visibleOutside;
+
+		var html = '--INSIDE Anonymous--';
+		html += '__tag_29$11_ typeof invisibleOutside: ' + typeof invisibleOutside;
+		html += '__tag_30$11_ typeof visibleOutside: ' + typeof visibleOutside;
+		contentDiv.innerHTML = html + '__tag_31$33_<br/>';
+	})();
+
+	var html = '--OUTSIDE Anonymous--';
+	html += '__tag_35$9_ typeof invisibleOutside: ' + typeof invisibleOutside;
+	html += '__tag_36$9_ typeof visibleOutside: ' + typeof visibleOutside;
+	contentD
+</script>
+</body>
+</html>

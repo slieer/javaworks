@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<color xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="color.xsd">
+	<red>1</red>
+	<green/>
+	<green/>
+	<other name="purple"></other>
+	<other name="orange"/>
+	<other name="apple"/>
+</color>

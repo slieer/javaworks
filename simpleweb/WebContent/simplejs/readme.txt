@@ -1,0 +1,1 @@
+http://code.google.com/apis/ajax/playground/

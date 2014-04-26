@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	Object.prototype.bar = 1;
+	var foo = {moo: 2};
+	for(var i in foo) {    
+		console.log(i); // prints both bar and moo
+	}
+
+	console.info('hasOwnProperty test......');
+	// still the foo from above
+	for(var i in foo) {    
+		if (foo.hasOwnProperty(i)) {        
+			console.log(i);    
+		}
+	}
+
+	var json = {
+		'vari' : 'v',
+		'arr' : [1,2,3],
+		'json' : {
+			'z' : 1, 'y' : 2, 'z' : 3
+		},
+		'fun' : function(){
+		},
+		toString : function(){
+			console.info('this is Object in \'toString\' output.');
+			return 'myself object test:' + json;
+		}
+	};
+	console.info('json test......');
+	for(var i in foo) {    
+		console.log(i); // prints both bar and moo
+	}
+
+	for(var i in json.prototype){
+		console.log(i)
+	}
+	console.info("toString....");
+	console.warn(json);
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="color">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="red" type="xs:string" />
+				<xs:element name="blue" type="xs:string" />
+				<xs:element name="green" type="xs:string" />
+				<xs:element name="other">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

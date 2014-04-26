@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+	type="text/javascript"></script>
+<style type="text/css">
+.page {
+	padding: 100px 0;
+	zoom: 1
+}
+
+
+.page span {
+	position: relative;
+	margin: 0 2px;
+	border: solid 1px #ccc;
+	float: left;
+}
+
+.page span a {
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+.page span i {
+	display: block;
+	height: 10px;
+	width: 10px;
+	background: #ccc;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: -20px;
+	margin-left: -5px;
+}   
+
+.page span i.active_i {
+	background: red;
+}
+</style>
+<script type="text/javascript">      
+$(document).ready(function(){      
+        function  pageStyle(obj,even,bg,active_bg){      
+            /*参数说明：      
+            obj为所有奇数元素      
+            even当前所要点击触发事件      
+            bg为足迹元素      
+            active_bg为点击后的足迹背景      
+            2012-9-2 作者：zoowar      
+            Email:zoowar@qq.com 博客：www.dayday28.com
+            */      
+            $(obj).css("top","-30px");
+            $(even).click(function(){
+                $(this)
+                .siblings(bg)
+                .addClass(active_bg)
+                .parent()
+                .siblings()
+                .find(bg)
+                .removeClass(active_bg);
+            })      
+        }      
+        pageStyle(".page i:even",".page a","i","active_i");
+    })      
+</script>
+</head>
+
+<body>
+	<div class="page">
+		<span><a>上一页</a></span> 
+		<span><a>1</a><i class="active_i"></i></span>
+		<span><a>2</a><i></i></span> 
+		<span><a>3</a><i></i></span> 
+		<span><a>4</a><i></i></span>
+		<span><a>5</a><i></i></span> 
+		<span><a>5</a><i></i></span> 
+		<span><a>6</a><i></i></span>
+		<span><a>7</a><i></i></span> 
+		<span><a>8</a><i></i></span> 
+		<span><a>9</a><i></i></span>
+		<span><a>下一页</a></span>
+	</div>
+</body>
+</html>

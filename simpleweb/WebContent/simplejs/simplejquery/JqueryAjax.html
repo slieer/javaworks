@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <a id='result' href="javascript:;">request</a>
+    
+    <a id="bind" href='javascript:;'>bind</a>
+<script type="text/javascript" src="../../jslib/jquery-1.7.1.js" ></script>
+<script type="text/javascript">
+(function(){
+	   $('#result').bind({
+	            click :  function(){
+                    var url = '/payment/client/tradeRecordListWeb.action';
+                    var startDate = '2012-06-01';
+                    var endDate = '2012-07-01';
+                    var parameter ={
+                            'createDateFrom' : startDate,
+                            'createDateTo' : endDate,
+                            'type': 5,
+                            'tradeType': 1,
+                            'currentPage': 1,
+                            'pageSize' : 20
+                            };
+
+                    
+                    //alert(jQuery.browser);  //{ mozilla=true, version="13.0"}
+                    alert(JSON.stringify(parameter));   //json Object to json String
+                    /*
+                    jQuery.getScript("http://app.cntvs.com/test/js.txt",function(){
+                        
+                    });
+                    $.getJSON(url , parameter,  function(json){
+                        console.info(json);
+                    }); */ 		            
+	            }
+	   });  
+	
+      $('#bind').bind('click', function(){
+      });
+})();
+</script>
+</body>
+</html>

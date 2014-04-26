@@ -1,0 +1,19 @@
+keytool命令位置:
+	"c:\Program Files\Java\jdk1.6.0_20\bin\keytool.exe"
+key.cert文件生成：
+	keytool -genkey -keystore Key.cert -keyalg rsa –alias tempkey 
+	或者： 
+    keytool -genkey -alias tempkey -keysize 512 -validity 3650 -keyalg RSA -dname "CN=sariel.javaeye.com, OU=sariel CA,  O=sariel Inc, L=Stockholm, S=Stockholm, C=SE" -keypass 123456 -storepass 123456 -keystore key.cert 
+
+
+服务器启动：java SSLServer 
+    key.cert 文件需要和 SSLServer.class 同一目录下 
+
+
+客户端启动
+cmd
+cd E:\BorqsWorkspace\workspace\simpleweb\target\classes
+java -Djavax.net.ssl.trustStore=E:\BorqsWorkspace\workspace\simpleweb\JavaSE\com\security\tls_ssl\simpleDemo\key.cert com.security.tls_ssl.simpleDemo.SSLClient
+
+
+------还有编码问题待解决------ 

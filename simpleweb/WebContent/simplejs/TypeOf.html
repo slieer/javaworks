@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javaScript data type and URL</title>
+</head>
+<body>
+	<script type="text/javascript">
+	(function(){
+		/**
+		基本类型判断
+		可以使用 typeof 来获取一个变量是否存在，
+		而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错
+		*/
+		if(typeof a !=	undefined){
+			alert("`a` variable not exit.")
+		}
+
+		/*
+		但如果使用 instaceof 去测试会发现 arguments 不是一个 Array 对象
+		*/
+		var a=new Array();
+		alert(a instanceof Array);
+
+		//alert({'a' : 'A'} instanceof JSON); //error.
+	})();
+
+	function testLoc(){
+		window.location.hash;
+		window.location.search;
+		window.location.pathname;
+		window.location.port;
+		window.location.host;
+		window.location.protocol;
+		window.location.href;
+	}
+	</script>
+</body>
+</html>

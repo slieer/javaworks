@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CSS Test</title>
+<style>	
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container * {
+	border: 1px solid black;
+}
+
+#container {
+    width: 960px;
+    margin: auto;
+}
+
+.error {
+    color: red;
+}
+
+li a {
+   text-decoration: none;
+}
+
+a { 
+	color: red; 
+}
+ 
+ul { 
+	margin-left: 0; 
+}
+
+a:link { 
+	color: red; 
+}
+
+a:visted {
+	color: purple; 
+}
+
+/*匹配在ul后面的第一个p*/
+ul + p {
+   color: red;
+}
+
+/*子选择器只对直接子级结点起作用*/
+div#container > ul {
+   border: 1px solid black;
+}
+
+/*相邻选择器，X~Y匹配与X相同级别的所有Y元素*/
+ul ~ p {
+   color: red;
+}
+
+/*属性选择器。 匹配所有拥有href属性，且href为http://css9.net的所有链接。*/
+a[href="http://css9.net"] {
+   color: #1f6053; 
+}
+
+/*属性选择器。匹配的是href中包含"css9.net"的所有链接。*/
+a[href*="css9.net"] {
+   color: #1f6053;
+}
+
+/*属性选择器。上面代码匹配的是href中所有以http开头的链接。*/
+a[href^="http"] {
+   background: url(path/to/external/icon.png) no-repeat;
+   padding-left: 10px;
+}
+
+/*属性选择器。在属性选择器中使用$，用于匹配结尾为特定字符串的元素。*/
+a[href$=".jpg"] {
+   background: url(path/to/external/icon.png) no-repeat;
+   padding-left: 10px;
+}
+
+</style>
+</head>
+	<body>
+
+		14. X[data-*="foo"]
+
+		在上一个选择器中提到如何匹配所有图片链接。如果使用X[href$=".jpg"]实现，需要这样做：
+
+		a[href$=".jpg"],
+		a[href$=".jpeg"],
+		a[href$=".png"],
+		a[href$=".gif"] {
+		color: red;
+		}
+
+		看上去比较麻烦。另一个解决办法是为所有的图片链接加一个特定的属性，例如‘data-file’
+
+		html代码
+
+		<a href="path/to/image.jpg" data-filetype="image"> 图片链接 </a>
+		css代码如下：
+
+		a[data-filetype="image"] {
+		color: red;
+		}
+
+		这样所有链接到图片的链接字体颜色为红色。
+
+		兼容浏览器：IE7+、Firefox、Chrome、Safari、Opera
+		15. X[foo~="bar"]
+
+		属性选择器。属性选择器中的波浪线符号可以让我们匹配属性值中用空格分隔的多个值中的一个。看下面例子：
+
+		html代码
+
+		<a href="path/to/image.jpg" data-info="external image"> Click Me, Fool </a>
+		css代码
+
+		a[data-info~="external"] {
+		color: red;
+		}
+		a[data-info~="image"] {
+		border: 1px solid black;
+		}
+
+		在上面例子中，匹配data-info属性中包含“external”链接的字体颜色为红色。匹配data-info属性中包含“image”的链接设置黑色边框。
+
+		兼容浏览器：IE7+、Firefox、Chrome、Safari、Opera
+		17. X:checked
+
+		checked伪类用来匹配处于选定状态的界面元素，如radio、checkbox。
+
+		input[type=radio]:checked {
+		border: 1px solid black;
+		}
+
+		上面代码中匹配的是所有处于选定状态的单选radio，设置1px的黑色边框。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		18. X:after和X:before
+
+		这两个伪类与content结合用于在元素的前面或者后面追加内容，看一个简单的例子：
+
+		h1:after {content:url(/i/logo.gif)}
+
+		上面的代码实现了在h1标题的后面显示一张图片。
+
+		我们也经常用它来实现清除浮动，写法如下：
+
+		.clearfix:after {
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		font-size: 0;
+		height: 0;
+		}
+		.clearfix {
+		*display: inline-block;
+		_height: 1%;
+		}
+
+		19. X:hover
+
+		div:hover {
+		background: #e3e3e3;
+		}
+
+		:hover伪类设定当鼠标划过时元素的样式。上面代码中设定了div划过时的背景色。
+
+		需要注意的是，在ie 6中，:hover只能用于链接元素。
+
+		这里分享一个经验，在设定链接划过时出现下滑线时，使用border-bottom会比text-decoration显得更漂亮些。代码如下：
+
+		a:hover {
+		border-bottom: 1px solid black;
+		}
+
+		兼容浏览器：IE6+、Firefox、Chrome、Safari、Opera
+		20. X:not(selector)
+
+		div:not(#container) {
+		color: blue;
+		}
+
+		否定伪类选择器用来在匹配元素时排除某些元素。在上面的例子中，设定除了id为container的div元素字体颜色为blue。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		21. X::pseudoElement
+
+		::伪类用于给元素片段添加样式。比如一个段落的第一个字母或者第一行。需要注意的是，这个::伪类只能用于块状元素。
+
+		下面的代码设定了段落中第一个字母的样式：
+
+		p::first-letter {
+		float: left;
+		font-size: 2em;
+		font-weight: bold;
+		font-family: cursive;
+		padding-right: 2px;
+		}
+
+		下面的代码中设定了段落中第一行的样式：
+
+		p::first-line {
+		font-weight: bold;
+		font-size: 1.2em;
+		}
+
+		兼容浏览器：IE6+、Firefox、Chrome、Safari、Opera
+
+		（IE6竟然支持，有些意外啊。）
+		22. X:nth-child(n)
+
+		li:nth-child(3) {
+		color: red;
+		}
+
+		这个伪类用于设定一个序列元素（比如li、tr）中的第n个元素（从1开始算起）的样式。在上面例子中，设定第三个列表元素li的字体颜色为红色。
+
+		看一个更灵活的用法，在下面例子中设定第偶数个元素的样式，可以用它来实现隔行换色：
+
+		tr:nth-child(2n) {
+		background-color: gray;
+		}
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari
+		23. X:nth-last-child(n)
+
+		li:nth-last-child(2) {
+		color: red;
+		}
+
+		与X:nth-child(n)功能类似，不同的是它从一个序列的最后一个元素开始算起。上面例子中设定倒数第二个列表元素的字体颜色。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		24. X:nth-of-type(n)
+
+		ul:nth-of-type(3) {
+		border: 1px solid black;
+		}
+
+		与X:nth-child(n)功能类似，不同的是它匹配的不是某个序列元素，而是元素类型。例如上面的代码设置页面中出现的第三个无序列表ul的边框。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari
+		25. X:nth-last-of-type(n)
+
+		ul:nth-last-of-type(3) { border: 1px solid black; }
+
+		与X:nth-of-type(n)功能类似，不同的是它从元素最后一次出现开始算起。上面例子中设定倒数第三个无序列表的边框
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		26. X:first-child
+
+		:first-child伪类用于匹配一个序列的第一个元素。我们经常用它来实现一个序列的第一个元素或最后一个元素的上（下）边框，如：
+
+		ul:nth-last-of-type(3) {
+		border: 1px solid black;
+		}
+
+		兼容浏览器：IE7+、Firefox、Chrome、Safari、Opera
+		27. X:last-child
+
+		ul > li:last-child {
+		border-bottom:none;
+		}
+
+		与:first-child类似，它匹配的是序列中的最后一个元素。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		28. X:only-child
+
+		div p:only-child {
+		color: red;
+		}
+
+		这个伪类用的比较少。在上面例子中匹配的是div下有且仅有一个的p，也就是说，如果div内有多个p，将不匹配。
+
+		<div>
+			<p>
+				My paragraph here.
+			</p>
+		</div>
+		<div>
+			<p>
+				Two paragraphs total.
+			</p>
+			<p>
+				Two paragraphs total.
+			</p>
+		</div>
+		在上面代码中第一个div中的段落p将会被匹配，而第二个div中的p则不会。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		29. X:only-of-type
+
+		li:only-of-type {
+		font-weight: bold;
+		}
+
+		这个伪类匹配的是，在它上级容器下只有它一个子元素，它没有邻居元素。例如上面代码匹配仅有一个列表项的列表元素。
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera
+		30. X:first-of-type
+
+		:first-of-type伪类与:nth-of-type(1)效果相同，匹配出现的第一个元素。我们来看个例子：
+
+		<div>
+			<p>
+				My paragraph here.
+			</p>
+			<ul>
+				<li>
+					List Item 1
+				</li>
+				<li>
+					List Item 2
+				</li>
+			</ul>
+			<ul>
+				<li>
+					List Item 3
+				</li>
+				<li>
+					List Item 4
+				</li>
+			</ul>
+		</div>
+		在上面的html代码中，如果我们希望仅匹配List Item 2列表项该如何做呢：
+
+		方案一：
+
+		ul:first-of-type > li:nth-child(2) {
+		font-weight: bold;
+		}
+
+		方案二：
+
+		p + ul li:last-child {
+		font-weight: bold;
+		}
+
+		方案三：
+
+		ul:first-of-type li:nth-last-child(1) {
+		font-weight: bold;
+		}
+
+		兼容浏览器：IE9+、Firefox、Chrome、Safari、Opera。
+	</body>
+</html>

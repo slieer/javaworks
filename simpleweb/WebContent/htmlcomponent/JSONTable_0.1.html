@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../jslib/jquery-1.7.1.js"></script>
+<style type="text/css">
+.cellphone {
+    width: 70%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    margin:0 auto 0 auto; 
+}
+
+.cellphone th {
+    background: #5ea4ce;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    font-weight:bold;
+}
+
+.cellphone td {
+    padding-left: 5px;
+    text-align: left;
+    border: 1px solid #c0c0c0;
+}
+
+</style>
+</head>
+<body>
+    <table id='tab' class="cellphone"></table>
+	<script type="text/javascript">
+    var jsonData ={ 
+        title : {'count' : '名次', 'prize' : '奖品', 'rank' : '排名','rankstr' : 'rankstr_', 'type' : 't'},
+		data : [
+				{"count":1,"prize":"联想（Lenovo）乐Pad A2107 7英寸平板电脑","rank":1,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"音乐花园壁挂苹果音响iphone音箱台灯","rank":2,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"音乐花园壁挂苹果音响iphone音箱台灯","rank":3,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"音乐花园壁挂苹果音响iphone音箱台灯","rank":4,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"玩加（wocol）能量之星 12000mAh 移动电源","rank":5,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"玩加（wocol）能量之星 12000mAh 移动电源","rank":6,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"玩加（wocol）能量之星 12000mAh 移动电源","rank":7,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"玩加（wocol）能量之星 12000mAh 移动电源","rank":8,"rankstr":null,"type":0},
+	     		{"count":1,"prize":"玩加（wocol）能量之星 12000mAh 移动电源","rank":9,"rankstr":null,"type":0},
+	
+	    		{"count":5000,"prize":"5000蜜蜂币","rank":10,"rankstr":null,"type":1},
+	    		{"count":5000,"prize":"5000蜜蜂币","rank":11,"rankstr":null,"type":1},
+	    		{"count":5000,"prize":"5000蜜蜂币","rank":12,"rankstr":null,"type":1},
+	    		{"count":5000,"prize":"5000蜜蜂币","rank":13,"rankstr":null,"type":1}
+    		]	    
+    }; 
+
+    function f(){
+        var tab = $('#tab');
+        var colOrder = [];
+        //construct title.
+        var thead = '<thead><tr>'
+        for(var titleKey in jsonData.title){
+        	thead = thead.concat("<th>" + jsonData.title[titleKey] + "</th>");
+        	colOrder.push(titleKey);
+        }
+        thead = thead.concat('</tr></thead>');
+        tab.append(thead);
+
+        //construct body.
+        var tabBody = $('<tbody></tbody>');
+        for(var i = 0; i < jsonData.data.length; i++){
+            var tr = $('<tr></tr>');
+        	var row = jsonData.data[i];
+        	for(var j=0; j < colOrder.length; j++){
+            	var td = "<td>" + row[colOrder[j]] + "</td>";
+            	tr.append(td);
+            }
+            tabBody.append(tr);
+        }
+        tab.append(tabBody);
+    }
+
+    f();
+    </script>
+</body>
+</html>

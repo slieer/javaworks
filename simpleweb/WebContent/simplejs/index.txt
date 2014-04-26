@@ -1,0 +1,42 @@
+documentFragment 是一個無父對象的document對象.
+他支持以下DOM2方法: 
+appendChild, cloneNode, hasAttributes, hasChildNodes, insertBefore, 
+normalize, removeChild, replaceChild. 
+也支持以下DOM2屬性: 
+attributes, childNodes, firstChild, lastChild, localName, namespaceURI, 
+nextSibling, nodeName, nodeType, nodeValue, ownerDocument, parentNode, 
+prefix, previousSibling, textContent. 
+其他方法可以將documentFragment 作為一個參數，（比如Node的 appendChild和insertBefore 方法），
+這樣，fragment 就可以被追加到父對象中。 
+Example：
+复制代码 代码如下:
+var frag = document.createDocumentFragment(); 
+frag.appendChild(document.createTextNode('Ipsum Lorem')); 
+document.body.appendChild(frag); 
+
+document.createDocumentFragment()说白了就是为了节约使用DOM。
+每次JavaScript对DOM的操作都会改变页面的变现，并重新刷新整个页面，从而消耗了大量的时间。
+为解决这个问题，可以创建一个文档碎片，把所有的新节点附加其上，然后把文档碎片的内容一次性添加到document中。
+复制代码 代码如下:
+var oui=document.getElementById("oItem"); 
+for(var i=0;i<10;i++) 
+{ 
+var oli=document.createElement("li"); 
+oui.appendChild(oli); 
+oli.appendChild(document.createTextNode("Item"+i)); 
+} 
+
+上面的代码在循环中调用了oui.appendChild（oli），每次执行这条语句后，浏览器都会更新页面。
+其次下面的oui.appendChild()添加了文本节点，也要更新页面。所以一共要更新页面20次。 
+为了页面的优化，我们要尽量减少DOM的操作，将列表项目在添加文本节点之后再添加，并合理地使用creatDocumentFragment(),代码如下：
+复制代码 代码如下:
+var oui=document.getElementById("oItem"); 
+var oFragment=document.createDocumentFragment(); 
+for(var i=0;i<10;i++){ 
+var oli=document.createElement("li"); 
+oli.appendChild(document.createTextNode("Item"+i)); 
+oFragment.appendChild(oli); 
+} 
+oui.appendChild(oFragment); 
+
+详细出处参考：http://www.jb51.net/article/17647.htm

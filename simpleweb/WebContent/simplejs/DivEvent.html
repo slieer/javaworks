@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>智能事件处理</title>
+<style>
+	.span_title{
+		display: block;
+		text-align: center;
+	}
+
+	.span_sub_title{
+		display: block;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div style="width:500px">
+		<div>
+			<span class='span_title'>雅虎团队经验-网站页面性能优化的34条黄金守则</span> 
+			<span class='span_sub_title'>之开发智能事件处理程序</span>
+			
+		</div>
+		 <div id='buttonEvent'>		 	
+			<input type="button" name="addUser"  value="addUser"><br>
+			<input type="button" name="listUser"  value="listUser"><br>
+			<input type="button" name="deleteUser"  value="deleteUser"><br>
+			<input type="button" name="deleteAllUser"  value="deleteAllUser"><br>
+			<input type="button" name="updateUser"  value="updateUser"><br>
+		 </div>
+	</div>
+	<script>
+		(function(doc){
+			var divEvent = doc.getElementById('buttonEvent');
+			//alert(divEvent.nodeName)
+			divEvent.onclick = function(e){
+				var thzEvent = e;
+				if(!e && window.event){
+					thzEvent = window.event
+				}
+				
+				//thzEvent.explicitOriginalTarget;
+				var eventElementName;
+				if(thzEvent.target){
+					//ff or ie9
+					eventElementName = thzEvent.target.name;					
+				}else{
+					//ie8
+					eventElementName = thzEvent.srcElement.name;
+				}
+				switch(eventElementName){
+					case 'addUser' : 
+					alert("addUser");
+					break;
+					case 'listUser' : 
+					alert("listUser");
+					break;
+					case 'deleteUser' : 
+					alert('deleteUser');
+					break;
+					case 'deleteAllUser' : 
+					alert('deleteAllUser');
+					break;
+					case 'updateUser' : 
+					alert('updateUser');
+					break;
+					
+				}
+			}
+		})(document);
+	</script>
+</body>
+</html>

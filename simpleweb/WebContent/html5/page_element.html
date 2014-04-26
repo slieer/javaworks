@@ -1,0 +1,55 @@
+<!-- 新的文档类型  (New Doctype) -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Insert title here</title>
+	
+	<!-- link,script 元素不需要指定type属性  -->
+	<link rel="stylesheet" href="path/to/stylesheet.css" />
+	<script src="path/to/script.js"></script>
+	
+</head>
+<body>
+	<header>
+		<hgroup>  <!-- hgroup 对元素分组 --> 
+			<h1> Recall Fan Page </h1> 
+			<h2> Only for people who want the memory of a lifetime. </h2> 
+		</hgroup> 
+	</header>
+	<p> They were interrupted, just after Quato said, 
+		<mark>Open your 高亮标签</mark>
+	</p>
+	
+	<!-- figure 可以语义化地将注释和相应的图片联系起来 -->
+	<figure>
+		<img src="path/to/image" alt="About image" />
+		<figcaption>
+			<p>This is an image of something interesting. </p>
+		</figcaption> 
+	</figure>
+	
+	<!-- placeholder 在HTML4或XHTML中，你需要用JavaScript来给文本框添加占位符。
+		比如，你可以提前设置好一些信息，当用户开始输入时，文本框中的文字就消失。 -->
+	<input type="text" placeholder="设计蜂巢" />
+		
+	<form method="post" action=""> 
+		<label for="someInput"> Your Name: </label> 
+		<input type="text" id="someInput" name="someInput" 
+			placeholder="Douglas Quaid" required autofocus>
+			
+		<input type="text" 
+		    name="username" 
+		    id="username" 
+		    placeholder="4 <> 10" 
+		    pattern="[A-Za-z]{4,10}" 
+		    autofocus 
+		    required> 			
+		<button type="submit">Go</button> 
+	</form>
+	
+	
+	<!-- 本地存储, websocket, worker -->
+	<footer>document footer</footer>
+</body>
+</html>

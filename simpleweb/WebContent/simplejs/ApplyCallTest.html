@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>call with test</title>
+</head>
+<body>
+
+
+<div>
+	<b>http://www.cnitblog.com/yemoo/archive/2007/11/30/37070.html</b><br/>
+	对于apply和call两者在作用上是相同的，但两者在参数上有区别的。<br/>
+	对于第一个参数意义都一样，但对第二个参数：<br/>
+	apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。<br/>
+	如 func.call(func1,var1,var2,var3)对应的apply写法为：func.apply(func1,[var1,var2,var3])<br/>	
+	同时使用apply的好处是可以直接将当前函数的arguments对象作为apply的第二个参数传入<br/>
+	说明白一点其实就是更改对象的内部指针，即改变对象的this指向的内容。这在面向对象的js编程过程中有时是很有用的。<br/>
+</div>
+	<script type="text/javascript">
+        console.log('--- call test ---');
+		function Obj(){
+			this.value="对象！";
+		}
+	    var value="global 变量";
+	    window.Fun1();   //global变量
+	    Fun1.call(window);  //global 变量
+	    Fun1.call(document.getElementById('myText'));  //input text
+	    Fun1.call(new Obj());   //对象！
+        
+	    function Fun1(){
+	    	//alert(this.value);
+            console.log('this.value=' + this.value)
+	    }
+	
+        console.log('--- call test 2 ---');
+	    var func = function(){
+            this.a="func"
+        };
+	    var myfunc = function(x){
+	        var a="myfunc";
+	        console.log('a=' + this.a);
+	        console.log('x=' + x);
+	    };
+	    myfunc.call(new func(),"var");
+
+        console.log('--- call test 2 ---');
+        /**定义一个animal类*/
+        function Animal(){
+            this.name = "Animal";
+            this.showName = function(){
+                console.log(this.name);
+            }
+
+            this.sayHi = function(ask){
+                console.log(this.name + "[animal], " + ask);
+                this.sayHi('hi,hi');
+            }
+        }
+        /**定义一个Cat类*/
+        function Cat(){
+            this.name = "Cat";
+            
+            this.sayHi = function(ask){
+                console.log(this.name + "[cat], " + ask);
+            }
+        }
+
+        /**创建两个类对象*/
+        var animal = new Animal();
+        var cat = new Cat();
+
+        //通过call或apply方法，将原本属于Animal对象的showName()方法交给当前对象cat来使用了。
+        //输入结果为"Cat"
+        animal.showName.call(cat);
+        animal.sayHi.apply(cat, ['How are you?']);
+        //animal.showName.apply(cat,[]);
+	</script>
+</body>
+</html>

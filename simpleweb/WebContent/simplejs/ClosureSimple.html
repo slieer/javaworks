@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="content"></div>
+<a href="javascript:;">closure test</a>
+<script type="text/javascript">
+	/*
+	 * When a function is defined in another function and it
+	 *    has access to the outer function's context even after
+	 *    the outer function returns
+	 * An important concept to learn in Javascript
+	 */
+
+	function outerFunction(someNum) {
+		var someString = 'Hai!';
+		var content = document.getElementById('content');
+		function innerFunction() {
+			//closure
+			content.innerHTML = someNum + ': ' + someString;
+			content = null; // IE memory leak for DOM reference
+		}
+		innerFunction();
+	}
+
+	outerFunction(1);
+	
+	(function(){
+		var a = document.getElementsByTagName('A')[0];
+		a.onclick = function(){
+			//closure
+			a.innerHTML = "welcome to BeiJing";
+		}
+	})();
+	
+</script>
+</body>
+</html>

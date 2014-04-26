@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css3 表格测试，支持ie9, firefox, etc.</title>
+<style>
+/**该属性指定了完成表布局时所用的布局算法。固定布局算法比较快，但是不太灵活，*/
+table{
+ 	table-layout:fixed;
+ }
+
+
+.tab {
+	width: 300px;
+	height: 200px;
+}
+
+.tab tr td:hover {
+	background-color: blue;
+}
+
+/*
+第一种奇偶数选择。
+.tab tr:nth-child(2n){
+         background:#6F9; 
+}
+
+.tab tr:nth-child(2n-1){
+         background: #40AA53; 
+}*/
+
+.tab tr:nth-child(odd){
+	/*color: green;*/
+	background : green;
+}
+
+.tab tr:nth-child(even){
+	/*color: yellow;*/
+	background: yellow;
+}
+</style>
+</head>
+<body>
+	<table class="tab">
+		<tr>
+			<td>111</td>
+			<td>222</td>
+			<td>333</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+		<tr>
+			<td>444</td>
+			<td>555</td>
+			<td>666</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+<script src="../../jslib//jsrender.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id='movieList'></div>
+	<div id='movieList1'>
+		<table style="border: 1;">
+		</table>
+	</div>
+	<script type="text/x-jsrender" id='movieTemplate'>
+    <table style="border:1;">
+        {{for apps}}
+        <tr id={{:id}}>
+            <td>{{:appName}}</td>
+            <td>{{:appVersion}}</td>
+            <td><a href='javascript:;'></a></td>
+        </tr>
+        {{/for}}
+    </table>
+    </script>
+	<script type="text/x-jsrender" id='movieTemplate1'>
+        <tr id={{:id}}>
+            <td>{{:appName}}</td>
+            <td>{{:appVersion}}</td>
+            <td><a href='javascript:;'></a></td>
+        </tr>
+    </script>
+
+	<script type="text/javascript">
+    var list = {
+    	 apps :[
+    	   {appName : 'a app', appVersion : '00.01.12'},
+    	   {appName : 'a app', appVersion : '00.01.13'},
+    	   {appName : 'a app', appVersion : '00.01.14'},
+    	   {appName : 'B app'}
+         ]
+    }; 
+
+    /**for*/
+    $( "#movieList" ).html(
+            //
+            $( "#movieTemplate" ).render( list )
+     );
+
+    $( "#movieList1" ).html(
+           $( "#movieTemplate1" ).render(list.apps)
+     );
+     
+    </script>
+</body>
+</html>

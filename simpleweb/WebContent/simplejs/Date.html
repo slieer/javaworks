@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Date Object</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var j = {
+    	    a : 'b',
+    	    f : function(){
+        	}
+    };
+
+    function f(){};
+    f.prototype = {
+    	    b: "helo",
+    	    c: function(){
+        	   return 'a';
+        	} 
+    };
+
+    var t = new f();
+    alert(t.b);
+    alert(t.c()); 
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>一个google mail中的圆角table</title>
+		<style>
+			.hX {
+			    cursor: pointer;
+			    display: inline-table;
+			    margin-right: 4px;
+			    margin-top: 3px;
+			    vertical-align: top;
+			}		
+			.cf {
+			    border-collapse: collapse;
+			}
+			.ha {
+		    color: #000000;
+		    font-family: arial,sans-serif;
+		    font-size: 100%;
+			}
+			
+			.hY .hM, .hQ .hM {
+			    height: 1px;
+			}
+			.hT, .hW, .hS {
+			    width: 1px;
+			}
+			
+			.hR .hM {
+			    padding-bottom: 1px;
+			}
+
+			.hU, .hV {
+			    font-family: verdana,arial,sans-serif;
+			    font-size: 9px;
+			    font-style: normal;
+			    font-variant: normal;
+			    font-weight: normal;
+			    line-height: normal;
+			}
+			.hO {
+			    padding-bottom: 1px;
+			    padding-left: 4px;
+			    padding-right: 4px;
+			    padding-top: 1px;
+			}	
+			.hN {
+			    padding-left: 4px;
+			    padding-right: 6px;
+			}					
+		</style>
+		<script>
+			
+			window.onload = function(){
+				var div = document.getElementById('div');
+				var tabHtml = tabArray.join(' ');
+				div.innerHTML = tabHtml;
+				
+				var planTab = document.getElementById('planTab_1');
+				var r = planTab.rows;
+				
+				var up0 = r[0].cells[1];
+				var down0 = r[2].cells[1];
+				var left0 = r[1].cells[0];
+				var center0 = r[1].cells[1];
+				
+				var up1 = r[0].cells[3];
+				var down1 = r[2].cells[3];
+				var center1 = r[1].cells[3];
+				var right1 = r[1].cells[4];
+								
+				center0.onmouseover =				 
+				center1.onmouseover = 
+				function(){
+					var style1 = "background-color:rgb(0, 102, 51);color:rgb(241, 245, 236)";
+					this.style.cssText = style1;
+					if(this == center0){
+						up0.style.cssText = style1;
+						down0.style.cssText = style1;
+						left0.style.cssText = style1;
+						
+					}else if(this == center1){
+						up1.style.cssText = style1;
+						down1.style.cssText = style1;
+						right1.style.cssText = style1;						
+					}
+				};
+				
+				center0.onmouseout =
+				center1.onmouseout = 
+				function(){
+					var style1 = "background-color: rgb(241, 245, 236);color:rgb(0, 102, 51);";
+					this.style.cssText = style1;
+					if(this == center0){
+						up0.style.cssText = style1;
+						down0.style.cssText = style1;
+						left0.style.cssText = style1;					
+					}else if(this == center1){
+						up1.style.cssText = style1;
+						down1.style.cssText = style1;
+						right1.style.cssText = style1;					
+					}
+				};			
+			}
+			
+			var tabArray = [
+					'<table id="planTab_1" cellpadding="0" class="cf hX">                                          ',
+					'	<tbody>                                                                                      ',
+					'		<tr class="hY hM">                                                                         ',
+					'			<td class="hT hM"></td>                                                                  ',
+					'			<td style="background-color: rgb(241, 245, 236);" class="hU hM"></td>                    ',
+					'			<td style="background-color: #f1f5ec" class="hS hM"></td>                                ',
+					'			<td style="background-color: rgb(241, 245, 236);" class="hV hM"></td>                    ',
+					'			<td class="hW hM"></td>                                                                  ',
+					'		</tr>                                                                                      ',
+					'		<tr class="hR">                                                                            ',
+					'			<td style="background-color: rgb(241, 245, 236);" class="hT hU hM"></td>                 ',
+					'			<td style="background-color: rgb(241, 245, 236); color: rgb(0, 102, 51);" class="hU hM"> ',
+					'				<div alt="一元一本" title="一元一本" name="planName" class="hN">一元一本</div>         ',
+					'			</td>                                                                                    ',
+					'			<td style="background-color: #006633" class="hS hM"></td>                                ',
+					'			<td style="background-color: rgb(241, 245, 236); color: rgb(0, 102, 51);" class="hV hM"> ',
+					'				<span alt="删除" title="删除" name="dw0_11_01" class="hO">X</span>                     ',
+					'			</td>                                                                                    ',
+					'			<td style="background-color: rgb(241, 245, 236);" class="hW hV hM"></td>                 ',
+					'		</tr>                                                                                      ',
+					'		<tr class="hY hM">                                                                         ',
+					'			<td class="hT hM"></td>                                                                  ',
+					'			<td style="background-color: rgb(241, 245, 236);" class="hU hM"></td>                    ',
+					'			<td style="background-color: #f1f5ec" class="hS hM"></td>                                ',
+					'			<td style="background-color: rgb(241, 245, 236);" class="hV hM"></td>                    ',
+					'			<td class="hW hM"></td>                                                                  ',
+					'		</tr>                                                                                      ',
+					'	</tbody>                                                                                     ',
+					'</table>	                                                                                     '
+			];
+		</script>
+	</head>
+<body>
+	<div id="div"></div>
+</body>
+	
+</html>

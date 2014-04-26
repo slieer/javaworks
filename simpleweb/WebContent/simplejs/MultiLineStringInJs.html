@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>javascript 和多行字符串</title>
+		
+	<script type="text/javascript">
+	//ie
+		Function.prototype.getMultiLine = function() {  
+		    var lines = new String(this);  
+		    lines = lines.substring(lines.indexOf("/*") + 3, lines.lastIndexOf("*/"));  
+		    return lines;  
+		}  
+		  
+		var ffff = function() {  
+		    /* 
+		   	 张三去倒水<br/> 
+		    <strong>天哪！</strong> 
+		    */  
+		}  
+		  
+		document.write(ffff.getMultiLine());  
+	/**---------------------------------------------------*/
+	//firefox
+	var str = (<r><![CDATA[
+		Line1
+		Line2Line2
+		Line3
+	]]></r>).toString();
+
+	alert(str);
+
+	</script>
+</head>
+<body>
+	http://www.cnblogs.com/starlet/archive/2010/05/24/1742572.html
+</body>
+</html>

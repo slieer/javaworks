@@ -1,0 +1,10 @@
+http://blog.csdn.net/salc3k/article/details/6960492
+
+   100KB           1MB            10MB      
+DOM              0.146s         0.469s          5.876s     
+SAX              0.110s         0.328s          3.547s     
+JDOM             0.172s         0.756s          45.447s    
+DOM4J            0.161s         0.422s          5.103s     
+StAX Stream      0.093s         0.334s          3.553s     
+StAX Event       0.131s         0.359s          3.641s
+kxml     

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+        //$(function () { alert($("#div_test").html()); })
+        
+        $.holdReady(true);
+        $(function () { 
+             alert($("#div_test").html());
+             $.holdReady(true); 
+        });
+
+
+        $(function () { 
+            alert('2rd' + $("#div_test").html());
+            
+       });
+       
+        $.holdReady(false);
+</script>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<div id="div_test">this is a test!</div>
+	</form>
+</body>
+</html>

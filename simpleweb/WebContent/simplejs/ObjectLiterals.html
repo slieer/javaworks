@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>js example</title>
+</head>
+<body>
+	<div id="content"></div>
+	<script type="text/javascript">
+		/*
+		 * An Object Literal is a format for defining an object in Javascript.
+		 * It's comma separated list of the properties/methods of that object.
+		 * Dynamic way to create objects.
+		 * Used for creating a 'Singleton'.
+		*/
+
+	    var j = {
+				    xx : function(){
+					    alert('hello');
+					}
+	    };
+
+	    j.xx();
+		
+		var a = {
+		  one : 1,
+		  arr : ['one','two','three'],
+		  doThis : function(){return 20;},
+		  two : 2
+		};
+	
+		var html = 'a.one = ' + a.one + '<br/>';
+		html += 'a.arr[0] = ' + a.arr[0] + '<br/>';
+		html += 'a.doThis() = ' + a.doThis() + '<br/>';
+		html += 'a.two = ' + a.two;
+	
+		document.getElementById('content').innerHTML = html;	
+	</script>
+</body>
+</html>

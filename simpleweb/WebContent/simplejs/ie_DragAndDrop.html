@@ -1,0 +1,28 @@
+<HEAD>
+<SCRIPT>                               
+function fnSetInfo() {                                                             
+  event.dataTransfer.setData("Text", "Microsoft Golf 1998"); 
+  event.dataTransfer.effectAllowed = "copy";                 
+}
+
+function fnGetInfo() {
+  event.returnValue = false;                           
+  event.dataTransfer.dropEffect = "copy";              
+  oTarget.value = event.dataTransfer.getData("Text");  
+}
+
+function fnCancelDefault() {                                            
+  event.returnValue = false;                  
+  event.dataTransfer.dropEffect = "copy";  
+}
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<IMG ID=oSource SRC="Golf98.gif" ondragstart="fnSetInfo()">
+<P>Drag the image and drop it onto the text box below. Text data will be pasted into the text box.</P>
+<INPUT ID=oTarget VALUE="[drop text here]"
+       ondragenter="fnCancelDefault()" 
+       ondrop="fnGetInfo()"
+       ondragover="fnCancelDefault()">
+</BODY>

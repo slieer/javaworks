@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="content"></div>
+<script type="text/javascript">
+	/*
+	 * You can define or redefine prototypes for existing objects
+	 * Including for native Javascript types
+	 * VERY DANGEROUS - THIS IS A BAD EXAMPLE
+	 */
+
+	// Modify all strings' concat function to also take a delimeter.
+	String.prototype.concat = function(str1, delimeter) {
+		return this + delimeter + str1;
+	};
+
+	// Add a method to print a string backwards!
+	String.prototype.reverse = function() {
+		var reverse = '';
+		for ( var i = this.length - 1; i >= 0; i--) {
+			reverse += this[i]
+		}
+		return reverse;
+	};
+
+	var a = 'abc';
+	var b = 'def';
+	var html = 'a = ' + a + '__tag_32$26_';
+	html += 'b = ' + b + '__tag_33$23_';
+	html += 'a.concat(b, \'|\') = ' + a.concat(b, '|') + '__tag_34$55_';
+	html += 'a.reverse() = ' + a.reverse();
+	document.getElementById('content')
+</script>
+</body>
+</html>

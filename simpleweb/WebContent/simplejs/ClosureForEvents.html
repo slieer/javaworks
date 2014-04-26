@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="content"></div>
+<script type="text/javascript">
+	/*
+	 * One great use is for event handlers
+	 * If a handler prints a value, it prints the value at trigger time
+	 * If you want to hardcode a value into handler, use closure
+	 */
+
+	var content = document.getElementById('content');
+
+	// BAD SETTING HANDLER
+	for ( var i = 0; i < 5; i++) {
+		var button = document.createElement('input');
+		button.type = 'button';
+		button.value = 'Closure-less Button number ' + i;
+		button.onclick = function() {
+			alert("Closure-less Button number " + i);
+		};
+		content.appendChild(button);
+	}
+	content.appendChild(document.createElement('br'));
+
+	// GOOD SETTING HANDLER
+	function buttonClick(buttonNumber) {
+		// buttonNumber is now snapshotted in this function that is returned!
+		return function() {
+			alert('Closure Button number ' + buttonNumber);
+		};
+	}
+	for ( var i = 0; i < 5; i++) {
+		var button = document.createElement('input');
+		button.type = 'button';
+		button.value = 'Closure Button number ' + i;
+		button.onclick = buttonClick(i);
+		content.appendChild(button);
+	}
+</script>
+</body>
+</html>

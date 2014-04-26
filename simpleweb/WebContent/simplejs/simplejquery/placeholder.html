@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> New Document </title>
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<script src="http://discuz.gtimg.cn/cloud/scripts/jquery.min.js?v=1.6.4"></script>
+</head>
+<body>
+
+<!-- html5 -->
+<input type="text" name="search" placeholder="Search" value="">
+<input type="text" name="search2" placeholder="Search" value="">
+
+<script type="text/javascript">
+	// 创建一个新的 input
+	var i = document.createElement("input");
+
+	// 如果创建的 input 不支持 placeholder 属性，执行以下代码
+	if (!("placeholder" in i)) {
+		// 遍历所有带有 placeholder 属性的 input
+		$("input[placeholder]").each(function () {
+			var self = $(this);
+			// 保存原始文字颜色
+			var color = self.css('color');
+			// value 填充为 placeholder 值
+			self.val(self.attr("placeholder")).bind({
+				// 成为焦点的时候将内容置空，颜色变为真是颜色
+				focus: function () {
+					if (self.val() === self.attr("placeholder")) {
+						self.val("");
+					}
+					self.css('color', color);
+				},
+				// 失去焦点的时候，如果内容为空，修改为 placeholder 值，并修改颜色
+				blur: function () {
+					if (self.attr("placeholder") && self.val() === "") {
+						self.val(self.attr("placeholder"));
+						self.css('color', '#BBB');
+					}
+				}
+			});
+			// 修改颜色
+			self.css('color', '#BBB');
+		});
+	}
+</script>
+</body>
+</html>

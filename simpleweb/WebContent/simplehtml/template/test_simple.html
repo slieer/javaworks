@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+<script src="../../jslib//jsrender.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="movieList"></div>
+<div id="movieList1"></div>
+
+<script id="movieTemplate" type="text/x-jsrender">
+    <input type='radio' value='{{:v}}' name='rule'>{{:title}}
+</script>
+
+<script type="text/javascript">
+var movies = [
+              { v: "0", title: "全选" },
+              { v: "1", title: "部分选择" },
+              { v: "2", title: "部分不选择" }
+          ];
+
+$( "#movieList" ).html(
+        $( "#movieTemplate" ).render( movies )
+    );
+
+<!--test 2 -->
+$.templates({
+    titleTemplate: "<input type='radio' value='{{:v}}' name='rule1' {{:checked}}>{{:title}}",
+});
+
+var movies1 = [
+              { v: "0", title: "全选" },
+              { v: "1", title: "部分选择" ,checked : 'checked'},
+              { v: "2", title: "部分不选择" }
+          ];
+var html = $.render.titleTemplate( movies1 );
+$( "#movieList1" ).html( html );
+
+</script>
+</body>
+</html>

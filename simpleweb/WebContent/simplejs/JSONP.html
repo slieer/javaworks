@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+	 * A technique for avoiding browsers' cross-domain restriction
+	 * Allows you to request information cross-domain from client
+	 * You request a script from a cross domain
+	 * That service must respond in JSON wrapped in a function call you specify
+	 */
+
+	function myFunc() {
+		if (typeof console != 'undefined') {
+			console.log(arguments);
+		} else {
+			alert('click debug button');
+		}
+	}
+
+	var script = document.createElement('script');
+	script.src = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=Dog&callback=myFunc';
+	script.type = 'text/javascript';
+	document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+</body>
+</html>

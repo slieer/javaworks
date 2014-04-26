@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Image cutting</title>
+<style type="text/css">
+#div {
+	width: 600px;
+	height: 500px;
+	line-height: 140px;
+	overflow: hidden;
+	background: #f5f8fa;
+	border: 1px solid #b3c9d6;
+	position: relative;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+#div p {
+	position: static; +
+	position: absolute;
+	clear: both;
+	top: 50%;
+}
+
+#div img {
+	position: static; +
+	position: relative;
+	top: -50%;
+	left: -50%;
+	vertical-align: middle;
+}
+</style>
+</head>
+<body>
+	<div id="div">
+		<p>
+			<a href="javascript:;"> <img
+				src="http://cn.bing.com/az/hprichbg?p=rb%2fMeiliSnowMt_ZH-CN8900133312_1366x768.jpg" />
+			</a>
+		</p>
+	</div>
+	<a href="http://bbs.phpchina.com/thread-169709-1-1.html">from</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>map area test</title>
+</head>
+<body>
+	<img src="planets.gif" alt="Planets" usemap="#planetmap" />
+
+	<map name="planetmap">
+		<area shape="rect" coords="0,0,110,260" href="sun.htm" alt="Sun" />
+		<area shape="circle" coords="129,161,10" href="mercur.htm"
+			alt="Mercury" />
+		<area shape="circle" coords="180,139,14" href="venus.htm" alt="Venus" />
+	</map>
+<!--  not html5
+	<object data="/i/eg_planets.jpg" type="image/gif" usemap="#Map1">
+		<map name="Map1">
+			<a href="/example/html/sun.html" shape="rect" coords="0,0,110,260">Sun</a>
+			<a href="/example/html/mercur.html" shape="circle" coords="129,161,10">Mercury</a>
+			<a href="/example/html/venus.html" shape="circle" coords="180,139,14">Venus</a>
+		</map>
+	</object>
+ -->
+</body>
+</html>
