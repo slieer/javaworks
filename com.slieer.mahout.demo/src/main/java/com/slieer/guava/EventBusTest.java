@@ -1,7 +1,6 @@
 package com.slieer.guava;
 
 import java.util.List;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 import com.google.common.collect.Lists;

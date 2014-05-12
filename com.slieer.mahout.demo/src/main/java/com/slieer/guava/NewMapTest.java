@@ -1,7 +1,5 @@
 package com.slieer.guava;
 
-import java.util.Map;
-
 import org.junit.Test;
 
 import com.google.common.collect.ArrayListMultimap;

@@ -26,5 +26,8 @@ public class Application {
       printer.printMessage();
       
       context.close();
+      
+      int i = 4 ^ 3; //xor 7
+      System.out.println(i);
   }
 }
