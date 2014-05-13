@@ -32,6 +32,18 @@ import org.apache.lucene.util.Version;
  * 
  */
 public class Indexer {
+    private static final String FIELD_MESSAGE = "message";
+
+    private static final String FIELD_SUBJECT = "subject";
+
+    private static final String FIELD_MONTH = "month";
+
+    private static final String FIELD_DATE = "date";
+
+    private static final String FIELD_RECEIVER = "receiver";
+
+    private static final String FIELD_SENDER = "sender";
+
     private IndexWriter indexWriter;
 
     /* Location of directory where index files are stored */
@@ -42,7 +54,7 @@ public class Indexer {
 
     private boolean isCreate;
 
-    public Indexer(String indexDirectory, String dataDirectory) {
+    Indexer(String indexDirectory, String dataDirectory) {
         this.indexDirectory = indexDirectory;
         this.dataDirectory = dataDirectory;
     }
@@ -61,18 +73,7 @@ public class Indexer {
                  * Create instance of analyzer, which will be used to tokenize
                  * the input data
                  */
-                Analyzer standardAnalyzer = new StandardAnalyzer(
-                        Version.LUCENE_47);
-                // Create a new index
-                boolean create = true;
-                // Create the instance of deletion policy
-                IndexDeletionPolicy deletionPolicy = new KeepOnlyLastCommitDeletionPolicy();
-
-                Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_47);
-                IndexWriterConfig iwc = new IndexWriterConfig(
-                        Version.LUCENE_47, analyzer);
-
-                iwc.setIndexDeletionPolicy(deletionPolicy);
+                IndexWriterConfig iwc = constructConfig();
                 if (isCreate) {
                     iwc.setOpenMode(OpenMode.CREATE);
                 } else {
@@ -85,6 +86,19 @@ public class Indexer {
                 throw new RuntimeException(ie);
             }
         }
+    }
+
+    static IndexWriterConfig constructConfig() {
+        Analyzer standardAnalyzer = new StandardAnalyzer(Version.LUCENE_47);
+
+        // Create the instance of deletion policy
+        IndexDeletionPolicy deletionPolicy = new KeepOnlyLastCommitDeletionPolicy();
+
+        IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_47,
+                standardAnalyzer);
+
+        iwc.setIndexDeletionPolicy(deletionPolicy);
+        return iwc;
     }
 
     /**
@@ -102,29 +116,27 @@ public class Indexer {
             properties.load(new FileInputStream(file));
 
             /* Step 1. Prepare the data for indexing. Extract the data. */
-            String sender = properties.getProperty("sender");
-            String receiver = properties.getProperty("receiver");
-            String date = properties.getProperty("date");
-            String month = properties.getProperty("month");
-            String subject = properties.getProperty("subject");
-            String message = properties.getProperty("message");
+            String sender = properties.getProperty(FIELD_SENDER);
+            String receiver = properties.getProperty(FIELD_RECEIVER);
+            String date = properties.getProperty(FIELD_DATE);
+            String month = properties.getProperty(FIELD_MONTH);
+            String subject = properties.getProperty(FIELD_SUBJECT);
+            String message = properties.getProperty(FIELD_MESSAGE);
             String emaildoc = file.getAbsolutePath();
 
             /* Step 2. Wrap the data in the Fields and add them to a Document */
-
             /*
              * We plan to show the value of sender, subject and email document
              * location along with the search results,for this we need to store
              * their values in the index
              */
-
-            Field senderField = new StringField("sender", sender,
-                    Field.Store.YES);
-
-            Field receiverfield = new StringField("receiver", receiver,
+            Field senderField = new StringField(FIELD_SENDER, sender,
                     Field.Store.NO);
 
-            Field subjectField = new TextField("subject", subject,
+            Field receiverfield = new StringField(FIELD_RECEIVER, receiver,
+                    Field.Store.NO);
+
+            Field subjectField = new TextField(FIELD_SUBJECT, subject,
                     Field.Store.YES);
 
             if (subject.toLowerCase().indexOf("pune") != -1) {
@@ -133,11 +145,13 @@ public class Indexer {
                 subjectField.setBoost(2.2F);
             }
 
-            Field emaildatefield = new StringField("date", date, Field.Store.NO);
+            Field emaildatefield = new StringField(FIELD_DATE, date,
+                    Field.Store.NO);
 
-            Field monthField = new StringField("month", month, Field.Store.NO);
+            Field monthField = new StringField(FIELD_MONTH, month,
+                    Field.Store.NO);
 
-            Field messagefield = new TextField("message", message,
+            Field messagefield = new TextField(FIELD_MESSAGE, message,
                     Field.Store.NO);
 
             Field emailDocField = new StringField("emailDoc", emaildoc,
@@ -155,9 +169,14 @@ public class Indexer {
             if (sender.toLowerCase().indexOf("job") != -1) {
                 // Display search results that contain 'job' in their sender
                 // email address
-                //doc.setBoost(2.1F);
+                // doc.setBoost(2.1F);
+                //You cannot set an index-time boost on an unindexed field, 
+                //or one that omits norms
+                /*
+                 *要给StringField型字段设置boost： 1、要加索引； 2、字段类型Field.Store.NO
+                 */
                 senderField.setBoost(2.1F);
-                
+
             }
 
             // Step 3: Add this document to Lucene Index.
@@ -167,7 +186,7 @@ public class Indexer {
          * Requests an "optimize" operation on an index, priming the index for
          * the fastest available search
          */
-        //indexWriter.optimize();
+        // indexWriter.optimize();
         /*
          * Commits all changes to the index and closes all associated files.
          */

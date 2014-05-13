@@ -9,10 +9,9 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.Term;
-import org.apache.lucene.queryParser.ParseException;
-import org.apache.lucene.queryParser.QueryParser;
-import org.apache.lucene.queryparser.ext.ParserExtension;
 import org.apache.lucene.queryparser.simple.SimpleQueryParser;
 import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.BooleanQuery;
@@ -23,9 +22,7 @@ import org.apache.lucene.search.PhraseQuery;
 import org.apache.lucene.search.PrefixFilter;
 import org.apache.lucene.search.PrefixQuery;
 import org.apache.lucene.search.Query;
-import org.apache.lucene.search.RangeQuery;
 import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.Searcher;
 import org.apache.lucene.search.Sort;
 import org.apache.lucene.search.SortField;
 import org.apache.lucene.search.SortField.Type;
@@ -36,6 +33,7 @@ import org.apache.lucene.search.WildcardQuery;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.BytesRef;
 import org.apache.lucene.util.Version;
+import org.junit.Test;
 
 /**
  * 使用 Apache Lucene 搜索文本
@@ -51,55 +49,51 @@ import org.apache.lucene.util.Version;
  * @author  Amol Sonawane
  */
 public class LuceneDemo {
-
 	//a path to directory where Lucene will store index files
-	private static String indexDirectory = "./indexdir";
+	private static String indexDirectory = "src/main/resources/lucene/index1";
 	// a path to directory which contains data files that need to be indexed
-	private static String dataDirectory = "./datadir";
+	private static String dataDirectory = "src/main/resources/lucene/data1";;
 	
-	private IndexSearcher indexSearcher;
+	private static IndexSearcher indexSearcher;
 	
 	/**
 	 * @param args
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
 	 */
-	public static void main(String[] args) throws FileNotFoundException, IOException {
-		
-		if(args.length < 2){
-			System.out.println("\nInsufficient arguments: " +
-					"\nFirst argument  : Location of the directory where " +
-					"index is" +
-					"\nSecond argument : Location of directory where data " +
-					"files are stored.");
-			System.exit(0);
-		}
-		
-		indexDirectory = args[0] ;
-		dataDirectory =  args[1] ;
-		
-		
-		LuceneDemo luceneDemo = new LuceneDemo();		
+	@Test
+	public void testCreateIndex() throws FileNotFoundException, IOException {
 		//create Lucene index
-		luceneDemo.createLuceneIndex();
-		//create IndexSearcher
-		luceneDemo.createIndexSearcher();
-		luceneDemo.termQueryExample();
-		luceneDemo.rangeQueryExample();
-		luceneDemo.prefixQueryExample();
-		luceneDemo.booleanQueryExample();
-		luceneDemo.phraseQueryExample();
-		luceneDemo.wildCardQueryExample();
-		luceneDemo.fuzzyQueryExample();
-		luceneDemo.queryParserExample();
-		luceneDemo.fieldBoostFactorExample();
-		luceneDemo.sortBySenderExample();
-		luceneDemo.filterExample();
-		luceneDemo.deletDocumentFromIndex();
-
+		LuceneDemo.createLuceneIndex();
 	}
 	
-	private void createLuceneIndex(){
+	@Test
+	public void testSearch(){
+        //create IndexSearcher
+        try {
+            LuceneDemo.createIndexSearcher();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        LuceneDemo luceneDemo = new LuceneDemo();
+        luceneDemo.termQueryExample();
+//        luceneDemo.rangeQueryExample();
+//        luceneDemo.prefixQueryExample();
+//        luceneDemo.booleanQueryExample();
+//        luceneDemo.phraseQueryExample();
+//        luceneDemo.wildCardQueryExample();
+//        luceneDemo.fuzzyQueryExample();
+//        luceneDemo.queryParserExample();
+//        luceneDemo.fieldBoostFactorExample();
+//        luceneDemo.sortBySenderExample();
+//        luceneDemo.filterExample();
+//        luceneDemo.deletDocumentFromIndex();
+	}
+	
+	/**
+	 * 创建索引文件
+	 */
+	static void createLuceneIndex(){
 		Indexer indexer = new Indexer(indexDirectory,dataDirectory);
 		//Create IndexWriter
 		indexer.createIndexWriter();
@@ -113,47 +107,24 @@ public class LuceneDemo {
 		}
 	}
 	
-	
-	
-	
-	private void createIndexSearcher() throws CorruptIndexException, IOException{
+	/**
+	 * 创建搜索器
+	 * @throws CorruptIndexException
+	 * @throws IOException
+	 */
+	static void createIndexSearcher() throws CorruptIndexException, IOException{
         File indexDir = new File(indexDirectory);
         IndexReader reader = DirectoryReader.open(FSDirectory.open(indexDir));
 		/* Create instance of IndexSearcher 
 		 */
 		indexSearcher = new IndexSearcher(reader);
 	}
-	
-	private void showSearchResults(Query query ){
 		
-		try{
-			/* First parameter is the query to be executed and 
-			   second parameter indicates the no of search results to fetch
-			 */
-			TopDocs topDocs = indexSearcher.search(query,20);	
-			System.out.println("Total hits "+topDocs.totalHits);
-			
-			// Get an array of references to matched documents
-			ScoreDoc[] scoreDosArray = topDocs.scoreDocs;	
-			for(ScoreDoc scoredoc: scoreDosArray){
-				//Retrieve the matched document and show relevant details
-				Document doc = indexSearcher.doc(scoredoc.doc);
-				System.out.println("\nSender: "+doc.getField("sender").stringValue());
-				System.out.println("Subject: "+doc.getField("subject").stringValue());
-				System.out.println("Email file location: "+
-								doc.getField("emailDoc").stringValue());	
-			}
-			System.out.println("---------------------------------------------");
-		}catch(IOException e){
-			e.printStackTrace();
-		}
-		
-	}
-	
-	/*
+	/**
+	 * 关键字搜索
 	 * Searches mails that contain the word "java" in subject field.
 	 */
-	private void termQueryExample(){
+	void termQueryExample(){
 		System.out.println("TermQuery example: Search mails having the word \"java\"" +
 				" in the subject field");
 		Term term = new Term("subject","java");
@@ -162,9 +133,10 @@ public class LuceneDemo {
 	}
 	
 	/**
+	 * 范围搜索
 	 * Searches mails received between 01/06/2009 to 6/06/2009 both inclusive
 	 */
-	private void rangeQueryExample(){
+	void rangeQueryExample(){
 		System.out.println("RangeQuery example: Search mails from 01/06/2009 " +
 				"to 6/06/2009 both inclusive");
 		//Term begin = new Term("date","20090601");
@@ -182,18 +154,20 @@ public class LuceneDemo {
 	}
 	
 	/**
+	 * 前缀搜索
 	 * Searches mails having sender field prefixed by the word "job"
 	 */
-	private void prefixQueryExample(){
+	void prefixQueryExample(){
 		System.out.println("PrefixQuery example: Search mails having sender field prefixed by the word 'job'");
 		PrefixQuery query = new PrefixQuery(new Term("sender","job"));
 	    showSearchResults(query);
 	}
 	
 	/**
+	 * 多关键字搜索
 	 * 	Searches mails that contain both "java" and "bangalore" in the subject field   
 	 */
-	private void booleanQueryExample(){
+	void booleanQueryExample(){
 		System.out.println("BooleanQuery: Search mails that have both 'java' " +
 				"and 'bangalore' in the subject field ");
 		Query query1 = new TermQuery(new Term("subject","java"));
@@ -204,10 +178,11 @@ public class LuceneDemo {
 		showSearchResults(query);
 	}
 	
-	/*
+	/**
+	 * 
 	 * Searches mails that contain a give phrase in the subject field.
 	 */
-	private void phraseQueryExample(){
+	void phraseQueryExample(){
 		System.out.println("PhraseQuery example: Search mails that have phrase " +
 				"'job opening j2ee' in the subject field.");
 		PhraseQuery query = new PhraseQuery();
@@ -221,9 +196,10 @@ public class LuceneDemo {
 	}
 	
 	/**
+	 * 单关键字，带通配符搜索
 	 * Searches mails that have word 'architect' in subject field.
 	 */
-	private void wildCardQueryExample(){
+	void wildCardQueryExample(){
 		System.out.println("WildcardQuery: Search for 'arch*' to find emails that " +
 				"have word 'architect' in subject field.");
 		Query query = new WildcardQuery(new Term("subject","arch*"));
@@ -235,7 +211,7 @@ public class LuceneDemo {
 	 * subject field. Note that we have misspelled the word and looking for
 	 * a word that is a close match to this.
 	 */
-	private void fuzzyQueryExample(){
+	void fuzzyQueryExample(){
 		System.out.println("FuzzyQuery: Search for emails that have word similar " 
 		   +"to 'admnistrtor' in the subject field. Note we have misspelled administrator here.");
 		Query query = new FuzzyQuery(new Term("subject", "admnistrtor"));
@@ -245,7 +221,7 @@ public class LuceneDemo {
 	/**
 	 * Shows how to use QueryParser
 	 */
-	private void queryParserExample(){
+	void queryParserExample(){
 		//first argument is the default field for query terms
 		System.out.println("QueryParser: Searches for mails that have given user" +
 				" entered query expression in the subject field.");
@@ -262,34 +238,32 @@ public class LuceneDemo {
 			showSearchResults(query);
 	}
 	
-	private void queryResultsSortingExample(){
+	void queryResultsSortingExample() throws IOException{
 		Query query = new TermQuery(new Term("java"));
 		//Filter filter = new TermsFilter();
-		//TopDocs topDocs = indexSearcher.search(query, n)
+		TopDocs topDocs = indexSearcher.search(query, 10);
 	}
 	
 	/**
 	 * Delete all the mails from the index that were received in May 2009.
 	 */
-	private void deletDocumentFromIndex(){
+	void deletDocumentFromIndex(){
 		try {
-			
 			//Check how many emails received in May 2009
 			Query query = new WildcardQuery(new Term("month","05"));
 			System.out.println("---------------------------------------------");
 			System.out.println("\nSearching for mails that were received in May");
 			showSearchResults(query);			
 
-			IndexReader indexReader = IndexReader.open(indexDirectory);
-			indexReader.deleteDocuments(new Term("month","05"));
-			//close associate index files and save deletions to disk
-			indexReader.close();	
+			IndexWriterConfig config = Indexer.constructConfig();
+			IndexWriter writer = new IndexWriter(FSDirectory.open(new File(indexDirectory)), config);
+		    writer.deleteDocuments(new Term("name", "11.txt"));
+		    writer.close();			
 			
 			createIndexSearcher();
 			System.out.println("After deleting mails received in May, " +
 					"searching for mails that were received in May");
 			showSearchResults(query);
-			
 			
 		} catch (CorruptIndexException e) {
 			e.printStackTrace();
@@ -343,14 +317,6 @@ public class LuceneDemo {
 		}
 	}
 
-	private void printResults(TopDocs topDocs)
-			throws CorruptIndexException, IOException {
-		for(ScoreDoc scoredoc: topDocs.scoreDocs){
-			//Retrieve the matched document and show relevant details
-			Document doc = indexSearcher.doc(scoredoc.doc);
-			System.out.println("Sender: "+doc.getField("sender").stringValue());
-		}
-	}
 	
 	/*
 	 * Searches for mails that have 'job' in the subject field, applies a filter
@@ -378,4 +344,37 @@ public class LuceneDemo {
 		
 	}
 	
+    private void printResults(TopDocs topDocs)
+            throws CorruptIndexException, IOException {
+        for(ScoreDoc scoredoc: topDocs.scoreDocs){
+            //Retrieve the matched document and show relevant details
+            Document doc = indexSearcher.doc(scoredoc.doc);
+            System.out.println("Sender: "+doc.getField("sender").stringValue());
+        }
+    }
+    
+    private void showSearchResults(Query query ){
+        
+        try{
+            /* First parameter is the query to be executed and 
+               second parameter indicates the no of search results to fetch
+             */
+            TopDocs topDocs = indexSearcher.search(query,20);   
+            System.out.println("Total hits "+topDocs.totalHits);
+            
+            // Get an array of references to matched documents
+            ScoreDoc[] scoreDosArray = topDocs.scoreDocs;   
+            for(ScoreDoc scoredoc: scoreDosArray){
+                //Retrieve the matched document and show relevant details
+                Document doc = indexSearcher.doc(scoredoc.doc);
+                System.out.println("\nSender: "+doc.getField("sender").stringValue());
+                System.out.println("Subject: "+doc.getField("subject").stringValue());
+                System.out.println("Email file location: "+
+                                doc.getField("emailDoc").stringValue());    
+            }
+            System.out.println("---------------------------------------------");
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
 }
