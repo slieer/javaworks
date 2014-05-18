@@ -24,6 +24,17 @@
 			<version>${mahout.version}</version>
 		</dependency>
 		<dependency>
+		    <groupId>org.apache.mahout</groupId>
+		    <artifactId>mahout-integration</artifactId>
+		    <version>${mahout.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>org.apache.mahout</groupId>
+            <artifactId>mahout-collections</artifactId>
+            <version>1.0</version>
+        </dependency>
+		
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
