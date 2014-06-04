@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.helloworld.impl;
+package org.jboss.as.quickstarts.helloworld.service.impl;
 
 public class HelloService {
 
