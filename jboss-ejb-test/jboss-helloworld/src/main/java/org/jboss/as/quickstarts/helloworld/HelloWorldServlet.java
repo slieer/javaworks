@@ -26,19 +26,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * <p>
- * A simple servlet taking advantage of features added in 3.0.
- * </p>
- * 
- * <p>
- * The servlet is registered and mapped to /HelloServlet using the {@linkplain WebServlet
- * @HttpServlet}. The {@link HelloService} is injected by CDI.
- * </p>
- * 
- * @author Pete Muir
- * 
- */
+import org.jboss.as.quickstarts.helloworld.impl.HelloService;
+
 @SuppressWarnings("serial")
 @WebServlet("/HelloWorld")
 public class HelloWorldServlet extends HttpServlet {
