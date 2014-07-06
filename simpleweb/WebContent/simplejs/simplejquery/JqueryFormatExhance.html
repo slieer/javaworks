@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>json or xml format</title>
+<link href="../../css/jquery.exhance.css" media="screen"
+	rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="jsonExample1Display"></div>
+    <div id="xmlExample1Display"></div>
+
+
+	<script type="text/javascript" src="../../jslib/jquery-1.11.1.js"></script>
+	<script type="text/javascript"
+		src="../../jslib/jquery-plugin/jquery.exhance.js"></script>
+
+	<script type="application/json" id="jsonExampleData">
+{
+    "object1": {
+        "innerObject": {
+            "string1": "test",
+            "string2": "moreTest",
+            "nothing": null
+           },
+        "niceLinks": ["http://google.com", "http://en.wikipedia.org"],
+        "thisIsTrue": false
+    },
+    "anArray": [42, 23, 15]
+}
+</script>
+
+	<script>
+		$('#jsonExample1Display').Exhance({
+			src : 'jsonExampleData'
+		});
+	</script>
+
+
+	<script type="application/xml" id="xmlExampleData">
+<test1><element1><foo bar="true" mode="test">Welcome to Exhance.</foo></element1><element2>bye</element2><description>XML test data</description></test1><test2>http://jquery.com</test2>
+</script>
+
+<script type="text/javascript">
+$('#xmlExample1Display').Exhance({
+	  src : 'xmlExampleData',
+	  type : 'xml',
+	  box : true
+	}); 
+</script>
+
+</body>
+</html>

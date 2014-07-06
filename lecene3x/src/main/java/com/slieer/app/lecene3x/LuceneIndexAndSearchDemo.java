@@ -102,7 +102,7 @@ public class LuceneIndexAndSearchDemo {
 			ireader = DirectoryReader.open(directory);
 			isearcher = new IndexSearcher(ireader);			
 			
-			String keyword = "中文分词工具包";			
+			String keyword = "词典和分词";			
 			//使用QueryParser查询分析器构造Query对象
 			QueryParser qp = new QueryParser(Version.LUCENE_40, fieldName,  analyzer);
 			qp.setDefaultOperator(QueryParser.AND_OPERATOR);
