@@ -9,6 +9,11 @@ public class Student implements Serializable{
 	private Integer id;
 	private String name;
 
+	@ManyToMany (cascade = CascadeType.REFRESH)
+	@JoinTable (//关联表
+	    name =  "student_teacher" , //关联表名
+	    inverseJoinColumns =  @JoinColumn (name =  "teacher_id" ),//被维护端外键
+	    joinColumns =  @JoinColumn (name =  "student_id" ))//维护端外键 
 	private List<Teacher> teachers;
 
 	private List<Course> books;
