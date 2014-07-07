@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>xml test</title>
+</head>
+<body>
+	<object id="obj" width="0" height="0" type='txt/xml'
+		data='./ch2_data.xml'></object>
+		
+<script type="text/javascript" src="../../jslib/jquery-1.11.1.js"></script>	
+	<script>
+var xml = $($('#obj')[0].contentDocument);
+
+$(xml).find("taxrate").each(function(i)
+        {
+            var oid = $(this).attr("id");
+            var lower = $(this).children("lower").text();
+            var upper = $(this).children("upper").text();
+            var rate = $(this).children("rate").text();
+            var buckle = $(this).children("buckle").text();
+            ///后续操作。。。
+            console.info('oid:' + oid);
+            console.info('lower:' + lower);
+            console.info('upper:' + upper);
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taxrates>
+	<taxrate id="1">
+		<lower>0</lower>
+		<upper>500</upper>
+		<rate>5</rate>
+		<buckle>0</buckle>
+	</taxrate>
+	<taxrate id="2">
+		<lower>500</lower>
+		<upper>2000</upper>
+		<rate>10</rate>
+		<buckle>25</buckle>
+	</taxrate>
+	<taxrate id="3">
+		<lower>2000</lower>
+		<upper>5000</upper>
+		<rate>15</rate>
+		<buckle>125</buckle>
+	</taxrate>
+	<taxrate id="4">
+		<lower>5000</lower>
+		<upper>20000</upper>
+		<rate>20</rate>
+		<buckle>375</buckle>
+	</taxrate>
+	<taxrate id="5">
+		<lower>20000</lower>
+		<upper>40000</upper>
+		<rate>25</rate>
+		<buckle>1375</buckle>
+	</taxrate>
+	<taxrate id="6">
+		<lower>40000</lower>
+		<upper>60000</upper>
+		<rate>30</rate>
+		<buckle>3375</buckle>
+	</taxrate>
+	<taxrate id="7">
+		<lower>60000</lower>
+		<upper>80000</upper>
+		<rate>35</rate>
+		<buckle>6375</buckle>
+	</taxrate>
+	<taxrate id="8">
+		<lower>80000</lower>
+		<upper>100000</upper>
+		<rate>40</rate>
+		<buckle>10375</buckle>
+	</taxrate>
+	<taxrate id="9">
+		<lower>100000</lower>
+		<upper>99999999</upper>
+		<rate>45</rate>
+		<buckle>15375</buckle>
+	</taxrate>
+</taxrates>
