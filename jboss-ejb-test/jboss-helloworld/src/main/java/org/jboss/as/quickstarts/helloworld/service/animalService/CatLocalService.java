@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.helloworld.animalService;
+package org.jboss.as.quickstarts.helloworld.service.animalService;
 
 import javax.ejb.Local;
 

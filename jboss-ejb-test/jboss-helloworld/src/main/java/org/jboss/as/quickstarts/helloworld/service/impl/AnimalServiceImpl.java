@@ -1,12 +1,12 @@
-package org.jboss.as.quickstarts.helloworld;
+package org.jboss.as.quickstarts.helloworld.service.impl;
 
 import javax.ejb.Stateless;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jboss.as.quickstarts.helloworld.animalService.CatLocalService;
-import org.jboss.as.quickstarts.helloworld.animalService.CatRemoteService;
-import org.jboss.as.quickstarts.helloworld.animalService.DogRemoteService;
+import org.jboss.as.quickstarts.helloworld.service.animalService.CatLocalService;
+import org.jboss.as.quickstarts.helloworld.service.animalService.CatRemoteService;
+import org.jboss.as.quickstarts.helloworld.service.animalService.DogRemoteService;
 
 @Stateless
 public class AnimalServiceImpl implements CatLocalService, CatRemoteService, DogRemoteService{
