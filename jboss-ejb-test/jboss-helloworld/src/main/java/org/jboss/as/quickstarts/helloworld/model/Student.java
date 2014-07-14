@@ -3,6 +3,11 @@ package org.jboss.as.quickstarts.helloworld.model;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
 public class Student implements Serializable{
 	private static final long serialVersionUID = -4759114292267662466L;
 
