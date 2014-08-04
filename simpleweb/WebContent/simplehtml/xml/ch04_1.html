@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>java script SAX Parser</title>
+</head>
+<body>
+	<object id="obj" width="0" height="0" type='txt/plain'
+		data='./ch04_cate_channel_list.action.txt'></object>
+<!--txt/xml text/plain 
+   <script id='obj' type='txt/plain' src="./ch04_cate_channel_list.action.txt"></script>  
+-->
+	<script type="text/javascript" src='../../jslib/xml/sax.js'></script>
+	<script type="text/javascript" src='../../jslib/xml/xmldoc.js'></script>
+	 <script type="text/javascript" src="../../jslib/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	 //var xmlString = document.getElementById('obj').contentDocument;
+	 //var xmlString = document.getElementById('obj').ownerDocument;
+	 //var xmlContent = xmlString.documentElement.textContent;
+	 //console.log('xmlstr:' + xmlContent);
+	
+	 //var xmlContent = document.getElementById('obj').innerText;
+    var data = $('#obj');
+    var xmlContent = data.text(); 
+    var suggestions = new XmlDocument(xmlContent);
+//    var nameNode = suggestions.descendantWithPath("result.channellist.item");
+
+    suggestions.eachChild(function(node) {
+      //document.write("<p>Found book with title: '" + book.attr.title + "'</p>");
+        if(node.name == 'item'){
+        	   var children = node.children;
+        	   for(var i = 0; i < children.length; i++){
+        		   	 var child = children[i];
+        		   	 if(child.name == 'channelcate'){
+        		   		console.log(child.value);
+        		   	     }
+        	    }
+          }
+    });
+
+	</script>
+</body>
+</html>

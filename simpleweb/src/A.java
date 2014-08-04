@@ -62,6 +62,11 @@ class B extends A{
 		//Class<? extends List<>> c = l.getClass();
 		
 		//System.out.println(c);
+		
+		Long totalLong = 39291L;
+	   System.out.println(totalLong.intValue()/100+1);
+      System.out.println(totalLong.intValue()%100+1);
+		
 	}
 }
 
