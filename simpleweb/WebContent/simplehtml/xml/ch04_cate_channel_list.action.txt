@@ -1,0 +1,2894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+    <status>0</status>
+    <msg/>
+   <catelist>
+    <item>
+        <id>7</id>       
+        <name>央视</name>
+        <type>1</type>         
+    </item>
+    <item>
+        <id>6</id>       
+        <name>卫视</name>
+        <type>1</type>         
+    </item>
+    <item>
+        <id>5</id>       
+        <name>地方</name>
+        <type>1</type>         
+    </item>
+    <item>
+        <id>10</id>       
+        <name>123</name>
+        <type>1</type>         
+    </item>
+    <item>
+        <id>2</id>       
+        <name>体育</name>
+        <type>2</type>         
+    </item>
+    <item>
+        <id>1</id>       
+        <name>电视剧</name>
+        <type>2</type>         
+    </item>
+    <item>
+        <id>8</id>       
+        <name>电影</name>
+        <type>2</type>         
+    </item>
+    <item>
+        <id>4</id>       
+        <name>综艺</name>
+        <type>2</type>         
+    </item>
+    <item>
+        <id>3</id>       
+        <name>少儿</name>
+        <type>2</type>         
+    </item>
+    </catelist>
+  <channellist>
+    <item>
+        <channelid>1792</channelid>
+        <name>黑龙江卫视高清</name>
+        <chid>1</chid>
+        <channelcate>6,10,</channelcate>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第20集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第21集]]></name>
+            <timestart>2014-07-18 20:20:00</timestart>
+            <timeend>2014-07-18 21:07:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1790</channelid>
+        <name>深圳卫视高清</name>
+        <chid>3</chid>
+        <channelcate>6,10,</channelcate>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第58集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第59集]]></name>
+            <timestart>2014-07-18 20:25:00</timestart>
+            <timeend>2014-07-18 21:16:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>4</channelid>
+        <name>CCTV-3</name>
+        <chid>4</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>22535</progid> 
+            <iconid>22535</iconid>             
+            <name><![CDATA[幸福账单 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>21114</progid> 
+            <iconid>21114</iconid>             
+            <name><![CDATA[开门大吉 ]]></name>
+            <timestart>2014-07-18 21:00:00</timestart>
+            <timeend>2014-07-18 22:30:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>6</channelid>
+        <name>CCTV-5</name>
+        <chid>5</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>73314</progid> 
+            <iconid>73314</iconid>             
+            <name><![CDATA[跳水世界杯:女子10米跳台决赛 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:45:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+        <progevent>
+            <progid>73513</progid> 
+            <iconid>73513</iconid>             
+            <name><![CDATA[中欧男篮锦标赛:中国-黑山 ]]></name>
+            <timestart>2014-07-18 20:45:00</timestart>
+            <timeend>2014-07-18 21:59:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>7</channelid>
+        <name>CCTV-6</name>
+        <chid>6</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>73466</progid> 
+            <iconid>73466</iconid>             
+            <name><![CDATA[毛驴县令之母鸡打鸣 ]]></name>
+            <timestart>2014-07-18 18:16:00</timestart>
+            <timeend>2014-07-18 20:03:00</timeend>
+            <procate>8,</procate>
+        </progevent>
+        <progevent>
+            <progid>121</progid> 
+            <iconid>121</iconid>             
+            <name><![CDATA[光影星播客 ]]></name>
+            <timestart>2014-07-18 20:03:00</timestart>
+            <timeend>2014-07-18 20:15:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>48937</progid> 
+            <iconid>48937</iconid>             
+            <name><![CDATA[倩女幽魂 ]]></name>
+            <timestart>2014-07-18 20:15:00</timestart>
+            <timeend>2014-07-18 22:02:00</timeend>
+            <procate>8,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>8</channelid>
+        <name>CCTV-7</name>
+        <chid>7</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>186</progid> 
+            <iconid>186</iconid>             
+            <name><![CDATA[军事报道 ]]></name>
+            <timestart>2014-07-18 19:31:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>187</progid> 
+            <iconid>187</iconid>             
+            <name><![CDATA[军事纪实 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:33:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>32</progid> 
+            <iconid>32</iconid>             
+            <name><![CDATA[公共宣传 ]]></name>
+            <timestart>2014-07-18 20:33:00</timestart>
+            <timeend>2014-07-18 20:35:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>9</channelid>
+        <name>CCTV-8</name>
+        <chid>8</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>66669</progid> 
+            <iconid>66669</iconid>             
+            <name><![CDATA[战长沙 第17集]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:55:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73241</progid> 
+            <iconid>73241</iconid>             
+            <name><![CDATA[本集提要:战长沙 ]]></name>
+            <timestart>2014-07-18 19:55:00</timestart>
+            <timeend>2014-07-18 19:56:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>10</channelid>
+        <name>CCTV-9</name>
+        <chid>9</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>13029</progid> 
+            <iconid>13029</iconid>             
+            <name><![CDATA[人类星球 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>66069</progid> 
+            <iconid>66069</iconid>             
+            <name><![CDATA[楚国八百年 第4集]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>73503</progid> 
+            <iconid>73503</iconid>             
+            <name><![CDATA[我与北极熊一家 ]]></name>
+            <timestart>2014-07-18 21:00:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>11</channelid>
+        <name>CCTV-10</name>
+        <chid>10</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>238</progid> 
+            <iconid>238</iconid>             
+            <name><![CDATA[自然传奇 ]]></name>
+            <timestart>2014-07-18 18:45:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>54478</progid> 
+            <iconid>54478</iconid>             
+            <name><![CDATA[中国汉字听写大会 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>25264</progid> 
+            <iconid>25264</iconid>             
+            <name><![CDATA[探索.发现 ]]></name>
+            <timestart>2014-07-18 22:00:00</timestart>
+            <timeend>2014-07-18 22:45:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>12</channelid>
+        <name>CCTV-11</name>
+        <chid>11</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>47839</progid> 
+            <iconid>47839</iconid>             
+            <name><![CDATA[一鸣惊人 ]]></name>
+            <timestart>2014-07-18 19:20:00</timestart>
+            <timeend>2014-07-18 20:23:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>60065</progid> 
+            <iconid>60065</iconid>             
+            <name><![CDATA[主持人全天伴视 ]]></name>
+            <timestart>2014-07-18 20:23:00</timestart>
+            <timeend>2014-07-18 20:29:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>13</channelid>
+        <name>CCTV-12</name>
+        <chid>12</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>260</progid> 
+            <iconid>260</iconid>             
+            <name><![CDATA[一线 ]]></name>
+            <timestart>2014-07-18 19:24:00</timestart>
+            <timeend>2014-07-18 20:07:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>267</progid> 
+            <iconid>267</iconid>             
+            <name><![CDATA[天网 ]]></name>
+            <timestart>2014-07-18 20:07:00</timestart>
+            <timeend>2014-07-18 20:49:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>266</progid> 
+            <iconid>266</iconid>             
+            <name><![CDATA[普法栏目剧 ]]></name>
+            <timestart>2014-07-18 20:49:00</timestart>
+            <timeend>2014-07-18 21:39:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>14</channelid>
+        <name>CCTV-13</name>
+        <chid>13</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>12</progid> 
+            <iconid>12</iconid>             
+            <name><![CDATA[新闻联播 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:38:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>66591</progid> 
+            <iconid>66591</iconid>             
+            <name><![CDATA[焦点访谈 ]]></name>
+            <timestart>2014-07-18 19:38:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>15</channelid>
+        <name>CCTV-14</name>
+        <chid>14</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>20962</progid> 
+            <iconid>20962</iconid>             
+            <name><![CDATA[动画狂欢曲 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate>3,</procate>
+        </progevent>
+        <progevent>
+            <progid>53047</progid> 
+            <iconid>53047</iconid>             
+            <name><![CDATA[国产动画新片 ]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate>3,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>16</channelid>
+        <name>CCTV-15</name>
+        <chid>15</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>304</progid> 
+            <iconid>304</iconid>             
+            <name><![CDATA[精彩音乐汇:暑期特辑 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 21:09:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>62174</progid> 
+            <iconid>62174</iconid>             
+            <name><![CDATA[音乐频道导视 ]]></name>
+            <timestart>2014-07-18 21:09:00</timestart>
+            <timeend>2014-07-18 21:15:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1610</channelid>
+        <name>CCTV台球</name>
+        <chid>16</chid>
+        <channelcate>7,</channelcate>
+    </item>
+    <item>
+        <channelid>1158</channelid>
+        <name>CCTV女性时尚</name>
+        <chid>18</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>2705</progid> 
+            <iconid>2705</iconid>             
+            <name><![CDATA[讲述 ]]></name>
+            <timestart>2014-07-18 19:29:00</timestart>
+            <timeend>2014-07-18 20:10:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>2705</progid> 
+            <iconid>2705</iconid>             
+            <name><![CDATA[讲述 ]]></name>
+            <timestart>2014-07-18 20:10:00</timestart>
+            <timeend>2014-07-18 20:52:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>428</channelid>
+        <name>CCTV电视指南</name>
+        <chid>19</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[精品点击:精彩音乐汇 ]]></name>
+            <timestart>2014-07-18 19:07:00</timestart>
+            <timeend>2014-07-18 20:29:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>34925</progid> 
+            <iconid>34925</iconid>             
+            <name><![CDATA[世界地理精彩多看点 ]]></name>
+            <timestart>2014-07-18 20:29:00</timestart>
+            <timeend>2014-07-18 20:34:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>424</channelid>
+        <name>CCTV央视文化</name>
+        <chid>20</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>81</progid> 
+            <iconid>81</iconid>             
+            <name><![CDATA[百家讲坛 ]]></name>
+            <timestart>2014-07-18 19:12:00</timestart>
+            <timeend>2014-07-18 19:49:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>81</progid> 
+            <iconid>81</iconid>             
+            <name><![CDATA[百家讲坛 ]]></name>
+            <timestart>2014-07-18 19:49:00</timestart>
+            <timeend>2014-07-18 20:28:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>244</progid> 
+            <iconid>244</iconid>             
+            <name><![CDATA[原来如此 ]]></name>
+            <timestart>2014-07-18 20:28:00</timestart>
+            <timeend>2014-07-18 21:24:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>398</channelid>
+        <name>CCTV风云音乐</name>
+        <chid>21</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>14474</progid> 
+            <iconid>14474</iconid>             
+            <name><![CDATA[爱现场 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>20978</progid> 
+            <iconid>20978</iconid>             
+            <name><![CDATA[炫动亚洲 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:20:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>8561</progid> 
+            <iconid>8561</iconid>             
+            <name><![CDATA[风云音乐精彩多看点 ]]></name>
+            <timestart>2014-07-18 21:20:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>888</channelid>
+        <name>CCTV国防军事</name>
+        <chid>22</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>14293</progid> 
+            <iconid>14293</iconid>             
+            <name><![CDATA[军事全记录 ]]></name>
+            <timestart>2014-07-18 18:50:00</timestart>
+            <timeend>2014-07-18 19:55:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>14298</progid> 
+            <iconid>14298</iconid>             
+            <name><![CDATA[精品典播:铁血二战 ]]></name>
+            <timestart>2014-07-18 19:55:00</timestart>
+            <timeend>2014-07-18 20:40:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>14295</progid> 
+            <iconid>14295</iconid>             
+            <name><![CDATA[装备时空 ]]></name>
+            <timestart>2014-07-18 20:40:00</timestart>
+            <timeend>2014-07-18 21:15:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1775</channelid>
+        <name>CCTV-NEWS</name>
+        <chid>23</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>3724</progid> 
+            <iconid>3724</iconid>             
+            <name><![CDATA[今日话题 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>4379</progid> 
+            <iconid>4379</iconid>             
+            <name><![CDATA[中国24小时 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:40:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>4384</progid> 
+            <iconid>4384</iconid>             
+            <name><![CDATA[体育报道 ]]></name>
+            <timestart>2014-07-18 20:40:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1208</channelid>
+        <name>CCTV-法语</name>
+        <chid>24</chid>
+        <channelcate>7,</channelcate>
+    </item>
+    <item>
+        <channelid>1545</channelid>
+        <name>CCTV阿拉伯语</name>
+        <chid>25</chid>
+        <channelcate>7,</channelcate>
+    </item>
+    <item>
+        <channelid>1547</channelid>
+        <name>CCTV俄语</name>
+        <chid>26</chid>
+        <channelcate>7,</channelcate>
+    </item>
+    <item>
+        <channelid>10200</channelid>
+        <name>CCTV西班牙语</name>
+        <chid>27</chid>
+        <channelcate>7,</channelcate>
+    </item>
+    <item>
+        <channelid>1081</channelid>
+        <name>CCTV-4中文国际（美）</name>
+        <chid>28</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>71</progid> 
+            <iconid>71</iconid>             
+            <name><![CDATA[华人世界 ]]></name>
+            <timestart>2014-07-18 19:15:00</timestart>
+            <timeend>2014-07-18 19:45:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[中国古树 ]]></name>
+            <timestart>2014-07-18 19:45:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1080</channelid>
+        <name>CCTV-4中文国际（欧）</name>
+        <chid>29</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>81</progid> 
+            <iconid>81</iconid>             
+            <name><![CDATA[百家讲坛 ]]></name>
+            <timestart>2014-07-18 19:17:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>58316</progid> 
+            <iconid>58316</iconid>             
+            <name><![CDATA[探索发现(海外版) ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:42:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>77</progid> 
+            <iconid>77</iconid>             
+            <name><![CDATA[快乐汉语 ]]></name>
+            <timestart>2014-07-18 20:42:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>18</channelid>
+        <name>中国教育台-1</name>
+        <chid>30</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>11537</progid> 
+            <iconid>11537</iconid>             
+            <name><![CDATA[火蓝刀锋 第32集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>11537</progid> 
+            <iconid>11537</iconid>             
+            <name><![CDATA[火蓝刀锋 ]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>20</channelid>
+        <name>中国教育台-3</name>
+        <chid>31</chid>
+        <channelcate>7,</channelcate>
+        <progevent>
+            <progid>65461</progid> 
+            <iconid>65461</iconid>             
+            <name><![CDATA[独生子 第35集]]></name>
+            <timestart>2014-07-18 19:36:00</timestart>
+            <timeend>2014-07-18 20:31:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>65461</progid> 
+            <iconid>65461</iconid>             
+            <name><![CDATA[独生子 第36集]]></name>
+            <timestart>2014-07-18 20:31:00</timestart>
+            <timeend>2014-07-18 21:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1132</channelid>
+        <name>嘉佳卡通</name>
+        <chid>32</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>65040</progid> 
+            <iconid>65040</iconid>             
+            <name><![CDATA[噢佳大本营 ]]></name>
+            <timestart>2014-07-18 18:30:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate>3,</procate>
+        </progevent>
+        <progevent>
+            <progid>65045</progid> 
+            <iconid>65045</iconid>             
+            <name><![CDATA[嘉佳大剧场 ]]></name>
+            <timestart>2014-07-18 22:00:00</timestart>
+            <timeend>2014-07-19 06:00:00</timeend>
+            <procate>3,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>69</channelid>
+        <name>BTV卡酷少儿</name>
+        <chid>33</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>72649</progid> 
+            <iconid>72649</iconid>             
+            <name><![CDATA[妈妈听我说 ]]></name>
+            <timestart>2014-07-18 18:30:00</timestart>
+            <timeend>2014-07-18 19:55:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>6926</progid> 
+            <iconid>6926</iconid>             
+            <name><![CDATA[广宣时段 ]]></name>
+            <timestart>2014-07-18 19:55:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>935</channelid>
+        <name>SiTV五星体育</name>
+        <chid>34</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>56203</progid> 
+            <iconid>56203</iconid>             
+            <name><![CDATA[体育新闻 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+        <progevent>
+            <progid>23477</progid> 
+            <iconid>23477</iconid>             
+            <name><![CDATA[今日体育档案 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:20:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+        <progevent>
+            <progid>73228</progid> 
+            <iconid>73228</iconid>             
+            <name><![CDATA[巴西世界杯决赛 ]]></name>
+            <timestart>2014-07-18 20:20:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>27</channelid>
+        <name>凤凰资讯</name>
+        <chid>35</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>3860</progid> 
+            <iconid>3860</iconid>             
+            <name><![CDATA[华闻大直播 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:45:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>71518</progid> 
+            <iconid>71518</iconid>             
+            <name><![CDATA[足球狂热 ]]></name>
+            <timestart>2014-07-18 19:45:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1958</channelid>
+        <name>凤凰香港台</name>
+        <chid>36</chid>
+        <channelcate/>
+    </item>
+    <item>
+        <channelid>60</channelid>
+        <name>BTV北京卫视</name>
+        <chid>37</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73104</progid> 
+            <iconid>73104</iconid>             
+            <name><![CDATA[结婚前规则 第20集]]></name>
+            <timestart>2014-07-18 19:33:00</timestart>
+            <timeend>2014-07-18 20:22:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73104</progid> 
+            <iconid>73104</iconid>             
+            <name><![CDATA[结婚前规则 第21集]]></name>
+            <timestart>2014-07-18 20:22:00</timestart>
+            <timeend>2014-07-18 21:10:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>10476</channelid>
+        <name>天津卫视高清</name>
+        <chid>38</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第20集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:23:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第21集]]></name>
+            <timestart>2014-07-18 20:23:00</timestart>
+            <timeend>2014-07-18 21:15:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>10389</channelid>
+        <name>山东卫视高清</name>
+        <chid>39</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第21集]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:22:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第22集]]></name>
+            <timestart>2014-07-18 20:22:00</timestart>
+            <timeend>2014-07-18 21:12:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>81</channelid>
+        <name>东方卫视</name>
+        <chid>41</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>62120</progid> 
+            <iconid>62120</iconid>             
+            <name><![CDATA[保卫孙子 第19集]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:19:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>62120</progid> 
+            <iconid>62120</iconid>             
+            <name><![CDATA[保卫孙子 第20集]]></name>
+            <timestart>2014-07-18 20:19:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>70</channelid>
+        <name>广东卫视</name>
+        <chid>42</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第20集]]></name>
+            <timestart>2014-07-18 19:33:00</timestart>
+            <timeend>2014-07-18 20:29:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第21集]]></name>
+            <timestart>2014-07-18 20:29:00</timestart>
+            <timeend>2014-07-18 21:19:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>46</channelid>
+        <name>湖南卫视</name>
+        <chid>43</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>72913</progid> 
+            <iconid>72913</iconid>             
+            <name><![CDATA[神犬奇兵 第30集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:10:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73434</progid> 
+            <iconid>73434</iconid>             
+            <name><![CDATA[天天向上 ]]></name>
+            <timestart>2014-07-18 20:10:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>93</channelid>
+        <name>深圳卫视</name>
+        <chid>44</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第58集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第59集]]></name>
+            <timestart>2014-07-18 20:25:00</timestart>
+            <timeend>2014-07-18 21:16:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>36</channelid>
+        <name>辽宁卫视</name>
+        <chid>45</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第20集]]></name>
+            <timestart>2014-07-18 19:36:00</timestart>
+            <timeend>2014-07-18 20:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第21集]]></name>
+            <timestart>2014-07-18 20:25:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>40</channelid>
+        <name>陕西卫视</name>
+        <chid>46</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第20集]]></name>
+            <timestart>2014-07-18 19:33:00</timestart>
+            <timeend>2014-07-18 20:26:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第21集]]></name>
+            <timestart>2014-07-18 20:26:00</timestart>
+            <timeend>2014-07-18 21:17:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>592</channelid>
+        <name>青海卫视</name>
+        <chid>47</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>11537</progid> 
+            <iconid>11537</iconid>             
+            <name><![CDATA[火蓝刀锋 第14集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:15:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>11537</progid> 
+            <iconid>11537</iconid>             
+            <name><![CDATA[火蓝刀锋 第15集]]></name>
+            <timestart>2014-07-18 20:15:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>41</channelid>
+        <name>山东卫视</name>
+        <chid>48</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第21集]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:22:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第22集]]></name>
+            <timestart>2014-07-18 20:22:00</timestart>
+            <timeend>2014-07-18 21:12:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>48</channelid>
+        <name>贵州卫视</name>
+        <chid>49</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第58集]]></name>
+            <timestart>2014-07-18 19:34:00</timestart>
+            <timeend>2014-07-18 20:24:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第59集]]></name>
+            <timestart>2014-07-18 20:24:00</timestart>
+            <timeend>2014-07-18 21:21:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>37</channelid>
+        <name>河北卫视</name>
+        <chid>50</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第20集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第21集]]></name>
+            <timestart>2014-07-18 20:25:00</timestart>
+            <timeend>2014-07-18 21:10:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>38</channelid>
+        <name>河南卫视</name>
+        <chid>51</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第20集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73080</progid> 
+            <iconid>73080</iconid>             
+            <name><![CDATA[豆腐西施杨七巧 第21集]]></name>
+            <timestart>2014-07-18 20:25:00</timestart>
+            <timeend>2014-07-18 21:12:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>44</channelid>
+        <name>江苏卫视</name>
+        <chid>52</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>72948</progid> 
+            <iconid>72948</iconid>             
+            <name><![CDATA[杉杉来了 第29集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>72948</progid> 
+            <iconid>72948</iconid>             
+            <name><![CDATA[杉杉来了 第30集]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>43</channelid>
+        <name>浙江卫视</name>
+        <chid>53</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>64196</progid> 
+            <iconid>64196</iconid>             
+            <name><![CDATA[大明猩 ]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:26:00</timeend>
+            <procate>8,</procate>
+        </progevent>
+        <progevent>
+            <progid>64196</progid> 
+            <iconid>64196</iconid>             
+            <name><![CDATA[大明猩 ]]></name>
+            <timestart>2014-07-18 20:26:00</timestart>
+            <timeend>2014-07-18 21:16:00</timeend>
+            <procate>8,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>50</channelid>
+        <name>广西卫视</name>
+        <chid>54</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>53504</progid> 
+            <iconid>53504</iconid>             
+            <name><![CDATA[国防生 第8集]]></name>
+            <timestart>2014-07-18 19:33:00</timestart>
+            <timeend>2014-07-18 20:28:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>53504</progid> 
+            <iconid>53504</iconid>             
+            <name><![CDATA[国防生 第9集]]></name>
+            <timestart>2014-07-18 20:28:00</timestart>
+            <timeend>2014-07-18 21:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>59</channelid>
+        <name>重庆卫视</name>
+        <chid>55</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>66932</progid> 
+            <iconid>66932</iconid>             
+            <name><![CDATA[密使Ⅱ:江都谍影 第28集]]></name>
+            <timestart>2014-07-18 19:34:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>66932</progid> 
+            <iconid>66932</iconid>             
+            <name><![CDATA[密使Ⅱ:江都谍影 第29集]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>52</channelid>
+        <name>甘肃卫视</name>
+        <chid>56</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73169</progid> 
+            <iconid>73169</iconid>             
+            <name><![CDATA[贫富人生 第6集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:29:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73169</progid> 
+            <iconid>73169</iconid>             
+            <name><![CDATA[贫富人生 第7集]]></name>
+            <timestart>2014-07-18 20:29:00</timestart>
+            <timeend>2014-07-18 21:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>42</channelid>
+        <name>安徽卫视</name>
+        <chid>57</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第58集]]></name>
+            <timestart>2014-07-18 19:33:00</timestart>
+            <timeend>2014-07-18 20:16:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第59集]]></name>
+            <timestart>2014-07-18 20:16:00</timestart>
+            <timeend>2014-07-18 20:56:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>55</channelid>
+        <name>新疆卫视</name>
+        <chid>58</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>67479</progid> 
+            <iconid>67479</iconid>             
+            <name><![CDATA[食来孕转 第1集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:24:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>67479</progid> 
+            <iconid>67479</iconid>             
+            <name><![CDATA[食来孕转 第2集]]></name>
+            <timestart>2014-07-18 20:24:00</timestart>
+            <timeend>2014-07-18 21:17:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>45</channelid>
+        <name>江西卫视</name>
+        <chid>59</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>54489</progid> 
+            <iconid>54489</iconid>             
+            <name><![CDATA[钟点工们 第11集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>54489</progid> 
+            <iconid>54489</iconid>             
+            <name><![CDATA[钟点工们 第12集]]></name>
+            <timestart>2014-07-18 20:20:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>56</channelid>
+        <name>内蒙古卫视</name>
+        <chid>60</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>12</progid> 
+            <iconid>12</iconid>             
+            <name><![CDATA[中央电视台新闻联播 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:40:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>16</progid> 
+            <iconid>16</iconid>             
+            <name><![CDATA[西游记 第9集]]></name>
+            <timestart>2014-07-18 19:40:00</timestart>
+            <timeend>2014-07-18 20:34:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>16</progid> 
+            <iconid>16</iconid>             
+            <name><![CDATA[西游记 第10集]]></name>
+            <timestart>2014-07-18 20:34:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>47</channelid>
+        <name>湖北卫视</name>
+        <chid>61</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第58集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:34:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>65505</progid> 
+            <iconid>65505</iconid>             
+            <name><![CDATA[十月围城 第59集]]></name>
+            <timestart>2014-07-18 20:34:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>49</channelid>
+        <name>云南卫视</name>
+        <chid>62</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73104</progid> 
+            <iconid>73104</iconid>             
+            <name><![CDATA[结婚前规则 第20集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:21:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73104</progid> 
+            <iconid>73104</iconid>             
+            <name><![CDATA[结婚前规则 第21集]]></name>
+            <timestart>2014-07-18 20:21:00</timestart>
+            <timeend>2014-07-18 21:12:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>58</channelid>
+        <name>四川卫视</name>
+        <chid>63</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>73104</progid> 
+            <iconid>73104</iconid>             
+            <name><![CDATA[结婚前规则 第20集]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:23:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73104</progid> 
+            <iconid>73104</iconid>             
+            <name><![CDATA[结婚前规则 第21集]]></name>
+            <timestart>2014-07-18 20:23:00</timestart>
+            <timeend>2014-07-18 21:18:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>51</channelid>
+        <name>东南卫视</name>
+        <chid>65</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>67479</progid> 
+            <iconid>67479</iconid>             
+            <name><![CDATA[食来孕转 第9集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:29:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>67479</progid> 
+            <iconid>67479</iconid>             
+            <name><![CDATA[食来孕转 第10集]]></name>
+            <timestart>2014-07-18 20:29:00</timestart>
+            <timeend>2014-07-18 21:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>57</channelid>
+        <name>天津卫视</name>
+        <chid>66</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第20集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:23:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第21集]]></name>
+            <timestart>2014-07-18 20:23:00</timestart>
+            <timeend>2014-07-18 21:15:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>35</channelid>
+        <name>吉林卫视</name>
+        <chid>67</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>69680</progid> 
+            <iconid>69680</iconid>             
+            <name><![CDATA[我在北京挺好的 第4集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:23:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>69680</progid> 
+            <iconid>69680</iconid>             
+            <name><![CDATA[我在北京挺好的 第5集]]></name>
+            <timestart>2014-07-18 20:23:00</timestart>
+            <timeend>2014-07-18 21:15:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>39</channelid>
+        <name>山西卫视</name>
+        <chid>68</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>66478</progid> 
+            <iconid>66478</iconid>             
+            <name><![CDATA[亲爱的 第21集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>66478</progid> 
+            <iconid>66478</iconid>             
+            <name><![CDATA[亲爱的 第22集]]></name>
+            <timestart>2014-07-18 20:20:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>53</channelid>
+        <name>宁夏卫视</name>
+        <chid>69</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>8731</progid> 
+            <iconid>8731</iconid>             
+            <name><![CDATA[青春期撞上更年期 第1集]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:33:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>8731</progid> 
+            <iconid>8731</iconid>             
+            <name><![CDATA[青春期撞上更年期 第2集]]></name>
+            <timestart>2014-07-18 20:33:00</timestart>
+            <timeend>2014-07-18 21:28:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>54</channelid>
+        <name>西藏卫视</name>
+        <chid>70</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>863</progid> 
+            <iconid>863</iconid>             
+            <name><![CDATA[西藏新闻联播 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 19:59:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>281</progid> 
+            <iconid>281</iconid>             
+            <name><![CDATA[天气预报 ]]></name>
+            <timestart>2014-07-18 19:59:00</timestart>
+            <timeend>2014-07-18 20:02:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>102</channelid>
+        <name>南方卫视</name>
+        <chid>71</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>2399</progid> 
+            <iconid>2399</iconid>             
+            <name><![CDATA[城事特搜 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:40:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>2400</progid> 
+            <iconid>2400</iconid>             
+            <name><![CDATA[讲开又讲 ]]></name>
+            <timestart>2014-07-18 19:40:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>34</channelid>
+        <name>黑龙江卫视</name>
+        <chid>72</chid>
+        <channelcate>6,</channelcate>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第20集]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63835</progid> 
+            <iconid>63835</iconid>             
+            <name><![CDATA[爱情公寓Ⅳ 第21集]]></name>
+            <timestart>2014-07-18 20:20:00</timestart>
+            <timeend>2014-07-18 21:07:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>94</channelid>
+        <name>深视都市</name>
+        <chid>74</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>2769</progid> 
+            <iconid>2769</iconid>             
+            <name><![CDATA[第一现场 ]]></name>
+            <timestart>2014-07-18 18:20:00</timestart>
+            <timeend>2014-07-18 19:50:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>70982</progid> 
+            <iconid>70982</iconid>             
+            <name><![CDATA[涛女郎 第39集]]></name>
+            <timestart>2014-07-18 19:50:00</timestart>
+            <timeend>2014-07-18 20:44:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>70982</progid> 
+            <iconid>70982</iconid>             
+            <name><![CDATA[涛女郎 第40集]]></name>
+            <timestart>2014-07-18 20:44:00</timestart>
+            <timeend>2014-07-18 21:35:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>95</channelid>
+        <name>深视电视剧</name>
+        <chid>75</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>73176</progid> 
+            <iconid>73176</iconid>             
+            <name><![CDATA[抗倭侠侣 ]]></name>
+            <timestart>2014-07-18 19:25:00</timestart>
+            <timeend>2014-07-18 20:14:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73176</progid> 
+            <iconid>73176</iconid>             
+            <name><![CDATA[抗倭侠侣 ]]></name>
+            <timestart>2014-07-18 20:14:00</timestart>
+            <timeend>2014-07-18 21:03:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>97</channelid>
+        <name>深圳娱乐频道aaa</name>
+        <chid>76</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1230</progid> 
+            <iconid>1230</iconid>             
+            <name><![CDATA[食客准备 ]]></name>
+            <timestart>2014-07-18 18:51:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>1231</progid> 
+            <iconid>1231</iconid>             
+            <name><![CDATA[城市发现 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>936</progid> 
+            <iconid>936</iconid>             
+            <name><![CDATA[爱情保卫战 ]]></name>
+            <timestart>2014-07-18 21:00:00</timestart>
+            <timeend>2014-07-18 22:06:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1794</channelid>
+        <name>DV生活</name>
+        <chid>77</chid>
+        <channelcate/>
+        <progevent>
+            <progid>65339</progid> 
+            <iconid>65339</iconid>             
+            <name><![CDATA[漾新闻 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>67863</progid> 
+            <iconid>67863</iconid>             
+            <name><![CDATA[娱乐瞭望塔 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>4712</progid> 
+            <iconid>4712</iconid>             
+            <name><![CDATA[人事 ]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>98</channelid>
+        <name>深视体育健康</name>
+        <chid>78</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>73360</progid> 
+            <iconid>73360</iconid>             
+            <name><![CDATA[回眸世界杯 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+        <progevent>
+            <progid>59212</progid> 
+            <iconid>59212</iconid>             
+            <name><![CDATA[我来斗地主 ]]></name>
+            <timestart>2014-07-18 21:30:00</timestart>
+            <timeend>2014-07-18 22:30:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>104</channelid>
+        <name>南方影视</name>
+        <chid>82</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>72526</progid> 
+            <iconid>72526</iconid>             
+            <name><![CDATA[红颜利箭 第31集]]></name>
+            <timestart>2014-07-18 18:50:00</timestart>
+            <timeend>2014-07-18 19:38:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>72526</progid> 
+            <iconid>72526</iconid>             
+            <name><![CDATA[红颜利箭 第32集]]></name>
+            <timestart>2014-07-18 19:38:00</timestart>
+            <timeend>2014-07-18 20:26:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>72526</progid> 
+            <iconid>72526</iconid>             
+            <name><![CDATA[红颜利箭 第33集]]></name>
+            <timestart>2014-07-18 20:26:00</timestart>
+            <timeend>2014-07-18 21:14:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>72</channelid>
+        <name>广东体育</name>
+        <chid>83</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>5277</progid> 
+            <iconid>5277</iconid>             
+            <name><![CDATA[体育实况 ]]></name>
+            <timestart>2014-07-18 19:25:00</timestart>
+            <timeend>2014-07-18 21:17:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+        <progevent>
+            <progid>3951</progid> 
+            <iconid>3951</iconid>             
+            <name><![CDATA[十分好球 ]]></name>
+            <timestart>2014-07-18 21:17:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>2,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>73</channelid>
+        <name>广东公共</name>
+        <chid>84</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>2841</progid> 
+            <iconid>2841</iconid>             
+            <name><![CDATA[各区新闻集锦 ]]></name>
+            <timestart>2014-07-18 19:29:00</timestart>
+            <timeend>2014-07-18 19:42:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>3966</progid> 
+            <iconid>3966</iconid>             
+            <name><![CDATA[DV现场 ]]></name>
+            <timestart>2014-07-18 19:42:00</timestart>
+            <timeend>2014-07-18 19:59:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>61</channelid>
+        <name>BTV文艺</name>
+        <chid>87</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1017</progid> 
+            <iconid>1017</iconid>             
+            <name><![CDATA[我家有明星 ]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:25:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>6926</progid> 
+            <iconid>6926</iconid>             
+            <name><![CDATA[广宣时段 ]]></name>
+            <timestart>2014-07-18 20:25:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>62</channelid>
+        <name>BTV科教</name>
+        <chid>90</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>61459</progid> 
+            <iconid>61459</iconid>             
+            <name><![CDATA[法治北京 ]]></name>
+            <timestart>2014-07-18 19:06:00</timestart>
+            <timeend>2014-07-18 19:56:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>6926</progid> 
+            <iconid>6926</iconid>             
+            <name><![CDATA[广宣时段 ]]></name>
+            <timestart>2014-07-18 19:56:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>64</channelid>
+        <name>BTV财经</name>
+        <chid>91</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1044</progid> 
+            <iconid>1044</iconid>             
+            <name><![CDATA[首都经济报道 ]]></name>
+            <timestart>2014-07-18 18:58:00</timestart>
+            <timeend>2014-07-18 19:58:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>6926</progid> 
+            <iconid>6926</iconid>             
+            <name><![CDATA[广宣时段 ]]></name>
+            <timestart>2014-07-18 19:58:00</timestart>
+            <timeend>2014-07-18 20:02:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>82</channelid>
+        <name>上视新闻综合</name>
+        <chid>96</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1749</progid> 
+            <iconid>1749</iconid>             
+            <name><![CDATA[东方110 ]]></name>
+            <timestart>2014-07-18 19:13:00</timestart>
+            <timeend>2014-07-18 19:43:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>73520</progid> 
+            <iconid>73520</iconid>             
+            <name><![CDATA[刺刀英雄 第15集]]></name>
+            <timestart>2014-07-18 19:43:00</timestart>
+            <timeend>2014-07-18 20:37:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>73520</progid> 
+            <iconid>73520</iconid>             
+            <name><![CDATA[刺刀英雄 第16集]]></name>
+            <timestart>2014-07-18 20:37:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>87</channelid>
+        <name>上视纪实频道</name>
+        <chid>97</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>21946</progid> 
+            <iconid>21946</iconid>             
+            <name><![CDATA[我要找律师 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:01:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>32614</progid> 
+            <iconid>32614</iconid>             
+            <name><![CDATA[眼界 ]]></name>
+            <timestart>2014-07-18 20:01:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>1929</progid> 
+            <iconid>1929</iconid>             
+            <name><![CDATA[往事 ]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>88</channelid>
+        <name>上视新娱乐</name>
+        <chid>98</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>4504</progid> 
+            <iconid>4504</iconid>             
+            <name><![CDATA[百家心 ]]></name>
+            <timestart>2014-07-18 19:15:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[超级家庭 第5集]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>1173</progid> 
+            <iconid>1173</iconid>             
+            <name><![CDATA[新娱乐在线 ]]></name>
+            <timestart>2014-07-18 21:00:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>84</channelid>
+        <name>上视星尚频道</name>
+        <chid>99</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1792</progid> 
+            <iconid>1792</iconid>             
+            <name><![CDATA[人气美食 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>46669</progid> 
+            <iconid>46669</iconid>             
+            <name><![CDATA[甲方乙方 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>1791</progid> 
+            <iconid>1791</iconid>             
+            <name><![CDATA[今日印象 ]]></name>
+            <timestart>2014-07-18 21:00:00</timestart>
+            <timeend>2014-07-18 22:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>10208</channelid>
+        <name>TVS东方购物</name>
+        <chid>100</chid>
+        <channelcate>5,</channelcate>
+    </item>
+    <item>
+        <channelid>131</channelid>
+        <name>湖北电视</name>
+        <chid>102</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>56660</progid> 
+            <iconid>56660</iconid>             
+            <name><![CDATA[导视 ]]></name>
+            <timestart>2014-07-18 19:36:00</timestart>
+            <timeend>2014-07-18 19:49:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[美丽错儿 第17集]]></name>
+            <timestart>2014-07-18 19:49:00</timestart>
+            <timeend>2014-07-18 20:38:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[美丽错儿 第18集]]></name>
+            <timestart>2014-07-18 20:38:00</timestart>
+            <timeend>2014-07-18 21:31:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>136</channelid>
+        <name>湖北公共</name>
+        <chid>103</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[问新闻 ]]></name>
+            <timestart>2014-07-18 19:25:00</timestart>
+            <timeend>2014-07-18 20:40:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>16603</progid> 
+            <iconid>16603</iconid>             
+            <name><![CDATA[拍案惊奇 ]]></name>
+            <timestart>2014-07-18 20:40:00</timestart>
+            <timeend>2014-07-18 21:15:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>635</channelid>
+        <name>湖北经视</name>
+        <chid>104</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[经视团购会 ]]></name>
+            <timestart>2014-07-18 19:28:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>63317</progid> 
+            <iconid>63317</iconid>             
+            <name><![CDATA[妇道 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:58:00</timeend>
+            <procate>8,</procate>
+        </progevent>
+        <progevent>
+            <progid>19731</progid> 
+            <iconid>19731</iconid>             
+            <name><![CDATA[桃花朵朵开 ]]></name>
+            <timestart>2014-07-18 20:58:00</timestart>
+            <timeend>2014-07-18 22:45:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>134</channelid>
+        <name>湖北体育</name>
+        <chid>105</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>52784</progid> 
+            <iconid>52784</iconid>             
+            <name><![CDATA[金装生活帮 ]]></name>
+            <timestart>2014-07-18 19:11:00</timestart>
+            <timeend>2014-07-18 20:03:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>23628</progid> 
+            <iconid>23628</iconid>             
+            <name><![CDATA[小鬼子走着瞧 第32集]]></name>
+            <timestart>2014-07-18 20:03:00</timestart>
+            <timeend>2014-07-18 20:46:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>23628</progid> 
+            <iconid>23628</iconid>             
+            <name><![CDATA[小鬼子走着瞧 第33集]]></name>
+            <timestart>2014-07-18 20:46:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>132</channelid>
+        <name>湖北影视</name>
+        <chid>106</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>63898</progid> 
+            <iconid>63898</iconid>             
+            <name><![CDATA[隋唐英雄Ⅳ 第28集]]></name>
+            <timestart>2014-07-18 19:11:00</timestart>
+            <timeend>2014-07-18 20:04:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63898</progid> 
+            <iconid>63898</iconid>             
+            <name><![CDATA[隋唐英雄Ⅳ 第29集]]></name>
+            <timestart>2014-07-18 20:04:00</timestart>
+            <timeend>2014-07-18 20:59:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>63898</progid> 
+            <iconid>63898</iconid>             
+            <name><![CDATA[隋唐英雄Ⅳ 第30集]]></name>
+            <timestart>2014-07-18 20:59:00</timestart>
+            <timeend>2014-07-18 21:58:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1980</channelid>
+        <name>湖北孕育指南频道</name>
+        <chid>107</chid>
+        <channelcate/>
+    </item>
+    <item>
+        <channelid>129</channelid>
+        <name>金鹰卡通</name>
+        <chid>110</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>4059</progid> 
+            <iconid>4059</iconid>             
+            <name><![CDATA[童心撞地球 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:56:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>33118</progid> 
+            <iconid>33118</iconid>             
+            <name><![CDATA[剧好玩 ]]></name>
+            <timestart>2014-07-18 19:56:00</timestart>
+            <timeend>2014-07-18 20:24:00</timeend>
+            <procate>3,</procate>
+        </progevent>
+        <progevent>
+            <progid>73231</progid> 
+            <iconid>73231</iconid>             
+            <name><![CDATA[麦咭天天看 ]]></name>
+            <timestart>2014-07-18 20:24:00</timestart>
+            <timeend>2014-07-18 20:26:00</timeend>
+            <procate>3,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>190</channelid>
+        <name>浙江经视</name>
+        <chid>111</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>19192</progid> 
+            <iconid>19192</iconid>             
+            <name><![CDATA[白天剧场 ]]></name>
+            <timestart>2014-07-18 19:10:00</timestart>
+            <timeend>2014-07-18 19:50:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>19192</progid> 
+            <iconid>19192</iconid>             
+            <name><![CDATA[白天剧场 ]]></name>
+            <timestart>2014-07-18 19:50:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[经视新闻、气象 ]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>192</channelid>
+        <name>浙江影视娱乐</name>
+        <chid>112</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>2317</progid> 
+            <iconid>2317</iconid>             
+            <name><![CDATA[休闲剧场 ]]></name>
+            <timestart>2014-07-18 19:17:00</timestart>
+            <timeend>2014-07-18 19:57:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2317</progid> 
+            <iconid>2317</iconid>             
+            <name><![CDATA[休闲剧场 ]]></name>
+            <timestart>2014-07-18 19:57:00</timestart>
+            <timeend>2014-07-18 20:36:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2157</progid> 
+            <iconid>2157</iconid>             
+            <name><![CDATA[身体警报 ]]></name>
+            <timestart>2014-07-18 20:36:00</timestart>
+            <timeend>2014-07-18 21:47:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>194</channelid>
+        <name>浙江少儿</name>
+        <chid>113</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>22521</progid> 
+            <iconid>22521</iconid>             
+            <name><![CDATA[你猜谁会赢 ]]></name>
+            <timestart>2014-07-18 19:37:00</timestart>
+            <timeend>2014-07-18 20:11:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[成长秀 ]]></name>
+            <timestart>2014-07-18 20:11:00</timestart>
+            <timeend>2014-07-18 21:01:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>187</channelid>
+        <name>浙江民生休闲</name>
+        <chid>114</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>20052</progid> 
+            <iconid>20052</iconid>             
+            <name><![CDATA[钱塘老娘舅 ]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:10:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>19964</progid> 
+            <iconid>19964</iconid>             
+            <name><![CDATA[相亲才会赢 ]]></name>
+            <timestart>2014-07-18 20:10:00</timestart>
+            <timeend>2014-07-18 20:46:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>191</channelid>
+        <name>浙江教育科教</name>
+        <chid>115</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>2793</progid> 
+            <iconid>2793</iconid>             
+            <name><![CDATA[黄金剧场 ]]></name>
+            <timestart>2014-07-18 19:08:00</timestart>
+            <timeend>2014-07-18 19:44:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2793</progid> 
+            <iconid>2793</iconid>             
+            <name><![CDATA[黄金剧场 ]]></name>
+            <timestart>2014-07-18 19:44:00</timestart>
+            <timeend>2014-07-18 20:19:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2793</progid> 
+            <iconid>2793</iconid>             
+            <name><![CDATA[黄金剧场 ]]></name>
+            <timestart>2014-07-18 20:19:00</timestart>
+            <timeend>2014-07-18 20:55:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>193</channelid>
+        <name>浙江公共新农村</name>
+        <chid>116</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>19975</progid> 
+            <iconid>19975</iconid>             
+            <name><![CDATA[深度报道 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 19:42:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>19989</progid> 
+            <iconid>19989</iconid>             
+            <name><![CDATA[新闻大直播 ]]></name>
+            <timestart>2014-07-18 19:42:00</timestart>
+            <timeend>2014-07-18 20:45:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>19975</progid> 
+            <iconid>19975</iconid>             
+            <name><![CDATA[深度报道 ]]></name>
+            <timestart>2014-07-18 20:45:00</timestart>
+            <timeend>2014-07-18 20:57:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>180</channelid>
+        <name>浙江钱江频道</name>
+        <chid>117</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>2975</progid> 
+            <iconid>2975</iconid>             
+            <name><![CDATA[都市剧场 ]]></name>
+            <timestart>2014-07-18 19:10:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2975</progid> 
+            <iconid>2975</iconid>             
+            <name><![CDATA[都市剧场 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:45:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2975</progid> 
+            <iconid>2975</iconid>             
+            <name><![CDATA[都市剧场 ]]></name>
+            <timestart>2014-07-18 20:45:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>232</channelid>
+        <name>杭州新闻综合</name>
+        <chid>118</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>29486</progid> 
+            <iconid>29486</iconid>             
+            <name><![CDATA[杭州新闻联播 ]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:07:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>2793</progid> 
+            <iconid>2793</iconid>             
+            <name><![CDATA[黄金剧场 ]]></name>
+            <timestart>2014-07-18 20:07:00</timestart>
+            <timeend>2014-07-18 20:55:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>2793</progid> 
+            <iconid>2793</iconid>             
+            <name><![CDATA[黄金剧场 ]]></name>
+            <timestart>2014-07-18 20:55:00</timestart>
+            <timeend>2014-07-18 21:45:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>234</channelid>
+        <name>杭州生活频道</name>
+        <chid>119</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[市民监督团 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:50:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>15179</progid> 
+            <iconid>15179</iconid>             
+            <name><![CDATA[生活大参考 ]]></name>
+            <timestart>2014-07-18 19:50:00</timestart>
+            <timeend>2014-07-18 20:35:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>24515</progid> 
+            <iconid>24515</iconid>             
+            <name><![CDATA[做给你看 ]]></name>
+            <timestart>2014-07-18 20:35:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>235</channelid>
+        <name>杭州影视频道</name>
+        <chid>120</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>24741</progid> 
+            <iconid>24741</iconid>             
+            <name><![CDATA[金手指剧场 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:42:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>24741</progid> 
+            <iconid>24741</iconid>             
+            <name><![CDATA[金手指剧场 ]]></name>
+            <timestart>2014-07-18 19:42:00</timestart>
+            <timeend>2014-07-18 20:29:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>24741</progid> 
+            <iconid>24741</iconid>             
+            <name><![CDATA[金手指剧场 ]]></name>
+            <timestart>2014-07-18 20:29:00</timestart>
+            <timeend>2014-07-18 21:10:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>233</channelid>
+        <name>杭州明珠</name>
+        <chid>121</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>20256</progid> 
+            <iconid>20256</iconid>             
+            <name><![CDATA[和事佬 ]]></name>
+            <timestart>2014-07-18 19:31:00</timestart>
+            <timeend>2014-07-18 19:59:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>16206</progid> 
+            <iconid>16206</iconid>             
+            <name><![CDATA[开心茶馆 ]]></name>
+            <timestart>2014-07-18 19:59:00</timestart>
+            <timeend>2014-07-18 20:32:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>22726</progid> 
+            <iconid>22726</iconid>             
+            <name><![CDATA[妈妈咪呀 ]]></name>
+            <timestart>2014-07-18 20:32:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>529</channelid>
+        <name>宁波少儿频道</name>
+        <chid>122</chid>
+        <channelcate/>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[炫5剧场 ]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>20029</progid> 
+            <iconid>20029</iconid>             
+            <name><![CDATA[第5影院 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:40:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>15175</progid> 
+            <iconid>15175</iconid>             
+            <name><![CDATA[幸福来敲门 ]]></name>
+            <timestart>2014-07-18 21:40:00</timestart>
+            <timeend>2014-07-18 22:35:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>226</channelid>
+        <name>杭州少儿频道</name>
+        <chid>123</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[五号厨房 ]]></name>
+            <timestart>2014-07-18 19:29:00</timestart>
+            <timeend>2014-07-18 20:03:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[老爸帮帮忙 ]]></name>
+            <timestart>2014-07-18 20:03:00</timestart>
+            <timeend>2014-07-18 20:26:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[节目预告六新 ]]></name>
+            <timestart>2014-07-18 20:26:00</timestart>
+            <timeend>2014-07-18 20:28:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>782</channelid>
+        <name>泰州新闻</name>
+        <chid>124</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[转中央台《新闻联播》 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 19:38:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[大米市 第14集]]></name>
+            <timestart>2014-07-18 19:38:00</timestart>
+            <timeend>2014-07-18 20:34:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[大米市 第15集]]></name>
+            <timestart>2014-07-18 20:34:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>110</channelid>
+        <name>南京新闻</name>
+        <chid>126</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[青春燃烧的岁月 第2843集]]></name>
+            <timestart>2014-07-18 19:37:00</timestart>
+            <timeend>2014-07-18 20:23:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[《青春燃烧的岁月》幕后故事 第3集]]></name>
+            <timestart>2014-07-18 20:23:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1000</channelid>
+        <name>南京娱乐</name>
+        <chid>128</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1052</progid> 
+            <iconid>1052</iconid>             
+            <name><![CDATA[超级访问 ]]></name>
+            <timestart>2014-07-18 19:00:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[我是掼蛋王 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>46243</progid> 
+            <iconid>46243</iconid>             
+            <name><![CDATA[小微我爱你 ]]></name>
+            <timestart>2014-07-18 21:00:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>116</channelid>
+        <name>南京少儿</name>
+        <chid>129</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>2826</progid> 
+            <iconid>2826</iconid>             
+            <name><![CDATA[小神龙俱乐部 ]]></name>
+            <timestart>2014-07-18 19:10:00</timestart>
+            <timeend>2014-07-18 19:40:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+        <progevent>
+            <progid>24278</progid> 
+            <iconid>24278</iconid>             
+            <name><![CDATA[成长喜多多 ]]></name>
+            <timestart>2014-07-18 19:40:00</timestart>
+            <timeend>2014-07-18 20:05:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>124</channelid>
+        <name>南京十八</name>
+        <chid>130</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[《标点说房》 ]]></name>
+            <timestart>2014-07-18 19:35:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[《标点健康》 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:35:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[《标点财商》 ]]></name>
+            <timestart>2014-07-18 20:35:00</timestart>
+            <timeend>2014-07-18 21:03:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>112</channelid>
+        <name>南京教科</name>
+        <chid>131</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>17156</progid> 
+            <iconid>17156</iconid>             
+            <name><![CDATA[东升工作室 ]]></name>
+            <timestart>2014-07-18 19:30:00</timestart>
+            <timeend>2014-07-18 20:00:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>17128</progid> 
+            <iconid>17128</iconid>             
+            <name><![CDATA[有请当事人 ]]></name>
+            <timestart>2014-07-18 20:00:00</timestart>
+            <timeend>2014-07-18 20:55:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>12976</progid> 
+            <iconid>12976</iconid>             
+            <name><![CDATA[大家庭 第26集]]></name>
+            <timestart>2014-07-18 20:55:00</timestart>
+            <timeend>2014-07-18 22:40:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>354</channelid>
+        <name>石家庄都市</name>
+        <chid>135</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>19634</progid> 
+            <iconid>19634</iconid>             
+            <name><![CDATA[小吴帮忙 ]]></name>
+            <timestart>2014-07-18 19:01:00</timestart>
+            <timeend>2014-07-18 19:46:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>19635</progid> 
+            <iconid>19635</iconid>             
+            <name><![CDATA[天天说交通 ]]></name>
+            <timestart>2014-07-18 19:46:00</timestart>
+            <timeend>2014-07-18 20:46:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>45191</progid> 
+            <iconid>45191</iconid>             
+            <name><![CDATA[真相 ]]></name>
+            <timestart>2014-07-18 20:46:00</timestart>
+            <timeend>2014-07-18 21:30:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>352</channelid>
+        <name>石家庄娱乐</name>
+        <chid>136</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>15548</progid> 
+            <iconid>15548</iconid>             
+            <name><![CDATA[爱剧场 ]]></name>
+            <timestart>2014-07-18 19:27:00</timestart>
+            <timeend>2014-07-18 20:18:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>15548</progid> 
+            <iconid>15548</iconid>             
+            <name><![CDATA[爱剧场 ]]></name>
+            <timestart>2014-07-18 20:18:00</timestart>
+            <timeend>2014-07-18 21:06:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>360</channelid>
+        <name>西安影视频道</name>
+        <chid>138</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1060</progid> 
+            <iconid>1060</iconid>             
+            <name><![CDATA[电视剧 ]]></name>
+            <timestart>2014-07-18 19:05:00</timestart>
+            <timeend>2014-07-18 23:20:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>24544</progid> 
+            <iconid>24544</iconid>             
+            <name><![CDATA[电影全色彩 ]]></name>
+            <timestart>2014-07-18 23:20:00</timestart>
+            <timeend>2014-07-18 23:41:00</timeend>
+            <procate>4,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>214</channelid>
+        <name>西安白鸽都市</name>
+        <chid>139</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>1060</progid> 
+            <iconid>1060</iconid>             
+            <name><![CDATA[电视剧 ]]></name>
+            <timestart>2014-07-18 19:28:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid>1060</progid> 
+            <iconid>1060</iconid>             
+            <name><![CDATA[电视剧 ]]></name>
+            <timestart>2014-07-18 19:28:00</timestart>
+            <timeend>2014-07-18 19:28:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+    </item>
+    <item>
+        <channelid>389</channelid>
+        <name>黑龙江都市</name>
+        <chid>140</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[孝子难当 第20集]]></name>
+            <timestart>2014-07-18 19:32:00</timestart>
+            <timeend>2014-07-18 20:24:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[孝子难当 第21集]]></name>
+            <timestart>2014-07-18 20:24:00</timestart>
+            <timeend>2014-07-18 21:14:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>391</channelid>
+        <name>黑龙江公共</name>
+        <chid>141</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>19695</progid> 
+            <iconid>19695</iconid>             
+            <name><![CDATA[说和 ]]></name>
+            <timestart>2014-07-18 19:25:00</timestart>
+            <timeend>2014-07-18 19:55:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>19693</progid> 
+            <iconid>19693</iconid>             
+            <name><![CDATA[帮忙 ]]></name>
+            <timestart>2014-07-18 19:55:00</timestart>
+            <timeend>2014-07-18 20:55:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>19699</progid> 
+            <iconid>19699</iconid>             
+            <name><![CDATA[消费30分 ]]></name>
+            <timestart>2014-07-18 20:55:00</timestart>
+            <timeend>2014-07-18 21:25:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>388</channelid>
+        <name>黑龙江文艺</name>
+        <chid>142</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>43201</progid> 
+            <iconid>43201</iconid>             
+            <name><![CDATA[大城小爱 ]]></name>
+            <timestart>2014-07-18 18:50:00</timestart>
+            <timeend>2014-07-18 20:10:00</timeend>
+            <procate>1,</procate>
+        </progevent>
+        <progevent>
+            <progid/> 
+            <iconid/>             
+            <name><![CDATA[乡亲乡爱精编版 ]]></name>
+            <timestart>2014-07-18 20:10:00</timestart>
+            <timeend>2014-07-18 21:10:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>390</channelid>
+        <name>黑龙江新闻</name>
+        <chid>143</chid>
+        <channelcate>5,</channelcate>
+        <progevent>
+            <progid>14774</progid> 
+            <iconid>14774</iconid>             
+            <name><![CDATA[新闻在线 ]]></name>
+            <timestart>2014-07-18 18:55:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>24200</progid> 
+            <iconid>24200</iconid>             
+            <name><![CDATA[新闻真相 ]]></name>
+            <timestart>2014-07-18 20:30:00</timestart>
+            <timeend>2014-07-18 21:00:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>543</channelid>
+        <name>新疆哈萨克斯坦新闻</name>
+        <chid>145</chid>
+        <channelcate/>
+        <progevent>
+            <progid>192</progid> 
+            <iconid>192</iconid>             
+            <name><![CDATA[致富经 ]]></name>
+            <timestart>2014-07-18 19:05:00</timestart>
+            <timeend>2014-07-18 19:45:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>66591</progid> 
+            <iconid>66591</iconid>             
+            <name><![CDATA[焦点访谈 ]]></name>
+            <timestart>2014-07-18 19:45:00</timestart>
+            <timeend>2014-07-18 20:08:00</timeend>
+            <procate/>
+        </progevent>
+        <progevent>
+            <progid>276</progid> 
+            <iconid>276</iconid>             
+            <name><![CDATA[国际时讯 ]]></name>
+            <timestart>2014-07-18 20:08:00</timestart>
+            <timeend>2014-07-18 20:30:00</timeend>
+            <procate/>
+        </progevent>
+    </item>
+    <item>
+        <channelid>1924</channelid>
+        <name>好消息2台</name>
+        <chid>147</chid>
+        <channelcate/>
+    </item>
+</channellist>
+</result>

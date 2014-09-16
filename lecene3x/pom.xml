@@ -14,8 +14,7 @@
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<junit.version>4.11</junit.version>
 	<log4j.version>2.0-rc1</log4j.version>
-	<lucene.version>4.0.0</lucene.version>
-	<!--  [2012-12-25] -->
+	<lucene.version>4.9.0</lucene.version>
   </properties>
 
     <dependencies>
@@ -50,6 +49,11 @@
         lucene-grouping
         lucene-similarity
          -->
+        <dependency>
+        	<groupId>org.apache.lucene</groupId>
+        	<artifactId>lucene-analyzers-common</artifactId>
+        	<version>4.9.0</version>
+        </dependency>
     </dependencies> 
     <build>
         <plugins>

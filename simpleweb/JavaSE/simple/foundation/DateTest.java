@@ -24,5 +24,11 @@ public class DateTest {
         Date date = new Date();
         System.out.println(date.getTime());
     }
+    
+    public static void testCurr(){
+        Date d = new Date();
+        long time = d.getTime();
+        long f =  time / (5 * 60 * 1000);
+    }
 
 }
