@@ -43,7 +43,7 @@ public class PropertyTest {
 	
 	@Test
 	public void beanUtilsGetTest(){
-		Map<String, Object> properties = new HashMap<String, Object>();
+		Map<String, String> properties = new HashMap<String, String>();
 		try {
 			properties = BeanUtils.describe(bean);
 			Object obj = properties.get("personList");
