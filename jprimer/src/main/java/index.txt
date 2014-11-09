@@ -1,0 +1,11 @@
+JavaTM Platform, Standard Edition 6 Overview
+
+http://download.oracle.com/javase/6/docs/technotes/guides/index.html#base
+
+关于maven 库查找
+http://mvnrepository.com/
+
+
+mvn clean package
+java -jar target/simplelog-0.0.1-SNAPSHOT.jar
+mvn clean test

@@ -1,6 +1,0 @@
-14.05.01 03:20:54 GMT-05:00 TRACE com.foo.App 18 main - Entering application.
-14.05.01 03:20:54 GMT-05:00 TRACE com.foo.Bar 10 doIt - entry
-14.05.01 03:20:54 GMT-05:00 ERROR com.foo.Bar 11 doIt - Did it again!
-14.05.01 03:20:54 GMT-05:00 TRACE com.foo.Bar 12 doIt - exit with(false)
-14.05.01 03:20:54 GMT-05:00 ERROR com.foo.App 21 main - Didn't do it.
-14.05.01 03:20:54 GMT-05:00 TRACE com.foo.App 23 main - Exiting application.
