@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import java.util.List;
 import java.util.Map;

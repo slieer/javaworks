@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import java.util.ArrayList;
 import java.util.Collections;

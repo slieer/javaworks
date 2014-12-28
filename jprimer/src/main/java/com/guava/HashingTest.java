@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,7 +14,7 @@ import com.google.common.hash.Hashing;
 import com.google.common.hash.PrimitiveSink;
 
 public class HashingTest {
-	static Logger logger = LogManager.getLogger(GuavaTest.class.getName());
+	static Logger logger = LogManager.getLogger(GuavaStringTest.class.getName());
 
 	public enum PersonFunnel implements Funnel<Person> {
 		INSTANCE, PLUS, SLIEER;

@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

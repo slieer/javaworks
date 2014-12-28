@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -7,8 +7,8 @@ import org.junit.Test;
 import com.google.common.base.Optional;
 import com.google.common.base.Strings;
 
-public class GuavaTest {
-	static Logger logger = LogManager.getLogger(GuavaTest.class.getName());	
+public class GuavaStringTest {
+	static Logger logger = LogManager.getLogger(GuavaStringTest.class.getName());	
 	
 	@Test
 	public void testStrings(){

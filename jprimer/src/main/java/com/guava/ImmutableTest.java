@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import java.awt.Color;
 import java.util.Collection;

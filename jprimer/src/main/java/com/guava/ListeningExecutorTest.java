@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -22,7 +22,7 @@ import com.google.common.util.concurrent.MoreExecutors;
  * 
  * @author root
  */
-public class ConcurrencyTest {
+public class ListeningExecutorTest {
 	@Test
 	public void test() {
 		ListeningExecutorService executor = MoreExecutors
