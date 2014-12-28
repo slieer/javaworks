@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -22,7 +22,24 @@ import com.google.common.util.concurrent.MoreExecutors;
  * 
  * @author root
  */
-public class ConcurrencyTest {
+public class ListeningExecutorTest {
+	void thizNotify(){
+		synchronized (this) {
+			notify();					
+		}		
+	}
+
+	void thizWait(){
+		try {
+			synchronized (this) {
+				wait();
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+	
 	@Test
 	public void test() {
 		ListeningExecutorService executor = MoreExecutors
@@ -38,6 +55,8 @@ public class ConcurrencyTest {
 		Futures.addCallback(future, new FutureCallback<String>() {
 			public void onSuccess(String result) {
 				System.out.println(result);
+				
+				thizNotify();
 			}
 
 			public void onFailure(Throwable t) {
@@ -45,7 +64,8 @@ public class ConcurrencyTest {
 			}
 
 		}, Executors.newFixedThreadPool(1));
-
+		
+		thizWait();
 		System.out.println("exit..");
 	}
 	

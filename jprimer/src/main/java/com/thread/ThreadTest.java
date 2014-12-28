@@ -1,4 +1,4 @@
-package org.slieer.jprimer;
+package com.thread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava.collection;
 
 import org.junit.Test;
 

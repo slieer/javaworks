@@ -1,4 +1,4 @@
-package com.slieer.java7;
+package com.java7;
 
 import java.io.File;
 import java.io.IOException;

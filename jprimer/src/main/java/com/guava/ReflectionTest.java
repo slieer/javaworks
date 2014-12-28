@@ -1,4 +1,4 @@
-package com.slieer.guava;
+package com.guava;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -15,9 +15,12 @@ public class ReflectionTest {
 	@Test
 	public void test() {
 		TypeToken<String> stringTok = TypeToken.of(String.class);
+		
 		TypeToken<Integer> intTok = TypeToken.of(Integer.class);
+		
 		TypeToken<List<String>> stringListTok = new TypeToken<List<String>>() {
 		};
+		
 		TypeToken<Map<?, ?>> wildMapTok = new TypeToken<Map<?, ?>>() {
 		};
 
@@ -31,6 +34,8 @@ public class ReflectionTest {
 				new TypeToken<Queue<String>>() {
 				}
 		);
+		
+		
 	}
 
 	static <K, V> TypeToken<Map<K, V>> mapToken(TypeToken<K> keyToken,

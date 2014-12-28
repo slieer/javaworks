@@ -7,6 +7,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.junit.Test;
+
 /**
  * mayInterruptIfRunning设成false话，不允许在线程运行时中断，设成true的话就允许。
 可以参考下面的代码来理解，如果设为false的话，会打印到99999，如果设成true的话，可能就打印不到99999 
@@ -17,8 +19,9 @@ import java.util.concurrent.Future;
  * version 1.0
  */
 public class Future01 {
-
-    public static void main(String[] args) {
+	
+	@Test
+    public void testThreadInterrupt() {
         ExecutorService eService = Executors.newFixedThreadPool(5);
         Future<?> future = eService.submit(new RunFuture());
         try {
