@@ -5,7 +5,7 @@ import org.junit.Test;
 public class InterruptTest {
     /**
      * sleep/interrupt方式
-     * 
+     di* 
      * @throws InterruptedException
      */
     @Test
