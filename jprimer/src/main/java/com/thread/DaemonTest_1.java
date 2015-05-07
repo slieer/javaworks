@@ -26,7 +26,7 @@ class MyThread extends Thread {
  * @author me
  *
  */
-public class DaemonTest1 {
+public class DaemonTest_1 {
   public static void main(String[] argv) throws Exception {
   	System.out.println("main thread start.");
   	Runnable runnable = new Runnable() {

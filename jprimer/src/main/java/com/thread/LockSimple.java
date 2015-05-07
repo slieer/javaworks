@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * last modified: 2014年8月4日 下午5:15:15
  */
-public class ThreadLockSimple {
+public class LockSimple {
 
     Lock lock = new ReentrantLock();
     Condition finishCondition = lock.newCondition();
@@ -63,7 +63,7 @@ public class ThreadLockSimple {
     }
 
     public static void main(String[] args) throws Exception {
-        ThreadLockSimple lt = new ThreadLockSimple();
+        LockSimple lt = new LockSimple();
         lt.run();
         Thread.sleep(3000);
         System.out.println("exit main.");

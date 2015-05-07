@@ -20,7 +20,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author slieer 2013-6-17
  *
  */
-public class ThreadLockTest {
+public class LockTest {
      private static Lock lock = new ReentrantLock();//通过JDK5中的锁来保证线程的访问的互斥
      private static int state = 0;
      

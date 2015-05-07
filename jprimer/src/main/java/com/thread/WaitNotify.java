@@ -69,7 +69,7 @@ class Consumer implements Runnable {
     }
 }
 
-public class ThreadWaitNotify {
+public class WaitNotify {
     public static void main(String args[]) {
         Q q = new Q();
         new Producer(q);

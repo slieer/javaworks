@@ -21,7 +21,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author slieer 2013-6-17
  *
  */
-public class ThreadLockTest_1 {
+public class LockTest_1 {
     private static Lock lock = new ReentrantLock();
     private static int count = 0;
     private static Condition A = lock.newCondition();

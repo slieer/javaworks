@@ -20,7 +20,7 @@ import java.util.concurrent.Semaphore;
  * @author slieer 2013-6-17
  *
  */
-public class ThreadSemaphoreTest {
+public class SemaphoreTest_1 {
     private static Semaphore A = new Semaphore(1);
     private static Semaphore B = new Semaphore(1);
     private static Semaphore C = new Semaphore(1);
