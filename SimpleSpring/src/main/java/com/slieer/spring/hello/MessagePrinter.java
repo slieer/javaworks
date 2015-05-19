@@ -5,7 +5,6 @@ import javax.annotation.Resource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.slieer.spring.hello.service.ManufactureService;
@@ -30,11 +29,6 @@ import com.slieer.spring.hello.service.MessageService;
 
 *如果既不指定 name 也不指定 type 属性，这时将通过反射机制使用 byName 自动注入策略。
  *
- *
- *@Component注解(不推荐使用) 只需要在对应的类上加上一个@Component注解，就将该类定义为一个Bean了。
- *Spring还提供了更加细化的注解形式：@Repository、@Service、@Controller，它们分别对应存储层Bean，业务层Bean，和展示层Bean。
- *版本(2.5)中，这些注解与@Component的语义是一样的，完全通用，在Spring以后的版本中可能会给它们追加更多的语义。
- *所以，我们推荐使用@Repository、@Service、@Controller来替代@Component。
  */
 @Component
 public class MessagePrinter {
@@ -42,11 +36,9 @@ public class MessagePrinter {
 	
 	@Autowired
     private ManufactureService manuService;
-	
-//	@Autowired
-//	@Qualifier("msgImpl")
-//	@Resource(name="msgImpl")
-//	private ManufactureService manuImpl;
+
+	@Resource(name="msgImpl")
+	private ManufactureService manuImpl;
     
 	@Resource
     private MessageService service;
@@ -57,6 +49,6 @@ public class MessagePrinter {
         
     	logger.info(manuService.produce(Fruit.香蕉));
     	
-//    	logger.info(manuImpl.produce(Fruit.APPLE));
+    	logger.info(manuImpl.produce(Fruit.APPLE));
     }
 }
