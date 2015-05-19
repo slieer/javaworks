@@ -1,8 +1,5 @@
 package com.slieer.spring.hello;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -28,7 +25,7 @@ public class Application {
 		};
 	}
 
-	@Bean
+	@Bean(name="msgImpl")
 	ManufactureService mockProduce() {
 		return new ManufactureService() {
 
@@ -38,16 +35,6 @@ public class Application {
 			}
 
 		};
-	}
-	
-	@PostConstruct
-	public void init(){
-		logger.info("init ...");
-	}
-	
-	@PreDestroy
-	public void destroy(){
-		logger.info("destroy ...");
 	}
 
 	public static void main(String[] args) {
