@@ -7,7 +7,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
 
 import com.slieer.spring.hello.service.ManufactureService;
 import com.slieer.spring.hello.service.MessageService;
@@ -56,8 +55,7 @@ public class Application {
 			}
 
 		};
-	}
-	
+	}	
 	
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(
@@ -65,6 +63,7 @@ public class Application {
 		MessagePrinter printer = context.getBean(MessagePrinter.class);
 		printer.printMessage();
 
+		
 		context.close();
 
 		//int i = ; // xor 7

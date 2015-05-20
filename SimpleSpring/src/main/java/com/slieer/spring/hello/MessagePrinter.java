@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.slieer.spring.hello.service.BeanConfig;
 import com.slieer.spring.hello.service.ManufactureService;
 import com.slieer.spring.hello.service.ManufactureService.Fruit;
 import com.slieer.spring.hello.service.MessageService;
@@ -43,6 +44,9 @@ public class MessagePrinter {
 	@Resource
     private MessageService service;
 
+	@Resource
+	BeanConfig.User user;
+
     public void printMessage() {
     	
     	logger.info(service.getMessage());
@@ -50,5 +54,7 @@ public class MessagePrinter {
     	logger.info(manuService.produce(Fruit.香蕉));
     	
     	logger.info(manuImpl.produce(Fruit.APPLE));
+    	
+    	logger.info("user:" + user);
     }
 }
