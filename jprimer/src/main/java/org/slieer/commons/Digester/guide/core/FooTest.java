@@ -23,7 +23,7 @@ public class FooTest {
 	
 	@Test
 	public void test() throws IOException, SAXException {
-		final String packageName = "com.slieer.commons.Digester.guide.core"; 
+		final String packageName = "org.slieer.commons.Digester.guide.core"; 
 		
 		Digester digester = new Digester();
 		digester.setValidating(false);
