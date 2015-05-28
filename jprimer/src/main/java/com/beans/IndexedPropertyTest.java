@@ -46,7 +46,7 @@ public class IndexedPropertyTest {
 		Month month = new Month(1, "Jan");
 
 		try {
-			Map<String, Object> map = BeanUtils.describe(month);
+			Map<String, String> map = BeanUtils.describe(month);
 			Set<String> keySet = map.keySet();
 			for (Iterator<String> iter = keySet.iterator(); iter.hasNext();) {
 				Object element = (Object) iter.next();

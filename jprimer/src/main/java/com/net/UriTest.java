@@ -4,11 +4,11 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import net.sf.json.JSONObject;
-
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.net.URLCodec;
 import org.junit.Test;
+
+import com.alibaba.fastjson.JSONObject;
 
 public class UriTest {
     @Test
@@ -17,16 +17,16 @@ public class UriTest {
             URL url = new URL("http://baidu.com?wd=%E6%96%8C%20%20%2B");
             URI uri = url.toURI();
             
-            JSONObject json = JSONObject.fromObject(uri);
+            JSONObject json = (JSONObject)JSONObject.toJSON(uri);
             System.out.println(json.toString());
             
             
             URI newUri = new URI("http", null,"www.mobee.com",80,null,null,null);
             
             System.out.println(newUri.toURL().toString());
-            json = JSONObject.fromObject(newUri);
+            
+            json = (JSONObject)JSONObject.toJSON(uri);
             System.out.println(json.toString());
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -69,7 +69,7 @@ public class UriTest {
     public void baisc() {
         try {
             URI userUri = new URI("http://www.cnblogs.com/springside5/archive/userInfo.action?name=x&sex=xx&adr=翟xx");
-            JSONObject userJson = JSONObject.fromObject(userUri);
+            JSONObject userJson = (JSONObject) JSONObject.toJSON(userUri);
             System.out.println(userJson.toString());
         } catch (URISyntaxException e) {
             e.printStackTrace();

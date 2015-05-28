@@ -60,7 +60,7 @@ public class PropertyTest {
 
 	@Test
 	public void beanUtilsGetTest() {
-		Map<String, Object> properties = null;
+		Map<String, String> properties = null;
 		try {
 			properties = BeanUtils.describe(bean);
 			Object obj = properties.get("personList");

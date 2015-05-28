@@ -1,7 +1,8 @@
 package com.foo;
 
 import org.junit.Test;
-import org.slieer.jprimer.App;
+
+import com.primer.App;
 
 
 /**
