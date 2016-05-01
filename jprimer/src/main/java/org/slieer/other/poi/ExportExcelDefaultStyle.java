@@ -168,7 +168,7 @@ public class ExportExcelDefaultStyle<T> {
 						byte[] bsValue = (byte[]) value;
 						HSSFClientAnchor anchor = new HSSFClientAnchor(0, 0,1023, 255, (short) 6, index, (short) 6, index);
 
-						anchor.setAnchorType(2);
+						//anchor.setAnchorType(2);
 						patriarch.createPicture(anchor, workbook.addPicture(
 						bsValue, HSSFWorkbook.PICTURE_TYPE_JPEG));
 					} else {

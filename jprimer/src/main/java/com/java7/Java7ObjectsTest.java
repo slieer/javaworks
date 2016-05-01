@@ -13,6 +13,6 @@ public class Java7ObjectsTest {
 	@Test
 	public void test() {
 		logger.info("test hash {}", Objects.hash("a", "ab", "abc"));
-		logger.info("test  {}", Objects.requireNonNull(null));
+		logger.info("test  {}", "" + Objects.requireNonNull(null));
 	}
 }

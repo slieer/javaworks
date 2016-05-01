@@ -1,16 +1,18 @@
-package com.slieer.spring.hello;
+package com.slieer.spring.hello.component;
 
 import javax.annotation.Resource;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-import com.slieer.spring.hello.service.BeanConfig;
 import com.slieer.spring.hello.service.ManufactureService;
 import com.slieer.spring.hello.service.ManufactureService.Fruit;
 import com.slieer.spring.hello.service.MessageService;
+import com.slieer.spring.hello.service.UserBean;
 
 
 /**
@@ -31,6 +33,7 @@ import com.slieer.spring.hello.service.MessageService;
 *如果既不指定 name 也不指定 type 属性，这时将通过反射机制使用 byName 自动注入策略。
  *
  */
+@Configuration
 @Component
 public class MessagePrinter {
 	private static Logger logger = LogManager.getLogger(MessagePrinter.class.getName());
@@ -45,7 +48,7 @@ public class MessagePrinter {
     private MessageService service;
 
 	@Resource
-	BeanConfig.User user;
+	UserBean user;
 
     public void printMessage() {
     	

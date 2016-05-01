@@ -5,10 +5,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.log4j.MyApp;
+
 
 public class SortTest {
+    public static Logger log = LogManager.getLogger(SortTest.class.getName());
 
     /**
      * @param args
@@ -35,7 +39,6 @@ public class SortTest {
 
         });
 
-        Log log = LogFactory.getLog(SortTest.class);
         // log.info("---refIds:" + refIds);
         for (int i = 0; result != null && i < result.size(); i++) {
             String[] str = (String[]) result.get(i);
