@@ -2,6 +2,7 @@ package com.slieer.spring.hello;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Test;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -21,16 +22,40 @@ import com.slieer.spring.hello.component.MessagePrinter;
 public class Application {
 	private static Logger logger = LogManager.getLogger(Application.class.getName());
 	
-	public static void main(String[] args) {
-		ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(
-				GenFruits.class, GenPersons.class, MessagePrinter.class);
-		MessagePrinter printer = context.getBean(MessagePrinter.class);
+	/**方法一*/
+	@Test
+	public void testContext1() {
+		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(
+				"com.slieer.spring.hello");
+		MessagePrinter printer = ctx.getBean(MessagePrinter.class);
 		printer.printMessage();
-
 		
-		context.close();
-
+		ctx.close();
 		//int i = ; // xor 7
-		logger.info("4 ^ 3=" + (4 ^ 3));
+		logger.info("testContext1 4 ^ 3=" + (4 ^ 3));
 	}
+	
+	/**方法二*/
+	@Test
+	public void testContext2() {
+		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(
+				GenFruits.class, GenPersons.class, MessagePrinter.class);
+		MessagePrinter printer = ctx.getBean(MessagePrinter.class);
+		printer.printMessage();
+		
+		ctx.close();
+		//int i = ; // xor 7
+		logger.info("testContext2 4 ^ 3=" + (4 ^ 3));
+	}
+	
+	/**方法三*/
+	@Test
+	public void testContext3() {
+		ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(
+				Config.class);
+		MessagePrinter printer = ctx.getBean(MessagePrinter.class);
+		printer.printMessage();
+		
+		ctx.close();
+	}	
 }
