@@ -1,3 +1,4 @@
+package com.zhai;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,18 +12,27 @@ import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Load {
-
-	public static WebDriver getWebDriver(String url) {
-//		Logger.getLogger(PhantomJSDriverService.class.getName()).setLevel(Level.OFF);
-		
+	public static WebDriver getDriver(){
+		/**
+		 *window
+		 *https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-windows.zip 
+		 * */
 		String phantomJsExe = "D:/devTools/phantomjs/phantomjs-2.1.1-windows/bin/phantomjs.exe";
+		/**
+		 * linux
+		 * */
+		phantomJsExe = "/usr/bin/phantomjs";
 		System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomJsExe);
 		
 		DesiredCapabilities desired = DesiredCapabilities.chrome();
 		desired.setJavascriptEnabled(true);
 		desired.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS, "--logLevel=DEBUG --port=9000");  
 		WebDriver driver = new PhantomJSDriver(desired);
-		
+		return driver;
+	}
+
+	public static WebDriver getWebDriver(String url) {
+		WebDriver driver = getDriver();
 		driver.get(url);
 		return driver;
 	}
@@ -41,10 +51,19 @@ public class Load {
 		return file;
 	}
 	
-	public static void main(String[] args) throws IOException {
-//		File file = getFile();
+	
+	public static void loadLocalFile(){
+		String url = "file:\\\\\\xiecheng.html";
+		WebDriver driver = getDriver();
+		WebDriver selenium = new WebDriverBackedSelenium(driver, "file:///D:/folder/abcd.html");		
+		WebDriver web = getWebDriver(url);
+	}
+	
+	
+	public static void parse ()throws IOException{
 		File file = new File("xiecheng.html");
 		Document doc = Jsoup.parse(file, "utf-8");
+		
 		Elements e = doc.select("#result-wrapper .flight-item");
 		e.forEach(item -> {
 			Elements row = item.select(".flight-row");			
@@ -60,6 +79,10 @@ public class Load {
 			String price = item.select(".seats-list .price").text();
 			
 			System.out.println(airName + "##" + flightNo + "##" + to  + "##" +  _return  + "##" +  price);
-		});
+		});		
+	}
+	
+	public static void main(String[] args){
+		loadLocalFile();
 	}
 }
