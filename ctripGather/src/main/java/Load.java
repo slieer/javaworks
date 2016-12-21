@@ -7,13 +7,22 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class Load {
 
 	public static WebDriver getWebDriver(String url) {
+//		Logger.getLogger(PhantomJSDriverService.class.getName()).setLevel(Level.OFF);
+		
 		String phantomJsExe = "D:/devTools/phantomjs/phantomjs-2.1.1-windows/bin/phantomjs.exe";
-		System.setProperty("phantomjs.binary.path", phantomJsExe);
-		WebDriver driver = new PhantomJSDriver();
+		System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomJsExe);
+		
+		DesiredCapabilities desired = DesiredCapabilities.chrome();
+		desired.setJavascriptEnabled(true);
+		desired.setCapability(PhantomJSDriverService.PHANTOMJS_GHOSTDRIVER_CLI_ARGS, "--logLevel=DEBUG --port=9000");  
+		WebDriver driver = new PhantomJSDriver(desired);
+		
 		driver.get(url);
 		return driver;
 	}

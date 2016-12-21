@@ -8,16 +8,16 @@ page.settings = {
 };
 
 page.libraryPath
-var url = 'http://flights.ctrip.com/international/round-beijing-bangkok-bjs-bkk?2016-12-22&2016-12-29&y_s';
+var url = 'http://www.oschina.net/';
 //url = 'http://192.168.60.52:49001/';
 page.open(url, function (status) {
 	if (status !== 'success') {
         console.log('Unable to access network');
     } else {		
-		page.includeJs("http://192.168.60.50:8080/res/js/jquery-2.1.4.min.js", function() {
+		page.includeJs("file:///jquery-3.1.1.js", function() {
 			var body = page.evaluate(function() {
 				/*return document.getElementById('flightList').innerHTML;*/				
-				var list = $("#flightList.flight-item");				
+				var list = $("body");				
 				return list;
 			});
 			
