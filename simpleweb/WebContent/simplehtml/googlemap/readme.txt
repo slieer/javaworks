@@ -1,1 +1,0 @@
-http://code.google.com/intl/zh-CN/apis/maps/documentation/javascript/examples/index.html
