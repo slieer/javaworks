@@ -51,15 +51,6 @@ public class Load {
 		return file;
 	}
 	
-	
-	public static void loadLocalFile(){
-		String url = "file:\\\\\\xiecheng.html";
-		WebDriver driver = getDriver();
-		WebDriver selenium = new WebDriverBackedSelenium(driver, "file:///D:/folder/abcd.html");		
-		WebDriver web = getWebDriver(url);
-	}
-	
-	
 	public static void parse ()throws IOException{
 		File file = new File("xiecheng.html");
 		Document doc = Jsoup.parse(file, "utf-8");
