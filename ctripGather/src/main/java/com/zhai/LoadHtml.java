@@ -11,17 +11,18 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Load {
+public class LoadHtml {
+	/**
+	 *window
+	 *https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-windows.zip 
+	 * */
+	public static String phantomJsExe = "D:/devTools/phantomjs/phantomjs-2.1.1-windows/bin/phantomjs.exe";
+	/**
+	 * linux
+	 * 需要自己安装phantomjs
+	 * */
+//	phantomJsExe = "/usr/bin/phantomjs";
 	public static WebDriver getDriver(){
-		/**
-		 *window
-		 *https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-windows.zip 
-		 * */
-		String phantomJsExe = "D:/devTools/phantomjs/phantomjs-2.1.1-windows/bin/phantomjs.exe";
-		/**
-		 * linux
-		 * */
-		phantomJsExe = "/usr/bin/phantomjs";
 		System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, phantomJsExe);
 		
 		DesiredCapabilities desired = DesiredCapabilities.chrome();
@@ -30,30 +31,24 @@ public class Load {
 		WebDriver driver = new PhantomJSDriver(desired);
 		return driver;
 	}
-
-	public static WebDriver getWebDriver(String url) {
+	
+	public static String requestHtmlPage(String url) {
 		WebDriver driver = getDriver();
 		driver.get(url);
-		return driver;
+		return driver.getPageSource();
 	}
 
-	public static File getFile() throws IOException{
-		String url = "http://flights.ctrip.com/international/round-beijing-bangkok-bjs-bkk?2016-12-22&2016-12-29&y_s";
-		WebDriver web = getWebDriver(url);
-		
-		File file = new File("xiecheng.html");
-		if(file.exists())file.delete();
-		
-		file.createNewFile();
-		FileWriter w = new FileWriter(file);
-		w.write(web.getPageSource());
-		
-		return file;
-	}
-	
-	public static void parse ()throws IOException{
-		File file = new File("xiecheng.html");
-		Document doc = Jsoup.parse(file, "utf-8");
+	/**
+	 * 抓取动态内容后,获取字符串，然后直接解析。
+	 * 采用jsoup方式解析html, 相对来说简单一些，可以采用类似于jquery的思维来做。
+	 * 这个解析过程可以自己的业务需求,写的更加详细些，以下只是示例:
+	 * */
+	public static void parse() throws IOException{
+		String url = "http://flights.ctrip.com/international/round-beijing-bangkok-bjs-bkk?2016-12-24&2016-12-29&y_s";
+		WebDriver driver = getDriver();
+		driver.get(url);
+		String pageSource = driver.getPageSource();
+		Document doc = Jsoup.parse(pageSource);
 		
 		Elements e = doc.select("#result-wrapper .flight-item");
 		e.forEach(item -> {
@@ -71,9 +66,9 @@ public class Load {
 			
 			System.out.println(airName + "##" + flightNo + "##" + to  + "##" +  _return  + "##" +  price);
 		});		
+		
 	}
-	
+		
 	public static void main(String[] args){
-		loadLocalFile();
 	}
 }
