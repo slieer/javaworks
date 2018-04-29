@@ -1,4 +1,4 @@
-package org.slieer.other.junit;
+package org.slieer.jprimer.junit;
 
 import java.util.Arrays;
 import java.util.Collection;

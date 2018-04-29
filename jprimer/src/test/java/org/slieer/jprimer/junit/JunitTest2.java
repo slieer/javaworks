@@ -1,4 +1,4 @@
-package org.slieer.other.junit;
+package org.slieer.jprimer.junit;
 
 import org.junit.Ignore;
 import org.junit.Test;
