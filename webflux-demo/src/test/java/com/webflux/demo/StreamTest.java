@@ -26,21 +26,22 @@ public class StreamTest {
         //转换成List
         List<String> listName = list.stream().map(Employee::getName).collect(Collectors.toList());
         //转换成Map
-        Map<Integer, String> mapName = list.stream().collect(Collectors.toMap(employee -> employee.getId(), employee -> employee.getName()));
+        Map<Integer, String> mapName = list.stream()
+                .collect(Collectors.toMap(employee -> employee.getId(), employee -> employee.getName(), (n1, n2) -> {return n1;}));
     }
 
     @Test
     public void minMaxAverage() {
         Employee employeeMaX = list.stream().max(Comparator.comparing(Employee::getSalary)).orElse(null);
-        assertEquals("Michael",employeeMaX.getName());
+        assertEquals("Michael", employeeMaX.getName());
         Employee employeeMin = list.stream().min(Comparator.comparing(Employee::getSalary)).orElse(null);
-        assertEquals("Alex",employeeMin.getName());
+        assertEquals("Alex", employeeMin.getName());
         double dMax = list.stream().mapToDouble(e -> e.getSalary()).max().orElse(0.00);
         assertTrue(dMax == 2000);
         double dMin = list.stream().mapToDouble(e -> e.getSalary()).min().orElse(0.00);
         assertTrue(dMin == 1000);
         double dAverage = list.stream().mapToDouble(e -> e.getSalary()).average().orElse(0.00);
-        log.info("dAverage:{}",dAverage);
+        log.info("dAverage:{}", dAverage);
     }
 
     protected static final List<List<Employee>> listFlat = Arrays.asList(
