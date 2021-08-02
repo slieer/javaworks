@@ -31,7 +31,7 @@
 		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 		<commons-chain.version>1.2</commons-chain.version>
 		<commons-codec.version>1.15</commons-codec.version>
-		<commons-compress.version>1.11</commons-compress.version>
+		<commons-compress.version>1.21</commons-compress.version>
 		<commons-collections4.version>4.4</commons-collections4.version>
 		<shiro-core.version>1.2.4</shiro-core.version>
 		<eclipse-collections-api.version>10.4.0</eclipse-collections-api.version>
