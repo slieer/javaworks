@@ -1,5 +1,0 @@
-SASL, JSSE, and Java GSS are often used together. 
-For example, a common pattern is for an application to use JSSE for establishing a secure channel, 
-and to use SASL for client, username/password-based authentication. 
-There are also SASL mechanisms layered on top of GSS-API mechanisms; 
-one popular example is a SASL GSS-API/Kerberos v5 mechanism that is used with LDAP.

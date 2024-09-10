@@ -1,0 +1,41 @@
+http://www.ibm.com/developerworks/cn/java/j-lo-proxy1/
+
+一、为了保持行为的一致性，代理类和委托类通常会实现相同的接口，所以在访问者看来两者没有丝毫的区别。
+通过代理类这中间一层，能有效控制对委托类对象的直接访问，也可以很好地隐藏和保护委托类对象，
+同时也为实施不同控制策略预留了空间，从而在设计上获得了更大的灵活性。
+
+二、下如何使用 Java 动态代理。具体有如下四步骤：
+	1、通过实现 InvocationHandler 接口创建自己的调用处理器； 
+	2、通过为 Proxy 类指定 ClassLoader 对象和一组 interface 来创建动态代理类； 
+	3、通过反射机制获得动态代理类的构造函数，其唯一参数类型是调用处理器接口类型； 
+	4、通过构造函数创建动态代理类实例，构造时调用处理器对象作为参数被传入。
+
+三、代理机制和实现	
+	1、对应上面的步骤, 动态代理对象创建过程				
+		// InvocationHandlerImpl 实现了 InvocationHandler 接口，并能实现方法调用从代理类到委托类的分派转发
+		// 其内部通常包含指向委托类实例的引用，用于真正执行分派转发过来的方法调用
+		InvocationHandler handler = new InvocationHandlerImpl(..); 
+		
+		// 通过 Proxy 为包括 Interface 接口在内的一组接口动态创建代理类的类对象
+		Class clazz = Proxy.getProxyClass(classLoader, new Class[] { Interface.class, ... }); 
+		
+		// 通过反射从生成的类对象获得构造函数对象
+		Constructor constructor = clazz.getConstructor(new Class[] { InvocationHandler.class }); 
+		
+		// 通过构造函数对象创建动态代理类实例
+		Interface Proxy = (Interface)constructor.newInstance(new Object[] { handler }); 
+ 
+
+	2、实际使用过程更加简单，因为 Proxy 的静态方法 newProxyInstance 已经为我们封装了步骤 2 到步骤 4 的过程，所以简化后的过程如下
+
+		简化的动态代理对象创建过程
+				
+		// InvocationHandlerImpl 实现了 InvocationHandler 接口，并能实现方法调用从代理类到委托类的分派转发
+		InvocationHandler handler = new InvocationHandlerImpl(..); 
+		
+		// 通过 Proxy 直接创建动态代理类实例
+		Interface proxy = (Interface)Proxy.newProxyInstance( classLoader, 
+			 new Class[] { Interface.class }, 
+			 handler ); 
+ 
+	

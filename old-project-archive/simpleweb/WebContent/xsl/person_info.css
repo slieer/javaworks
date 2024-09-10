@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+resume {
+	display: block;
+}
+
+name {
+	display: block;
+	font-size: 120%;
+}
+
+sex {
+	display: block;
+	text-indent: 2em
+}
+
+birthday {
+	display: block;
+	text-indent: 2em
+}
+
+skill {
+	display: block;
+	text-indent: 2em
+}
