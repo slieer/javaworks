@@ -1,0 +1,8 @@
+JAAS Authorization Tutorial
+http://download.oracle.com/javase/6/docs/technotes/guides/security/jaas/tutorials/GeneralAcnAndAzn.html
+
+JAAS Authentication Tutorial
+http://download.oracle.com/javase/6/docs/technotes/guides/security/jaas/tutorials/GeneralAcnOnly.html#RunAc
+
+Introduction to JAAS and Java GSS-API Tutorials
+http://download.oracle.com/javase/6/docs/technotes/guides/security/jgss/tutorials/index.html

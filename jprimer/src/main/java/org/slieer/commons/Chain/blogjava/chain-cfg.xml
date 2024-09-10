@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+	<chain name="CommandChain">
+	    <command id="filter1" className= "com.slieer.commons.BSF.blogjava.Filter1"/>
+		<command id="command1" className="com.slieer.commons.BSF.blogjava.command.Command1" />
+		<command id="command2" className="com.slieer.commons.BSF.blogjava.command.Command2" />
+		<command id="command3" className="com.slieer.commons.BSF.blogjava.command.Command3" />
+	</chain>
+	<command name="command4" className="com.slieer.commons.BSF.blogjava.command.Command4" />
+</catalog> 

@@ -1,0 +1,7 @@
+
+<foo name="The Parent">
+	<bar id="123" title="The First Child" />
+	<bar id="456" title="The Second Child" />
+	<bar id="457" title="The 1" />
+	<bar id="458" title="The 2" />
+</foo>

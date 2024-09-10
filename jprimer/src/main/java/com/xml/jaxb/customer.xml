@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer id="No1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.w3school.com.cn"
+	xsi:schemaLocation="http://www.w3school.com.cn file:///E:/BorqsWorkspace/MyGoogleCode/java-primer/simpleweb/JavaSE/com/xml/jaxb/customer.xsd">
+	<name>Alice Smith</name>
+	<address>
+		<street>123 Maple Street</street>
+		<city>Cambridge</city>
+		<zip>12345</zip>
+	</address>
+</customer>

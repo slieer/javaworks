@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<students>
+	<student>
+		<name>Java Boy</name>
+		<course>JSP</course>
+	</student>
+	<student>
+		<name>Java Girl</name>
+		<course>EJB</course>
+	</student>
+</students>
+
