@@ -1,4 +1,4 @@
-package com.primer.zip;
+package com.file.zip;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.zip.DataFormatException;

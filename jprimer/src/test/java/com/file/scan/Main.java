@@ -1,10 +1,10 @@
 
-package com.primer.file.scan;
-
-import static java.lang.System.out;
+package com.file.scan;
 
 import java.io.File;
 import java.util.Iterator;
+
+import static java.lang.System.out;
 
 public class Main {
     public static void main(String[] args) {

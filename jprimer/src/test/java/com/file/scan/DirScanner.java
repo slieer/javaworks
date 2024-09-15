@@ -1,5 +1,5 @@
 
-package com.primer.file.scan;
+package com.file.scan;
 
 import java.io.File;
 import java.io.FileFilter;

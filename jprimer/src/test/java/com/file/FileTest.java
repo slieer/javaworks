@@ -1,4 +1,4 @@
-package com.primer.file;
+package com.file;
 
 import java.io.File;
 import java.net.URL;
