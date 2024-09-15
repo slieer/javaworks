@@ -1,18 +1,12 @@
 package org.slieer.guava.thread;
 
+import com.google.common.util.concurrent.*;
+import org.junit.jupiter.api.Test;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
- 
-import com.google.common.util.concurrent.FutureCallback;
-import com.google.common.util.concurrent.Futures;
-import com.google.common.util.concurrent.ListenableFuture;
-import com.google.common.util.concurrent.ListeningExecutorService;
-import com.google.common.util.concurrent.MoreExecutors;
-import com.google.common.util.concurrent.RateLimiter;
-
-import org.junit.jupiter.api.Test;
 /**
  * @author dev
  ListenableFuture顾名思义就是可以监听的Future，它是对java原生Future的扩展增强。
@@ -100,7 +94,7 @@ public class ListenableFutureTwoTest {
             public void onFailure(Throwable t) {
                 t.printStackTrace();
             }
-        });
+        }, executorService);
     }
 }
  
