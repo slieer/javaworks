@@ -1,13 +1,12 @@
 package org.slieer.jprimer.junit;
 
-import java.util.Arrays;
-import java.util.Collection;
- 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
- 
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+
 /**
  * http://www.mkyong.com/unittest/junit-4-tutorial-6-parameterized-test/
  * The “Parameterized Test” means vary parameter value for unit test. 
@@ -17,24 +16,20 @@ import org.junit.runners.Parameterized.Parameters;
  * JUnit Parameterized Test
  * @author mkyong
  */
-@RunWith(value = Parameterized.class)
 public class JunitTest6 {
+
+	@ParameterizedTest
+	@ValueSource(ints = { 1, 2, 3 })
+	void testWithValueSource(int argument) {
+		assertTrue(argument > 0 && argument < 4);
+	}
+
  
-	 private int number;
- 
-	 public JunitTest6(int number) {
-	    this.number = number;
-	 }
- 
-	 @Parameters
-	 public static Collection<Object[]> data() {
-	   Object[][] data = new Object[][] { { 1 }, { 2 }, { 3 }, { 4 } };
-	   return Arrays.asList(data);
-	 }
+
  
 	 @Test
 	 public void pushTest() {
-	   System.out.println("Parameterized Number is : " + number);
+	   System.out.println("Parameterized Number is : ");
 	 }
  
 }

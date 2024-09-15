@@ -1,19 +1,12 @@
 package org.slieer.jprimer.junit;
 
-import static org.junit.Assert.assertEquals;
-import java.util.Arrays;
-import java.util.Collection;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 //(1)为准备使用参数化测试的测试类指定特殊的运行器 org.junit.runners.Parameterized。
-@RunWith(Parameterized.class)
 public class JunitTest6_1 {
 	// (2)为测试类声明几个变量，分别用于存放期望值和测试所用数据。
 	int result;
@@ -29,28 +22,12 @@ public class JunitTest6_1 {
 
 	// (4)为测试类声明一个使用注解 org.junit.runners.Parameterized.Parameters 修饰的，返回值为
 	// java.util.Collection 的公共静态方法，并在此方法中初始化所有需要测试的参数对。
-	@Parameters
-	public static Collection multipleValues() {
-		return Arrays.asList(new Object[][] { { 6, 3, 3 }, { 7, 3, 4 }, });
-	}
-
-	@BeforeClass
+	@BeforeAll
 	public static void setUpBeforeClass() throws Exception {
 	}
 
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
 
-	@Before
-	public void before() {
-	}
-
-	@After
-	public void after() {
-	}
-
-	@Test()
+	@Test
 	public void testadd() {
 		JDemo a = new JDemo();
 		// assertEquals(6,a.add(3, 3));

@@ -1,8 +1,7 @@
 package com.foo;
 
-import org.junit.Test;
-
 import com.primer.App;
+import org.junit.jupiter.api.Test;
 
 
 /**

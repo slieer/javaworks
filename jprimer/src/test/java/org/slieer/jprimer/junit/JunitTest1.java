@@ -1,16 +1,13 @@
 package org.slieer.jprimer.junit;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 /**
  * @author mkyong
@@ -20,28 +17,28 @@ public class JunitTest1 {
 
 	private Collection<String> collection;
 
-	@BeforeClass
+	@BeforeAll
 	public static void oneTimeSetUp() {
 		// one-time initialization code
 		System.out.println("@BeforeClass - oneTimeSetUp");
 	}
 
-	@AfterClass
+	@AfterAll
 	public static void oneTimeTearDown() {
 		// one-time cleanup code
 		System.out.println("@AfterClass - oneTimeTearDown");
 	}
 
-	@Before
+	@BeforeEach
 	public void setUp() {
 		collection = new ArrayList<String>();
-		System.out.println("@Before - setUp");
+		System.out.println("@BeforeEach - setUp");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() {
 		collection.clear();
-		System.out.println("@After - tearDown");
+		System.out.println("@AfterEach - tearDown");
 	}
 
 	@Test

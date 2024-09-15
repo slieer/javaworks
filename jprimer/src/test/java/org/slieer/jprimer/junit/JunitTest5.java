@@ -1,8 +1,5 @@
 package org.slieer.jprimer.junit;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-
 /**
  * JUnit Suite Test
  * @author mkyong
@@ -11,11 +8,11 @@ import org.junit.runners.Suite;
  * In Junit, both @RunWith and @Suite annotation are used to run the suite test.
  * 
  */
-@RunWith(Suite.class)
-@Suite.SuiteClasses({ 
-	JunitTest1.class, 
-	JunitTest2.class 
-})
+//@Suite
+//@SuiteDisplayName("JUnit Platform Suite Demo")
+//@SelectPackages("example")
+//@IncludeClassNamePatterns(".*Tests")
 public class JunitTest5 {
 
 }
+
