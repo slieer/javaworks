@@ -1,0 +1,9 @@
+<digester-rules>
+	<pattern value="people/person">
+		<object-create-rule classname="com.org.slieer.commons.Digester.person.Person" />
+		<set-next-rule methodname="add" paramtype="java.lang.Object" />
+		<set-properties-rule />
+		<bean-property-setter-rule pattern="name" />
+		<bean-property-setter-rule pattern="age" />
+	</pattern>
+</digester-rules>

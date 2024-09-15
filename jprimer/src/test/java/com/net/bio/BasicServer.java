@@ -60,7 +60,7 @@ class IoHandler implements Runnable{
 				String str = scanner.nextLine();
 				if(str.equals("request object")){
 					ObjectOutputStream stream = new ObjectOutputStream(out);
-					stream.writeObject(new Student(1, "slieer", "plus"));
+					stream.writeObject(new Student(1, "org", "plus"));
 				}else if(str.equalsIgnoreCase("bye")){
 					printWriter.println("S->C: close connection.");
 					stop = true;
