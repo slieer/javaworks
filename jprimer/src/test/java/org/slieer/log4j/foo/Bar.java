@@ -1,4 +1,4 @@
-package com.log4j.foo;
+package org.slieer.log4j.foo;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

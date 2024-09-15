@@ -1,4 +1,4 @@
-package com.log4j;
+package org.slieer.log4j;
 
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

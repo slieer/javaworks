@@ -1,10 +1,10 @@
-package com.log4j.biology.animal;
+package org.slieer.log4j.biology.animal;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.log4j.art.music.Musician;
-import com.log4j.biology.plant.Rice;
+import org.slieer.log4j.art.music.Musician;
+import org.slieer.log4j.biology.plant.Rice;
 
 public class Personal {
     Logger log = LogManager.getLogger();

@@ -1,4 +1,4 @@
-package com.log4j.biology.plant;
+package org.slieer.log4j.biology.plant;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

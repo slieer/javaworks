@@ -1,4 +1,4 @@
-package com.log4j;
+package org.slieer.log4j;
 
 // Import log4j classes.
 import org.apache.logging.log4j.LogManager;

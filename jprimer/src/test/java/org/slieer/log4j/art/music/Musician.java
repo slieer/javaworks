@@ -1,4 +1,4 @@
-package com.log4j.art.music;
+package org.slieer.log4j.art.music;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

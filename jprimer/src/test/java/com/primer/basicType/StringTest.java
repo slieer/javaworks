@@ -1,24 +1,21 @@
 package com.primer.basicType;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Map;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 
 import javax.script.ScriptEngineFactory;
 import javax.script.ScriptEngineManager;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.util.*;
 
-import org.junit.jupiter.api.Test;
-
+@Slf4j
 public class StringTest {
 	static String encode = "utf-8";
 
-	public static void main(String[] args) {
+	@Test
+	public void main() {
 	    String x = null + "a";
 	    System.out.println(x);
 		// String str = "aaaa";
@@ -55,6 +52,9 @@ public class StringTest {
 		}
 
 		//UrlParser.test();
+
+		var s = "aa\nbb\ncc";
+		log.info("{}", s.lines().count());
 		
 		new StringTest().processContact();
 

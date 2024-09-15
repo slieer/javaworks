@@ -1,10 +1,10 @@
-package com.log4j.foo;
+package org.slieer.log4j.foo;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 // Import log4j classes.
 
-import com.log4j.biology.animal.Personal;
+import org.slieer.log4j.biology.animal.Personal;
 
 public class App {
 
