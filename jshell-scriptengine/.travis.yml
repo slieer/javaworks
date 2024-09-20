@@ -1,0 +1,31 @@
+language: java
+jdk:
+  - oraclejdk11
+
+before_install:
+  - chmod +x gradlew
+
+addons:
+  sonarcloud:
+    organization: "eobermuhlner"
+    token:
+      secure: CMkYxNxTDZMUjymPwCJ87ZcZYq230m5LjH5kLLyUvxfUBIVb5zOXB+OMBGa4GVP5KmNLHDciFe1xO3Y+72Cg9FYvnw+HIqYNB0fQ/oVz32rvTePfLG8M8SfhHY04ZRNukN65LMZwgRqrrl6fCHClNGdWdVnYL5FGeKP1GxIBB5RASNqiI5/huMd6VXtwxqH61JjW60UNYPWUGBPZ4401b9KNmGuGpggkKX4uBXqpb0IPznm0CFPon9e4hm8o/8GIlAZthUCDAAn2S4FEl5nXftA9uEZyWZlYuW8zgKgE1qmRXcqqpUmImiVlQppKUJgbErkIW/SOf2DMyxP7kw9gK35/GegN/crS5vsq4+kRJ97b0u4yvUgr6c7J1OUZuifEXIfLSPUsfKAQRXTQmN5PyWVW1ZonFIoF5Brz4BrU+nuN71hiBJykGNo6b0YcQKylni2uCzUJMPyWPXmH59by78+ZTG3bOFVgzMmKOF3KSFeY3euUiovX2EfLjXwO9Z+23Pt9cFD5esL3DHCsVy8PMSOW8QFS7dvuWu2lbwZG5jLroNbv4KtBQMR2/rPDgbg/lzm2QI5lyhz51HyMkvnrwxyN3qSSVGiCd/o8z7ALNeIgZMAHC6VQ1TbuBYLetP3dkyHxRNXi60L/xRlxE0xXLkZDbn7rYD+OO6wy5P3NNZM=
+
+script:
+  - ./gradlew sonarqube
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+# set sudo to required, because this setup gets more memory
+sudo: required
+
+# keep gradle cache
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.sonar/cache
