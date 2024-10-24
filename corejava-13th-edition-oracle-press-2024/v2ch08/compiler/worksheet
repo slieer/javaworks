@@ -1,0 +1,10 @@
+What is your name?
+```
+var in = new Scanner(System.in);
+String name = in.nextLine();
+```
+How old are you?
+```
+int age = in.nextInt();
+```
+Hello, `name`! Next year, you will be `age + 1`.

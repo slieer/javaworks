@@ -1,0 +1,6 @@
+```
+var console = java.lang.System.console(); 
+var name = console.readLine("What is your name? ");
+var age = 1 * console.readLine("How old are you? ");
+```
+Hello, `name`! Next year, you will be `age + 1`.
