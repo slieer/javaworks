@@ -1,15 +1,13 @@
-package ch.obermuhlner.scriptengine.jshell;
+package com.jshell;
 
-import org.junit.Ignore;
-import org.junit.Test;
+
+import ch.obermuhlner.scriptengine.jshell.JShellScriptEngineFactory;
 
 import javax.script.*;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
-
-import static org.assertj.core.api.Assertions.*;
 
 
 public class JShellScriptEngineTest {

@@ -1,4 +1,4 @@
-package ch.obermuhlner.scriptengine.example;
+package com.jshell;
 
 import javax.script.*;
 

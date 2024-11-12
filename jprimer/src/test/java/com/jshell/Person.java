@@ -1,4 +1,4 @@
-package ch.obermuhlner.scriptengine.example;
+package com.jshell;
 
 public class Person {
     public String name;

@@ -1,6 +1,7 @@
-package ch.obermuhlner.scriptengine.jshell;
+package com.jshell;
 
-import org.junit.Test;
+import ch.obermuhlner.scriptengine.jshell.JShellScriptEngine;
+import ch.obermuhlner.scriptengine.jshell.JShellScriptEngineFactory;
 
 import javax.script.ScriptEngine;
 import java.util.Arrays;

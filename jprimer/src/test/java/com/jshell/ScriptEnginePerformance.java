@@ -1,7 +1,6 @@
-package ch.obermuhlner.scriptengine.example;
+package com.jshell;
 
 import javax.script.*;
-import java.awt.desktop.FilesEvent;
 import java.io.*;
 
 public class ScriptEnginePerformance {
