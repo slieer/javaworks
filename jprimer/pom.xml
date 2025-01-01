@@ -44,6 +44,11 @@
 		<shiro-core.version>2.0.1</shiro-core.version>
 		<commons-net.version>3.11.1</commons-net.version>
 		<commons-rng-simple.version>1.6</commons-rng-simple.version>
+		<btrace-client.version>2.2.6</btrace-client.version>
+		<btrace-boot.version>2.2.6</btrace-boot.version>
+		<btrace-agent.version>2.2.6</btrace-agent.version>
+		<javacv.version>1.5.11</javacv.version>
+		<imagej.version>2.16.0</imagej.version>
 	</properties>
 
 	<dependencies>
@@ -253,6 +258,36 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>io.btrace</groupId>
+			<artifactId>btrace-client</artifactId>
+			<version>${btrace-client.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.btrace</groupId>
+			<artifactId>btrace-boot</artifactId>
+			<version>${btrace-boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.btrace</groupId>
+			<artifactId>btrace-agent</artifactId>
+			<version>${btrace-agent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco</groupId>
+			<artifactId>javacv</artifactId>
+			<version>${javacv.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bytedeco</groupId>
+			<artifactId>javacv-platform</artifactId>
+			<version>${javacv.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+			<version>${imagej.version}</version>
+		</dependency>
 	</dependencies>
 
 	<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-shade-plugin</artifactId> 
@@ -260,4 +295,11 @@
 		<goal>shade</goal> </goals> <configuration> <transformers> <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer"> 
 		<mainClass>com.foo.App</mainClass> </transformer> </transformers> </configuration> 
 		</execution> </executions> </plugin> -->
+
+	<repositories>
+		<repository>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+	</repositories>
 </project>
