@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/fraud-detection-simple/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fraud-detection-simple/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frauddetection-simple/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/frauddetection-simple/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javafx-simple/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javafx-simple/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jcef-simple/jcef-sample-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jcef-simple/jcef-sample-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jprimer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jprimer/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
