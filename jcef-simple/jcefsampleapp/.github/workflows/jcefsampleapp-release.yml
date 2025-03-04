@@ -1,0 +1,40 @@
+name: jcefsampleapp-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_meta:
+        description: 'Build meta to use as source'
+        required: true
+      mvn_version:
+        description: 'jcefmaven version to use as source'
+        required: true
+
+jobs:
+  jcefsampleapp-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate release info
+        run: |
+          cd scripts
+          chmod +x create_release_info.sh
+          ./create_release_info.sh ${{ github.event.inputs.build_meta }} https://github.com/${{github.repository}}/actions/runs/${{github.run_id}} ${{github.run_number}} ${{ github.event.inputs.mvn_version }}
+      - name: Create Release
+        run: |
+          gh release create ${{env.release_tag_name}} --title "${{env.release_name}}" --notes-file release_info/release_message.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Add build_meta.json
+        run: |
+          gh release upload ${{env.release_tag_name}} release_info/build_meta.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build jcefsampleapp
+        run: chmod +x generate_artifacts.sh && ./generate_artifacts.sh ${{ github.event.inputs.mvn_version }}
+      - name: Add jcefsampleapp artifact
+        run: |
+          gh release upload ${{env.release_tag_name}} out/jcefsampleapp-${{ github.event.inputs.mvn_version }}-jar-with-dependencies.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

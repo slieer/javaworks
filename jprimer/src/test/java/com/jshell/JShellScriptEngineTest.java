@@ -2,12 +2,15 @@ package com.jshell;
 
 
 import ch.obermuhlner.scriptengine.jshell.JShellScriptEngineFactory;
+import org.junit.jupiter.api.Test;
 
 import javax.script.*;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 
 public class JShellScriptEngineTest {
@@ -26,7 +29,7 @@ public class JShellScriptEngineTest {
         assertScript("var alpha = 123", 123);
     }
 
-    @Ignore("lastValue() has no access to default value of declarations")
+//    @Ignore("lastValue() has no access to default value of declarations")
     @Test
     public void testSimpleDeclareIntVariable() throws ScriptException {
         assertScript("int alpha", 123);

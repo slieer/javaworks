@@ -2,12 +2,12 @@ package com.jshell;
 
 import ch.obermuhlner.scriptengine.jshell.JShellScriptEngine;
 import ch.obermuhlner.scriptengine.jshell.JShellScriptEngineFactory;
+import org.junit.jupiter.api.Test;
 
 import javax.script.ScriptEngine;
 import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertTrue;
 
 public class JShellScriptEngineFactoryTest {
     @Test

@@ -3,13 +3,6 @@ package org.slieer.pattern.oops.designPatterns.decorator;
 import org.slieer.pattern.oops.designPatterns.decorator.beverages.Beverage;
 import org.slieer.pattern.oops.designPatterns.decorator.beverages.Cappuccino;
 import org.slieer.pattern.oops.designPatterns.decorator.beverages.decorators.ChocolateDecorator;
-import org.slieer.pattern.oops.designPatterns.decorator.visualComponents.TextView;
-import org.slieer.pattern.oops.designPatterns.decorator.visualComponents.VisualComponent;
-import oops.designPatterns.decorator.visualComponents.decorators.BorderDecorator;
-import oops.designPatterns.decorator.visualComponents.decorators.ScrollDecorator;
-import org.slieer.pattern.oops.designPatterns.decorator.beverages.Beverage;
-import org.slieer.pattern.oops.designPatterns.decorator.beverages.Cappuccino;
-import org.slieer.pattern.oops.designPatterns.decorator.beverages.decorators.ChocolateDecorator;
 
 public class Client {
 
