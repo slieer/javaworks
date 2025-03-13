@@ -19,17 +19,31 @@ public class WebViewExample extends Application {
         webView.setContextMenuEnabled(true);
         webEngine.setUserAgent("MyApp Web Browser 1.0");
         // 加载网页
-        webEngine.load("https://www.alibaba.com");
+        webEngine.load("https://www.oschina.net");
         Worker<Void> loadWorker = webEngine.getLoadWorker();
         loadWorker.stateProperty().addListener((obs, oldState, newState) -> {
             log.info("newState:{}", newState);
-
+            if (newState == Worker.State.READY) {
+                //document loading ready
+            }
             if (newState == Worker.State.SCHEDULED) {
+                //document loading started
             }
 
             if (newState == Worker.State.SUCCEEDED) {
                 //document finished loading
             }
+            if (newState == Worker.State.CANCELLED) {
+                //document loading cancelled
+            }
+            if (newState == Worker.State.FAILED) {
+                //document loading failed
+            }
+            if (newState == Worker.State.RUNNING) {
+                //document loading in progress
+            }
+
+
         });
 
 

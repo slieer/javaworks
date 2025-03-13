@@ -10,7 +10,6 @@
 
     <modules>
         <module>jcef-sample-app</module>
-        <module>jcef-test</module>
     </modules>
 
 </project>

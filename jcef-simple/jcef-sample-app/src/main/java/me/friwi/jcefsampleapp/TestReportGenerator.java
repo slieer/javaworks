@@ -1,6 +1,6 @@
 package me.friwi.jcefsampleapp;
 
-import me.friwi.jcefmaven.CefBuildInfo;
+import lombok.extern.slf4j.Slf4j;
 import me.friwi.jcefmaven.EnumPlatform;
 import me.friwi.jcefmaven.UnsupportedPlatformException;
 
@@ -16,6 +16,7 @@ import java.util.Locale;
  *
  * @author Fritz Windisch
  */
+@Slf4j
 public class TestReportGenerator {
     public static void print(String[] args) throws IOException, UnsupportedPlatformException {
         System.out.println("Please consider reporting back whether this build worked on your platform or not.");

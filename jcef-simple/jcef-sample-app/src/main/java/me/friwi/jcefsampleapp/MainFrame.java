@@ -4,10 +4,14 @@
 
 package me.friwi.jcefsampleapp;
 
-import me.friwi.jcefmaven.*;
+import me.friwi.jcefmaven.CefAppBuilder;
+import me.friwi.jcefmaven.CefInitializationException;
+import me.friwi.jcefmaven.MavenCefAppHandlerAdapter;
+import me.friwi.jcefmaven.UnsupportedPlatformException;
 import org.cef.CefApp;
 import org.cef.CefApp.CefAppState;
 import org.cef.CefClient;
+import org.cef.CefSettings;
 import org.cef.browser.CefBrowser;
 import org.cef.browser.CefFrame;
 import org.cef.browser.CefMessageRouter;
@@ -18,6 +22,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
+import java.io.Serial;
 
 /**
  * This is a simple example application using JCEF.
@@ -32,6 +37,7 @@ import java.io.IOException;
  * within the package "tests.detailed".
  */
 public class MainFrame extends JFrame {
+    @Serial
     private static final long serialVersionUID = -5570653778104813836L;
     private final JTextField address_;
     private final CefApp cefApp_;
@@ -40,18 +46,19 @@ public class MainFrame extends JFrame {
     private final Component browerUI_;
     private boolean browserFocus_ = true;
 
-    /**
-     * To display a simple browser window, it suffices completely to create an
-     * instance of the class CefBrowser and to assign its UI component to your
-     * application (e.g. to your content pane).
-     * But to be more verbose, this CTOR keeps an instance of each object on the
-     * way to the browser UI.
-     */
     private MainFrame(String startURL, boolean useOSR, boolean isTransparent, String[] args) throws UnsupportedPlatformException, CefInitializationException, IOException, InterruptedException {
-        // (0) Initialize CEF using the maven loader
-        CefAppBuilder builder = new CefAppBuilder();
-        // windowless_rendering_enabled must be set to false if not wanted. 
-        builder.getCefSettings().windowless_rendering_enabled = useOSR;
+        var builder = new CefAppBuilder();
+
+        var cefSettings = builder.getCefSettings();
+        // Enable OSR for better performance
+        cefSettings.windowless_rendering_enabled = useOSR;
+        cefSettings.remote_debugging_port = 8081;
+        cefSettings.log_severity = CefSettings.LogSeverity.LOGSEVERITY_INFO;
+        cefSettings.user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36";
+
+        //Sets the install directory to use. Defaults to "./jcef-bundle".
+        //builder.setInstallDir(new File("jcef-bundle")); //Default
+
         // USE builder.setAppHandler INSTEAD OF CefApp.addAppHandler!
         // Fixes compatibility issues with MacOSX
         builder.setAppHandler(new MavenCefAppHandlerAdapter() {
@@ -61,11 +68,10 @@ public class MainFrame extends JFrame {
                 if (state == CefAppState.TERMINATED) System.exit(0);
             }
         });
-        
+
         if (args.length > 0) {
         	builder.addJcefArgs(args);
         }
-
         // (1) The entry point to JCEF is always the class CefApp. There is only one
         //     instance per application and therefore you have to call the method
         //     "getInstance()" instead of a CTOR.
