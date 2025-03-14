@@ -1,10 +1,34 @@
+.DS_Store
+.classpath
+.metadata
+.project
+.recommenders
+.settings
+.settings
+classes
+nb-configuration.xml
+nbactions.xml
+target
+target
+
 *.class
 
 # Package Files #
-
 *.war
 *.ear
-target
-classes
-.settings
-/webflux-demo/.idea
+
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*~
+
+#Visual Studio
+.vscode/
+
+#Test files
+UnitTest_DEV.java
+
+
+

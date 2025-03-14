@@ -7,11 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jcefsampleapp" />
-        <module name="sample" />
         <module name="jprimer" />
         <module name="my-app" />
         <module name="flink-primer" />
       </profile>
+      <profile name="Annotation profile for javaworks" enabled="true">
+        <sourceOutputDir name="src/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="src/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="psql" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="easyReplication" target="23" />
+      <module name="sample" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="psql" options="-parameters" />
+    </option>
   </component>
 </project>

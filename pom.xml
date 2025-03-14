@@ -14,7 +14,7 @@
         <module>fraud-detection-simple</module>
         <module>graal-js-jdk11-maven-demo</module>
         <module>jcef-simple</module>
-        <module>javafx-simple</module>
+        <module>psql-replication</module>
     </modules>
 
 </project>
