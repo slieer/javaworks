@@ -1,1 +1,1 @@
-Main-Class: resources.ResourceTest
+main.java.Main-Class: resources.ResourceTest

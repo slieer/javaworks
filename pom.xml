@@ -15,6 +15,7 @@
         <module>graal-js-jdk11-maven-demo</module>
         <module>jcef-simple</module>
         <module>psql-replication</module>
+        <module>playwright-intro</module>
     </modules>
 
 </project>
