@@ -962,8 +962,8 @@ NameToCode=No</a:ModelOptionsText>
 <c:ClassDiagrams>
 <o:ClassDiagram Id="o4">
 <a:ObjectID>5C28F892-2B5F-4FA9-AC8A-409370F60D55</a:ObjectID>
-<a:Name>Main</a:Name>
-<a:Code>Main</a:Code>
+<a:Name>main.java.Main</a:Name>
+<a:Code>main.java.Main</a:Code>
 <a:CreationDate>1312337006</a:CreationDate>
 <a:Creator>slieer</a:Creator>
 <a:ModificationDate>1312337006</a:ModificationDate>

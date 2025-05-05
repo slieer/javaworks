@@ -1,2 +1,2 @@
 run:
-java akka.Main HelloWorld
+java akka.main.java.Main HelloWorld

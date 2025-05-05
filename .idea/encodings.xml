@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/jprimer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pg-easy-replication/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pg-easy-replication/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/playwright-intro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/playwright-intro/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/psql-replication/src/main/java" charset="UTF-8" />
   </component>
 </project>
